@@ -1,3 +1,74 @@
+/*
+	Twenty 1.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+skel.init({
+	reset: 'full',
+	breakpoints: {
+		global:		{ range: '*', href: 'css/style.css', containers: 1400, grid: { gutters: 50 } },
+		wide:		{ range: '-1680', href: 'css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+		normal:		{ range: '-1280', href: 'css/style-normal.css', containers: 960, lockViewport: true },
+		narrow:		{ range: '-980', href: 'css/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
+		narrower:	{ range: '-840', href: 'css/style-narrower.css', grid: { collapse: 1 } },
+		mobile:		{ range: '-640', href: 'css/style-mobile.css', containers: '100%', grid: { gutters: 15, collapse: 2 } }
+	}
+}, {
+	layers: {
+
+		// Transform test.
+			transformTest: function() {
+
+				// Only use CSS transforms with touch devices.
+					return (skel.vars.isTouch);
+
+			},
+
+		// Layers.
+		// Probably shouldn't mess with these (at least until I've finished the skel-layers documentation).
+			layers: {
+				topPanel: {
+					states: 'global wide normal narrow narrower mobile',
+					position: 'top-center',
+					side: 'top',
+					hidden: true,
+					animation: 'pushY',
+					width: '100%',
+					height: '75%',
+					html: '<nav data-action="navList" data-args="nav"></nav>',
+					clickToClose: true,
+					swipeToClose: false
+				},
+				topButton: {
+					states: 'global wide normal narrow narrower mobile',
+					position: 'top-center',
+					width: 120,
+					height: 50,
+					html: '<span class="toggle" data-action="toggleLayer" data-args="topPanel"></span>'
+				},
+				sidePanel: {
+					states: 'global wide normal narrow narrower',
+					position: 'top-left',
+					side: 'left',
+					hidden: true,
+					animation: 'revealX',
+					width: 250,
+					height: '100%',
+					html: '<nav data-action="navList" data-args="nav"></nav>',
+					clickToClose: true
+				},
+				sideButton: {
+					states: 'global wide normal narrow narrower',
+					position: 'top-left',
+					width: 100,
+					height: 60,
+					html: '<span class="toggle" data-action="toggleLayer" data-args="sidePanel"></span>'
+				}
+			}
+	}
+});
+
 (function($) {
 
 	/* scrolly v0.1 | (c) n33 | n33.co @n33co | MIT */
@@ -30,13 +101,22 @@
 		// Scrolly links.
 			$('.scrolly').scrolly(1000, -10);
 
+		// Dropdowns.
+			$('#nav > ul').dropotron({
+				offsetY: -13,
+				mode: 'fade',
+				noOpenerFade: true,
+				expandMode: (skel.vars.isTouch ? 'click' : 'hover')
+			});
+
 		// Header.
 		// If the header is using "alt" styling and #banner is present, use scrollwatch
 		// to revert it back to normal styling once the user scrolls past the banner.
 		// Note: This is disabled on touch devices and whenever the 'normal' breakpoint is
 		// active (effectively disabling it on 'narrow', 'narrower', and 'mobile' as well).
-			if ( $header.hasClass('alt')
-			     &&	$banner.length > 0) {
+			if (!skel.vars.isTouch
+			&&	$header.hasClass('alt')
+			&&	$banner.length > 0) {
 
 				$window.on('load', function() {
 
