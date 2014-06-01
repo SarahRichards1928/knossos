@@ -29,13 +29,32 @@
         </script>-->
 
 		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+        <script src="js/init.js"></script>
 
         <noscript>
             <link rel="stylesheet" href="css/skel-noscript.css" />
             <link rel="stylesheet" href="css/style.css" />
             <link rel="stylesheet" href="css/style-wide.css" />
         </noscript>
+
+        <style>
+            /* Prevents slides from flashing */
+            #slides {
+                display:none;
+            }
+        </style>
+        <script src="js/jquery.slides.min.js"></script>
+
+<script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 640,
+        height: 480
+      });
+    });
+
+  </script>
 
         <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
     </head>
@@ -44,7 +63,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<h1 id="logo"><a href="index.html">Knossos <span>by MPI</span></a></h1>
+                <h1 id="logo"><a href="index.html"><img class="logo" src="images/logo.svg" alt="Knossos Logo" />Knossos <span>by MPI</span></a></h1>
 				<nav id="nav">
 					<ul>
 						<li class="current"><a href="index.html">Home</a></li>
@@ -102,9 +121,15 @@
                             <div class="circle_yellow"></div>
                             <div class="circle_green"></div>
                         </div>
-                        <div id="app">
+                        <div id="slides">
                             <img src="images/app.png" alt="Knossos application window">
+                            <img src="images/app.png" alt="Knossos application window">
+                            <img src="images/app.png" alt="Knossos application window">
+                            <img src="images/app.png" alt="Knossos application window">
+                            <a href="#" class="slidesjs-previous slidesjs-navigation">&larr;</a>
+<a href="#" class="slidesjs-next slidesjs-navigation">&rarr;</a>
                         </div>
+
                     </div>
                 </div>
 			</section>
