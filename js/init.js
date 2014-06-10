@@ -33,7 +33,7 @@ $(function(){
 skel.init({
 	reset: 'full',
 	breakpoints: {
-    global:		{ range: '*', href: 'css/style.css', containers: 1400, grid: { gutters: 50 } },
+    global:		{ range: '*', href: 'css/style.min.css', containers: 1400, grid: { gutters: 50 } },
 		wide:		  { range: '-1680', href: 'css/skelJS/style-wide.css', containers: 1200, grid: { gutters: 40 } },
 		normal:		{ range: '-1280', href: 'css/skelJS/style-normal.css', containers: 960, lockViewport: true },
 		narrow:		{ range: '-980', href: 'css/skelJS/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
