@@ -1,28 +1,36 @@
-
-
-$(function(){
-  $("#slides").slidesjs({
-    navigation: {
-      active: false,
-        // [boolean] Generates next and previous buttons.
-        // You can set to false and use your own buttons.
-        // User defined buttons must have the following:
-        // previous button: class="slidesjs-previous slidesjs-navigation"
-        // next button: class="slidesjs-next slidesjs-navigation"
-      effect: "slide"
-        // [string] Can be either "slide" or "fade".
-    },
-
-    pagination: {
-      active: false,
-        // [boolean] Create pagination items.
-        // You cannot use your own pagination. Sorry.
-      effect: "slide"
-        // [string] Can be either "slide" or "fade".
+$(function() {
+$('#slides').slidesjs({
+    width: 600,
+    height: 300,
+    callback: {
+        loaded: function(){
+          // hide navigation and pagination
+          $('.slidesjs-pagination, .slidesjs-navigation').hide(0); 
+        }
     }
-
-  });
 });
+  
+  // custom navigation/pagination links for slideshow
+$(".custom-item").click(function(e){
+  e.preventDefault();
+  // use data-item value when triggering default pagination link
+  $('a[data-slidesjs-item="' + $(this).attr("data-item") + '"]').trigger('click');
+});
+$('.custom-next').click(function(e) {
+  e.preventDefault();
+  // emulate next click
+  $('.slidesjs-next').click();
+});
+$('.custom-prev').click(function(e) {
+  e.preventDefault();
+  // emulate previous click
+  $('.slidesjs-previous').click();
+});
+
+
+});
+
+
 
 /*
 	Twenty 1.0 by HTML5 UP
@@ -34,11 +42,11 @@ skel.init({
 	reset: 'full',
 	breakpoints: {
     global:		{ range: '*', href: 'css/style.min.css', containers: 1400, grid: { gutters: 50 } },
-		wide:		  { range: '-1680', href: 'css/skelJS/style-wide.css', containers: 1200, grid: { gutters: 40 } },
-		normal:		{ range: '-1280', href: 'css/skelJS/style-normal.css', containers: 960, lockViewport: true },
-		narrow:		{ range: '-980', href: 'css/skelJS/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
-		narrower:	{ range: '-840', href: 'css/skelJS/style-narrower.css', grid: { collapse: 1 } },
-		mobile:		{ range: '-640', href: 'css/skelJS/style-mobile.css', containers: '100%', grid: { gutters: 15, collapse: 2 } }
+		wide:		  { range: '-1680', href: '0css/skelJS/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+		normal:		{ range: '-1280', href: '0css/skelJS/style-normal.css', containers: 960, lockViewport: true },
+		narrow:		{ range: '-980', href: '0css/skelJS/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
+		narrower:	{ range: '-840', href: '0css/skelJS/style-narrower.css', grid: { collapse: 1 } },
+		mobile:		{ range: '-640', href: '0css/skelJS/style-mobile.css', containers: '100%', grid: { gutters: 15, collapse: 2 } }
 	}
 }, {
 	layers: {
