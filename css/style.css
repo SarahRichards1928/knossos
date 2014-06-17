@@ -1,34 +1,38 @@
 @charset "UTF-8";
+@import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+#section-features {
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/Bio_BG.png");
+		background-position: bottom left, bottom right, top left, top center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+}
 
-/*
-	Twenty 1.0 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+#section-mpi {
+		background-color: #eeeeec;
+		background-image: url('images/bg2.png');
+}
+
+.breaker {
+	background-color: #95bfc7;
+	margin-top: -3em;
+	width: 100%;
+	padding: 2em;
+}
 
 /* Basic */
 
 	body, #skel-layers-wrapper {
-		background: #f3f6fa;
+		background: #364050 url('images/bg1.png');
 	}
 
-	body.loading * {
-		-moz-animation: none !important;
-		-webkit-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		-moz-transition: none !important;
-		-webkit-transition: none !important;
-		-o-transition: none !important;
-		-ms-transition: none !important;
-		transition: none !important;
-	}
 
 	body, input, select, textarea {
-		color: #7c8081;
+		/*color: #7c8081;*/
+		color: white;
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -122,7 +126,7 @@
 		text-align: center;
 	}
 
-/*		header.special:before, header.special:after {
+		header.special:before, header.special:after {
 			border-bottom: solid 1.5px;
 			border-top: solid 1.5px;
 			content: '';
@@ -140,7 +144,7 @@
 		header.special:after {
 			right: 0;
 		}
-*/
+
 		header.special h2 {
 			margin-bottom: 0;
 		}
@@ -171,71 +175,6 @@
 
 	footer.major {
 		padding-top: 3em;
-	}
-
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	textarea {
-		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-o-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		background: none;
-		border: solid 1px rgba(124, 128, 129, 0.2);
-		color: inherit;
-		display: block;
-		padding: 0.75em;
-		text-decoration: none;
-		width: 100%;
-		outline: 0;
-	}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		textarea:focus {
-			border-color: #83d3c9;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"] {
-		line-height: 1em;
-	}
-
-	::-webkit-input-placeholder {
-		color: inherit;
-		opacity: 0.5;
-		position: relative;
-		top: 3px;
-	}
-
-	:-moz-placeholder {
-		color: inherit;
-		opacity: 0.5;
-	}
-
-	::-moz-placeholder {
-		color: inherit;
-		opacity: 0.5;
-	}
-
-	:-ms-input-placeholder {
-		color: inherit;
-		opacity: 0.5;
-	}
-
-	.formerize-placeholder {
-		color: rgba(124, 128, 129, 0.5) !important;
 	}
 
 /* Image */
@@ -540,10 +479,12 @@
 		}
 
 		.wrapper.style2 {
-			/*background-color: #83d3c9;
-			color: white;*/
-      background-color: #eeeeec;
-      color: black;
+			background-color: #83d3c9;
+			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-position: bottom left, bottom right;
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: white;
 		}
 
 			.wrapper.style2 .button:hover {
@@ -580,9 +521,13 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background: white;
+		/*background-color: white;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		color: inherit;
+		*/
+		background: #222729 url('images/overlay.png');
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+		/*color: inherit;*/
+		color: white;
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
@@ -601,13 +546,6 @@
 			#header h1 span {
 				font-weight: 300;
 			}
-
-      #header h1 img {
-        width: 16px;
-        vertical-align: top;
-        margin-top: 0.2em;
-        margin-right: 0.25em;
-      }
 
 		#header nav {
 			letter-spacing: 0.075em;
@@ -756,136 +694,38 @@
 	@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 	#banner {
-		background-attachment: fixed;
-		background-color: #383d43;
-		background-image: url("../images/Bio_BG.png");
-		background-position: top center;
-		background-repeat: no-repeat;
-		background-size: cover;
-    background-attachment: fixed;
+		/*background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-position: bottom left, bottom right, top left, top center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+		*/
 		color: white;
 		cursor: default;
 		padding: 6em 0;
+		margin-top: -10em;
 		text-align: center;
 	}
 
-		#banner .inner {
-			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-			-o-animation: reveal-banner 1s 0.25s ease-in-out;
-			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-			animation: reveal-banner 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-o-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			background: rgba(69, 76, 87, 0.75);
-			color: white;
-			display: inline-block;
-			opacity: 0;
-			padding: 3em;
-			text-align: center;
-		}
+	#banner h2 {
+		text-align: left;
+		font-weight: 900;
+		letter-spacing: 0.05em;
+		padding: 2em;
+	}
 
-			#banner .inner header {
-				display: inline-block;
-				margin: 0 0 2em 0;
-				padding: 3px 0 3px 0;
-			}
-
-				#banner .inner header h2 {
-					font-size: 2.5em;
-					font-weight: 900;
-					letter-spacing: 0.2em;
-					margin: 0;
-					padding-left: 0.05em;
-					position: relative;
-					text-transform: uppercase;
-				}
-
-			#banner .inner p {
-				letter-spacing: 0.1em;
-				margin: 0;
-				text-transform: uppercase;
-			}
-
-				#banner .inner p a {
-					color: inherit;
-					font-weight: 400;
-					text-decoration: none;
-				}
-
-			#banner .inner footer {
-				margin: 2em 0 0 0;
-			}
-
-/* Mockup */
-
-#mockup {
-    margin-top: 2em;
-}
-/*
-#app img {
-    width: 100%;
-    margin-top: -3px;
-}*/
-
-#win_border {
-    background-color: #454c57;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: left;
-    padding: 0.5em 0 1.25em 1em;
-    clear: both;
-}
-
-#win_border .circle_red {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background:#e13332;
-    float: left;
-    margin-right: 0.25em;
-}
-
-#win_border .circle_yellow {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background:#ffd200;
-    float: left;
-    margin-right: 0.25em;
-}
-
-#win_border .circle_green {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background:#97ce68;
-    float: left;
-    margin-right: 0.25em;
-}
-
-
+	#banner img {
+		width: 80%;
+	}
 
 /* Main */
 
 	#main {
-		/*background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+		background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
-		background-size: 25em;*/
-        background-image: url("../images/cream_pixels_@2X.png");
-        background-position: top left;
-        background-repeat: repeat;
+		background-size: 25em;
 		padding: 7em 0;
 	}
 
@@ -912,7 +752,12 @@
 /* CTA */
 
 	#cta {
-		background-color: #383d43;
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
 		color: white;
 		padding: 5em;
 		text-align: center;
