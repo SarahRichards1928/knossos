@@ -2,27 +2,37 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
+#section-features {
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/Bio_BG.png");
+		background-position: bottom left, bottom right, top left, top center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+}
+
+#section-mpi {
+		background-color: #eeeeec;
+		background-image: url('images/bg2.png');
+}
+
+.breaker {
+	background-color: #95bfc7;
+	margin-top: -3em;
+	width: 100%;
+	padding: 2em;
+}
+
 /* Basic */
 
 	body, #skel-layers-wrapper {
-		background: #f3f6fa;
+		background: #364050 url('images/bg1.png');
 	}
 
-	/*body.loading * {
-		-moz-animation: none !important;
-		-webkit-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		-moz-transition: none !important;
-		-webkit-transition: none !important;
-		-o-transition: none !important;
-		-ms-transition: none !important;
-		transition: none !important;
-	}*/
 
 	body, input, select, textarea {
-		color: #7c8081;
+		/*color: #7c8081;*/
+		color: white;
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -165,71 +175,6 @@
 
 	footer.major {
 		padding-top: 3em;
-	}
-
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	textarea {
-		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-o-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		background: none;
-		border: solid 1px rgba(124, 128, 129, 0.2);
-		color: inherit;
-		display: block;
-		padding: 0.75em;
-		text-decoration: none;
-		width: 100%;
-		outline: 0;
-	}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		textarea:focus {
-			border-color: #83d3c9;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"] {
-		line-height: 1em;
-	}
-
-	::-webkit-input-placeholder {
-		color: inherit;
-		opacity: 0.5;
-		position: relative;
-		top: 3px;
-	}
-
-	:-moz-placeholder {
-		color: inherit;
-		opacity: 0.5;
-	}
-
-	::-moz-placeholder {
-		color: inherit;
-		opacity: 0.5;
-	}
-
-	:-ms-input-placeholder {
-		color: inherit;
-		opacity: 0.5;
-	}
-
-	.formerize-placeholder {
-		color: rgba(124, 128, 129, 0.5) !important;
 	}
 
 /* Image */
@@ -576,9 +521,13 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background: white;
+		/*background-color: white;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		color: inherit;
+		*/
+		background: #222729 url('images/overlay.png');
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+		/*color: inherit;*/
+		color: white;
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
@@ -745,72 +694,30 @@
 	@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
+		/*background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
 		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
+		*/
 		color: white;
 		cursor: default;
 		padding: 6em 0;
+		margin-top: -10em;
 		text-align: center;
 	}
 
-		#banner .inner {
-			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-			-o-animation: reveal-banner 1s 0.25s ease-in-out;
-			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-			animation: reveal-banner 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-o-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
-			color: white;
-			display: inline-block;
-			opacity: 0;
-			padding: 3em;
-			text-align: center;
-		}
+	#banner h2 {
+		text-align: left;
+		font-weight: 900;
+		letter-spacing: 0.05em;
+		padding: 2em;
+	}
 
-			#banner .inner header {
-				display: inline-block;
-				border-bottom: solid 2px;
-				border-top: solid 2px;
-				margin: 0 0 2em 0;
-				padding: 3px 0 3px 0;
-			}
-
-				#banner .inner header h2 {
-					border-bottom: solid 2px;
-					border-top: solid 2px;
-					font-size: 2.5em;
-					font-weight: 900;
-					letter-spacing: 0.2em;
-					margin: 0;
-					padding-left: 0.05em;
-					position: relative;
-					text-transform: uppercase;
-				}
-
-			#banner .inner p {
-				letter-spacing: 0.1em;
-				margin: 0;
-				text-transform: uppercase;
-			}
-
-				#banner .inner p a {
-					color: inherit;
-					font-weight: 400;
-					text-decoration: none;
-				}
-
-			#banner .inner footer {
-				margin: 2em 0 0 0;
-			}
+	#banner img {
+		width: 80%;
+	}
 
 /* Main */
 

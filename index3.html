@@ -24,10 +24,13 @@
                 boxModel: "border",
                 grid: { gutters: 30 },
                 breakpoints: {
-                wide: { range: "1200-", containers: 1140, grid: { gutters: 50 } },
-                narrow: { range: "481-1199", containers: 960 },
-                mobile: { range: "-480", containers: "fluid", lockViewport: true, grid: { collapse: true } }
-                }
+        global:     { range: '*', href: 'css/style.css', containers: 1400, grid: { gutters: 50 } },
+        wide:       { range: '-1680', href: 'css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+        normal:     { range: '-1280', href: 'css/style-normal.css', containers: 960, lockViewport: true },
+        narrow:     { range: '-980', href: 'css/style-narrow.css', containers: '95%', grid: { gutters: 30 } },
+        narrower:   { range: '-840', href: 'css/style-narrower.css', grid: { collapse: 1 } },
+        mobile:     { range: '-640', href: 'css/style-mobile.css', containers: '100%', grid: { gutters: 15, collapse: 2 } }
+    }
             }
             </script>
 
@@ -36,7 +39,7 @@
 
     </head>
 
-<body class="index loading">
+<body class="index">
     <!-- Header -->
     <header id="header" class="alt">
         <h1 id="logo"><a href="#welcome">Knossos <span>by MPI</span></a></h1>
@@ -52,17 +55,7 @@
     <div id="fullpage">
         <div class="section" id="section0">
             <section id="banner">
-            <!--
-                ".inner" is set up as an inline-block so it automatically expands
-                in both directions to fit whatever's inside it. This means it won't
-                automatically wrap lines, so be sure to use line breaks where
-                appropriate (<br />).
-            -->
-            <h2>Max Planck Institute for Medical Research:</h2>
-            <h1><img src="images/text_logo_white.svg" alt="" /></h1>
-            <h2>A scientific application</h2>
-
-                <!-- <div class="inner">
+            <div class="inner">
                     <header>
                         <h2>TWENTY</h2>
                     </header>
@@ -76,7 +69,7 @@
                             <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
                         </ul>
                     </footer>
-                </div> -->
+                </div> 
             </section>
         </div>
 
