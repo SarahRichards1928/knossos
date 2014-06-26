@@ -14,34 +14,18 @@
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
 	</head>
+
 	<body>
 		<!-- Header -->
 			<div id="header" class="skel-panels-fixed">
-				<div class="top">
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/logo_v6.svg" alt="" /></span>
-							<h1 id="title">Knossos</h1>
-							<span class="byline">by MPI</span>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Introduction</span></a></li>
-								<li><a href="#specification" id="specification-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Specification</span></a></li>
-								<li><a href="#setup" id="setup-link" class="skel-panels-ignoreHref"><span class="fa fa-terminal">Setup</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Knossos</span></a></li>
-							</ul>
-						</nav>
-				</div>
-				
-				<div class="bottom">
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/knossos-project" class="fa fa-github fa-5x solo"><span>Github</span></a></li>
-						</ul>
-				</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home"></span>Welcome</a></li>
+						<li><a href="#specification" id="specification-link" class="skel-panels-ignoreHref"><span class="fa fa-th"></span>Specification</a></li>
+						<li><a href="#get-knossos" id="get-knossos-link" class="skel-panels-ignoreHref"><span class="fa fa-terminal"></span>Get Knossos</a></li>
+						<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-user"></span>About Knossos</a></li>
+					</ul>
+				</nav>
 			</div>
 
 		<!-- Main -->
@@ -50,90 +34,40 @@
 				<!-- Intro -->
 					<section id="top" class="one">
 						<div class="container">
-							<a href="#" class="image featured"><img src="images/Bio_BG.png" alt="" /></a>
-
 							<header>
-								<h2 class="alt">We create <strong><img src="images/text_logo_black.svg" alt="Knossos" /></strong>.<br />
-								A scientific application that is used to<br />
-								annotate 3D image data.</h2>
+								<img src="images/text_logo_white.svg" alt="Knossos" />
 							</header>
-							
-							<p>Knossos is used by ... and developed at ...</p>
 
-							<footer>
-								<a href="#specification" class="button scrolly">Learn more about Knossos</a>
-							</footer>
-
+							<a href="images/mockup.png" class="image featured"><img src="images/app.png" alt="" /></a>
 						</div>
 					</section>
+
 					
 				<!-- Portfolio -->
 					<section id="specification" class="two">
 						<div class="container">
 					
 							<header>
-								<h2>Specification</h2>
+								<h2>Knossos</h2>
 							</header>
 							
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
-							fusce hendrerit lacus ridiculus.</p>
-						
 							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/A-million-suns-384369739" class="image full"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607" class="image full"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
+								<div class="8u">
+									KNOSSOS is a software tool for the visualization and annotation of 3D image data and was developed for the rapid reconstruction of neural morphology and connectivity. By dynamically loading only data from the surround of the current view point, seamless navigation is not limited to datasets that fit into the available RAM but works with much larger dataset stored in a special format on disk. Currently, KNOSSOS is limited to 8-bit data. In addition to viewing and navigating, KNOSSOS allows efficient manual neurite annotation ('skeletonization').
 								</div>
 								<div class="4u">
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/You-really-got-me-345249340" class="image full"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162" class="image full"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Elysium-355393900" class="image full"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
+									KNOSSOS is being used mostly for reconstructing cell morphologies from 3D electron microscopic data generated by Serial Block-Face Electron Microscopy (SBEM), with an occasional application to 2-photon and confocal optical microscopy data.
 								</div>
 							</div>
-
 						</div>
 					</section>
 
 				<!-- About Me -->
-					<section id="setup" class="three">
+					<section id="get-knossos" class="three">
 						<div class="container">
 
 							<header>
-								<h2>Setup</h2>
+								<h2>Get Knossos</h2>
 							</header>
 
 							<a href="http://ineedchemicalx.deviantart.com/art/Pasadena-357650036" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
