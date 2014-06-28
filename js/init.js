@@ -8,6 +8,8 @@
 			skelJS: {
 				prefix: 'css/style',
 				resetCSS: true,
+				normalizeCSS: true,
+				preloadStyleSheets: true,
 				boxModel: 'border',
 				useOrientation: true,
 				breakpoints: {
