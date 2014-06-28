@@ -33,35 +33,20 @@
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header
+#header
 	{
-		position: relative;
-		width: 100%;
-		background: none !important;
-		box-shadow: none !important;
-	}
-	
-		#header .top
-		{
-			position: relative;
-		}
-	
-		#header .bottom
-		{
-			border-top: solid 1px rgba(255,255,255,0.05);
-			box-shadow: 0 -1px 0 0 rgba(0,0,0,0.15);
-			padding-top: 2em;
-			margin-top: 1em;
-			position: relative;
-		}
-
-	#logo
-	{
-		margin: 1.5em 1.25em 1.25em 1.25em;
+		position: fixed;
+		width: 32px;
+		height: 100%;
+		color: #fff;
+		background: #222729 url('images/overlay.png');
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
+		padding: 0 0 0 0;
 	}
 
 	#nav
 	{
+		right: 0;
 	}
 	
 		#nav ul
@@ -74,8 +59,39 @@
 			
 				#nav ul li a
 				{
-					padding: 0.5em 1.25em 0.5em 1.25em;
+					color: rgba(255,255,255,0.5);
+					text-decoration: none;
+					outline: 0;
+					border: 0;
+					-moz-transition: none;
+					-webkit-transition: none;
+					-o-transition: none;
+					-ms-transition: none;
+					transition: none;
 				}
+					
+					#nav ul li a .link {
+						display: none;
+					}
+
+					#nav ul li a span
+					{
+						font-size: 0.8em;
+					}
+					
+						#nav ul li a span:before
+						{
+							color: #41484c;
+							width: 1.25em;
+							line-height: 1.75em;
+						}
+
+					#nav ul li a.active
+					{
+						background: rgba(0,0,0,0.15);
+						box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
+						color: #fff;
+					}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -83,7 +99,7 @@
 	
 	#footer
 	{
-		margin-left: 0;
+		margin-left: 64px;
 	}
 
 /*********************************************************************************/
@@ -92,7 +108,7 @@
 
 	#main
 	{
-		margin-left: 0;
+		margin-left: 64px;
 	}
 
 /*********************************************************************************/
