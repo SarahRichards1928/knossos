@@ -19,30 +19,6 @@
 					'mobile':	{ range: '-640', containers: 'fluid', lockViewport: true, grid: { gutters: 15, collapse: true } }
 				}
 			},
-
-		// skelJS Plugins (ditto; don't change unless you know what you're doing)
-			skelJSPlugins: {
-				panels: {
-					panels: {
-						sidePanel: {
-							breakpoints: 'narrower',
-							position: 'left',
-							size: 240,
-							html: '<div data-action="moveElement" data-args="header"></div></div>'
-						}
-					},
-					overlays: {
-						sidePanelToggle: {
-							breakpoints: 'narrower',
-							position: 'top-left',
-							width: '3.5em',
-							height: '2.25em',
-							html: '<div data-action="togglePanel" data-args="sidePanel" class="toggle"></div>'
-						}
-					}
-				}
-			}
-
 	};
 
 /*********************************************************************************/
