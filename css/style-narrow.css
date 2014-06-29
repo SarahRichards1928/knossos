@@ -1,4 +1,12 @@
 
+.circular {
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+		}
+
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -45,7 +53,9 @@
 		width: 64px;
 		height: 100%;
 		color: #fff;
-		background: #222729 url('images/overlay.png');
+		/*background: #222729 url('images/overlay.png');
+		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);*/
+		background: #000 url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
 		padding: 0 0 0 0;
 	}
@@ -94,7 +104,7 @@
 
 					#nav ul li a.active
 					{
-						background: rgba(0,0,0,0.15);
+						background: rgba(158, 12, 57, 0.25);
 						box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
 						color: #fff;
 					}

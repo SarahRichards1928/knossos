@@ -1,6 +1,13 @@
 @charset 'UTF-8';
 @font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
 
+span.code {
+	font-family: monospace;
+	font-size: 0.75em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -16,7 +23,7 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #666;
 		-webkit-text-stroke: 0.15px;
 	}
 
@@ -62,6 +69,7 @@
 	header
 	{
 		margin: 0 0 2em 0;
+		text-align: center;
 	}
 
 	footer
@@ -69,10 +77,16 @@
 		margin: 2em 0 0 0;
 	}
 
-	strong, b
+	b
 	{
 		font-weight: 300;
-		color: #666;
+		color: #1a1032;
+	}
+
+	strong
+	{
+		font-weight: 300;
+		font-variant: small-caps;
 	}
 	
 	em, i
@@ -83,7 +97,7 @@
 	a
 	{
 		text-decoration: none;
-		color: inherit;
+		color: #6e0e39;
 		border-bottom: dotted 1px rgba(128,128,128,0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -95,7 +109,7 @@
 
 		a:hover
 		{
-			color: #E27689;
+			color: #a60a43;
 			border-bottom-color: rgba(255,255,255,0);
 		}
 
@@ -126,9 +140,14 @@
 		font-style: italic;
 	}
 	
-	p, ul, ol, dl, table
+	ul, ol, dl, table
 	{
 		margin-bottom: 2em;
+	}
+
+	p {
+		margin-bottom: 1em;
+		text-align: left;
 	}
 
 	br.clear
@@ -165,6 +184,14 @@
 		}
 
 	/* Images */
+
+		.circular {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+		}
 
 		.image
 		{
@@ -225,8 +252,10 @@
 
 		ul.default
 		{
+			font-size: 0.9em;
 			list-style: disc;
-			padding-left: 1em;
+			padding-left: 3em;
+			text-align: left;
 		}
 		
 			ul.default li
@@ -256,7 +285,6 @@
 
 		ul.menu
 		{
-			cursor: default;
 		}
 		
 			ul.menu li
@@ -278,14 +306,101 @@
 		ol.default
 		{
 			list-style: decimal;
+			font-size: 0.75em;
 			padding-left: 1.25em;
+			text-align: left;
 		}
 
 			ol.default li
 			{
 				padding-left: 0.25em;
 			}
-			
+	
+/* Forms */
+
+		form
+		{
+		}
+		
+			form label
+			{
+				display: block;
+				text-align: left;
+				margin-bottom: 0.5em;
+			}
+		
+			form input.text,
+			form select,
+			form textarea
+			{
+				position: relative;
+				-webkit-appearance: none;
+				display: block;
+				border: 0;
+				background: #fff;
+				background: rgba(255,255,255,0.75);
+				width: 100%;
+				border-radius: 0.35em;
+				padding: 0.75em 1em 0.75em 1em;
+				box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+				border: solid 1px rgba(0,0,0,0.15);
+				-moz-transition: all 0.35s ease-in-out;
+				-webkit-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+			}
+
+				form input.text:hover,
+				form select:hover,
+				form textarea:hover
+				{
+				}
+
+				form input.text:focus,
+				form select:focus,
+				form textarea:focus
+				{
+					box-shadow: 0 0 2px 1px #8ededc;
+					background: #fff;
+				}
+				
+				form textarea
+				{
+					min-height: 14em;
+				}
+
+				form .formerize-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-webkit-input-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form :-moz-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-moz-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form :-ms-input-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-moz-focus-inner
+				{
+					border: 0;
+				}
+
+
 	/* Tables */
 	
 		table
@@ -342,7 +457,7 @@
 			color: #fff !important;
 			text-decoration: none;
 			padding: 0.75em 2.5em 0.75em 2.5em;
-			background-color: #9E0C39;
+			background-color: #6e0e39;
 			border: 0;
 			cursor: pointer;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
@@ -359,20 +474,30 @@
 
 			.button:hover
 			{
-				background-color: #E21B5A;
+				background-color: #a60a43;
 			}
 			
 			.button:active
 			{
-				background-color: #E21B5A;
+				background-color: #a60a43;
 			}
+
+		.button.small {
+			padding: 0.25em 1em 0.25em 1em;
+			margin: 0.25em 0.25em 0.25em 0.25em;
+			font-size: 0.75em;
+		}
 		
 	/* Item */
 	
 		.item
 		{
-			box-shadow: 0 0.05em 0.15em 0 rgba(0,0,0,0.05);
+			/*box-shadow: 0 0.05em 0.15em 0 rgba(0,0,0,0.05);*/
 			margin-bottom: 40px;
+		}
+
+		.item.shadow {
+			box-shadow: 0 0.05em 0.15em 0 rgba(0,0,0,0.05);	
 		}
 		
 			.item header
@@ -428,7 +553,7 @@
 
 	#header
 	{
-		background: rgba(0, 0, 0, 0.75) url('images/overlay.png');
+		background: rgba(0, 0, 0, 0.85) url('images/overlay.png');
 		box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
 		cursor: default;
 		font-size: 0.8em;
@@ -558,7 +683,7 @@
 
 					#nav ul li a.active
 					{
-						background: rgba(158, 12, 57, 0.15);
+						background: rgba(166, 10, 67, 0.15);
 						box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
 						color: #fff;
 					}
@@ -569,7 +694,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #9E0C39;
+								color: #a60a43;
 							}
 
 /*********************************************************************************/
@@ -579,11 +704,10 @@
 	#footer
 	{
 		text-align: center;
-		background-color: #dce3e2;
-		padding: 3em 0 4em 0;
+		background-color: #222222;
+		padding: 2em 0 2em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
 		font-size: 0.8em;
-		background-image: url('../images/Bio_Footer.png');
 	}
 
 		#footer .copyright
@@ -629,25 +753,22 @@
 			padding: 5em 0 0 0;
 			box-shadow: inset 0 -2em 2em -2em #000;
 		}
-	
-			#main > section.one .image.featured
-			{
-				/*margin-bottom: 3em;*/
-				z-index: -1000;
-			}
 
 		#main > section.two
 		{
-			background-color: #f5fafa;
-			text-align: left;
 		}
 	
 		#main > section.three
 		{
-			background-color: #ecf1f1;
+			background-color: #f5f9fc;
 		}
 	
 		#main > section.four
 		{
-			background-color: #e8edec;
+			background-color: #e6f0f7;
+		}
+
+		#main > section.five {
+			background-color: #dfebf2;
+			box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025), inset 0 -2em 2em -2em #000;
 		}
