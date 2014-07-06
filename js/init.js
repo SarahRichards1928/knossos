@@ -14,14 +14,15 @@
 				useOrientation: true,
 				breakpoints: {
 					'widest':	{ range: '1881-', hasStyleSheet: false, containers: 1400, grid: { gutters: 40 } },
-					'wide':	{ range: '961-1880', containers: 1200, grid: { gutters: 40 } },
-					'normal':	{ range: '961-1620', containers: 960, grid: { gutters: 40 } },
-					'narrow':	{ range: '961-1024', containers: 'fluid', grid: { gutters: 20 } },
-					'narrower':	{ range: '-960', containers: 'fluid', grid: { gutters: 15 } },
+					'wide':	{ range: '1621-1880', containers: 1200, grid: { gutters: 40 } },
+					'normal':	{ range: '1025-1620', containers: 960, grid: { gutters: 40 } },
+					'narrow':	{ range: '800-1024', containers: 'fluid', grid: { gutters: 20 } },
+					'narrower':	{ range: '-800', containers: 'fluid', grid: { gutters: 15 } },
 					'mobile':	{ range: '-640', containers: 'fluid', lockViewport: true, grid: { gutters: 15, collapse: true } }
 				}
 			},
 	};
+
 
 /*********************************************************************************/
 /* Don't modify beyond this point unless you know what you're doing!             */
@@ -245,5 +246,33 @@
 				});
 				
 				jQuery.n33_scrollzer(ids, { pad: 200, lastHack: true });
+
+
+
+				var $body = $('body'),
+				$window = $(window),
+				$header = $('#header'),
+				$banner = $('#top');
+
+				if ($header.hasClass('alt')
+				&&	$banner.length > 0) {
+
+				$window.on('load', function() {
+
+					// scrollgress v0.2 | (c) n33 | n33.co @n33co | MIT
+						(function(){var e="scrollwatch",t="length",n="top",r=null,i="scrollgress",s="data",o="scrollwatch-state",u="range",a="anchor",f="unscrollwatch",l="unscrollgress",c="removeData",h="element",p="-id",d="scroll.",v="height",m="scrollTop",g="center",y="bottom",b=$(window),w=$(document),E=1e3;$.fn[e]=function(f){var l,c,h,p;if(this[t]>1){for(l=0;l<this[t];l++)$(this[l])[e](f);return this}return c=$.extend({range:.5,anchor:n,init:r,on:r,off:r,delay:0},f),h=$(this),c.init&&c.init(h),h[s](o,-1)[i](function(e){window.clearTimeout(p),p=window.setTimeout(function(){var t=parseInt(h[s](o));if(t==0||t==-1)if(e>=-1*c[u]&&e<=c[u]){h[s](o,1),c.on&&c.on(h);return}if(t==1||t==-1)if(e<-1*c[u]||e>=c[u]){h[s](o,0),c.off&&c.off(h);return}},c.delay)},{anchor:c[a]},e),h},$.fn[f]=function(){var n,r;if(this[t]>1){for(n=0;n<this[t];n++)$(this[n])[f]();return this}return r=$(this),r[c](o,0)[l](e),r},$.fn[i]=function(e,r,o){var u,f,l,c,S;if(this[t]>1){for(u=0;u<this[t];u++)$(this[u])[i](e,r,o);return this}return o||(o=i),f=$.extend({anchor:n,direction:"both",scope:h,easing:0},r),l=$(this),l[s](o+p)||l[s](o+p,E++),c=l[s](o+p),S=d+o+"-"+c,b.off(S).on(S,function(){var t,r=l.offset()[n],i=l.outerHeight(),s=w[v]();switch(f.scope){default:case h:switch(f[a]){default:case n:t=(r-b[m]())/i*-1;break;case g:t=(r-b[m]()-(b[v]()-i)/2)/i*-1;break;case y:t=(r-b[m]()-(b[v]()-i))/i*-1}break;case"window":switch(f[a]){default:case n:t=(r-b[m]())/b[v]()*-1;break;case g:t=(r-b[m]()-(b[v]()-i)/2)/b[v]()*-1;break;case y:t=(r-b[m]()-(b[v]()-i))/b[v]()*-1}}f.direction=="forwards"?t=Math.max(0,t):f.direction=="backwards"&&(t=Math.min(0,t)),t>0?t=Math.max(0,t-f.easing/100):t<0&&(t=Math.min(0,t+f.easing/100)),e(t,l)}).trigger("scroll"),l},$.fn[l]=function(e){var n,r,o,u;if(this[t]>1){for(n=0;n<this[t];n++)$(this[n])[l](e);return this}return e||(e=i),r=$(this),r[s](e+p)?(o=r[s](e+p),u=d+e+"-"+o,b.off(u),r[c](e+p),r):r}})();
+
+					// Apply scrollgress to banner.
+						$banner.scrollwatch({
+							delay:		0,
+							range:		1,
+							anchor:		'top',
+							on:			function() { $header.addClass('alt reveal'); },
+							off:		function() { $header.removeClass('alt'); }
+						});
+
+				});
+			
+			}
 
 	});
