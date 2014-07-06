@@ -603,57 +603,44 @@ span.code {
 					color: #fff;
 				}
 
-	#logo
-	{
-		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
-		min-height: 48px;
-		cursor: default;
-	}
-	
-		#logo h1
-		{
-			position: relative;
-			color: #fff;
-			font-weight: 600;
-			font-size: 1em;
-			line-height: 1em;
-		}
-	
-		#logo .byline
-		{
-			position: relative;
-			display: block;
-			font-size: 0.6em;
-			color: rgba(255,255,255,0.5);
-			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
-		}
-		
-		#logo .image
-		{
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
-	
 	#nav
 	{
 		letter-spacing: 0.075em;
 		position: absolute;
-		right: 1.5em;
+		/*right: 1.0em;*/
 		text-transform: uppercase;
 		top: 0;
+
+        /****/
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
 	}
 	
 		#nav ul
 		{
+            clear: left;
+            float: left;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 50%;
+            text-align: center;
 		}
 		
 			#nav ul li
 			{
-				display: inline-block;
-				margin-left: 1.5em;
+				/*display: inline-block;
+				margin-left: 1.0em;
+                */
+                /****/
+                display: block;
+                float: left;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                right: 50%;
 			}
 			
 				#nav ul li a
@@ -695,6 +682,19 @@ span.code {
 							{
 								color: #a60a43;
 							}
+
+
+ul.gallery {
+}
+
+ul.gallery li {
+    display: inline-block;
+}
+
+ul.gallery li a {
+    text-decoration: none;
+    border: 0 solid #000;
+}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -752,6 +752,11 @@ span.code {
 			padding: 5em 0 0 0;
 			box-shadow: inset 0 -2em 2em -2em #000;
 		}
+
+        #main > section.one header {
+            margin-top: 2em;
+            margin-bottom: 9em;
+        }
 
 		#main > section.two
 		{

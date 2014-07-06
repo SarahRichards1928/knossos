@@ -8,22 +8,20 @@
         <meta name="keywords" content="3D image, visualization, skeletonization" />
 
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/skel.min.js"></script>
-        <script src="js/init.js"></script>
+        <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/lightbox.css" />
     </head>
 
     <body>
-        <div id="header" class="skel-panels-fixed">
+        <div id="header">
             <nav id="nav">
                 <ul>
-                    <li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home"></span><span class="link">Welcome</span></a></li>
-                    <li><a href="#specification" id="specification-link" class="skel-panels-ignoreHref"><span class="fa fa-th"></span><span class="link">What is Knossos</span></a></li>
-                    <li><a href="#get-knossos" id="get-knossos-link" class="skel-panels-ignoreHref"><span class="fa fa-download"></span><span class="link">Get Knossos</span></a></li>
-                    <li><a href="#team" id="team-link" class="skel-panels-ignoreHref"><span class="fa fa-users"></span><span class="link">The Team</span></a></li>
-                    <li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope"></span><span class="link">Contact</span></a></li>
+                    <li><a href="#top" id="top-link"><span class="fa fa-home"></span><span class="link">Welcome</span></a></li>
+                    <li><a href="#specification" id="specification-link"><span class="fa fa-th"></span><span class="link">What is Knossos</span></a></li>
+                    <li><a href="#get-knossos" id="get-knossos-link"><span class="fa fa-download"></span><span class="link">Get Knossos</span></a></li>
+                    <li><a href="#team" id="team-link"><span class="fa fa-users"></span><span class="link">The Team</span></a></li>
+                    <li><a href="#started" id="started-link"><span class="fa fa-users"></span><span class="link">Get started!</span></a></li>
+                    <li><a href="#contact" id="contact-link"><span class="fa fa-envelope"></span><span class="link">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -35,8 +33,12 @@
                         <img src="images/text_logo_white.svg" alt="Knossos" />
                     </header>
 
-                    <a href="images/mockup.png" class="image featured"><img src="images/app.png" alt="" /></a>
-                </div>
+                    <ul class="gallery">
+                        <li><a href="images/app.png" data-lightbox="image-1" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
+                        <li><a href="images/app.png" data-lightbox="image-2" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
+                        <li><a href="images/app.png" data-lightbox="image-3" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
+                        <li><a href="images/app.png" data-lightbox="image-4" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
+                    </ul>
             </section>
 
             <section id="specification" class="two">
@@ -213,7 +215,7 @@
                             <div class="row">
                                 <div class="4u">
                                     <article class="item">
-                                        <img class="image circular" src="images/team/joergen.png" title="Jörgen Kornfeld - The Songbird" />
+                                        <img class="image circular" src="images/team/joergen.png" />
                                         <header>
                                             <h3>J&ouml;rgen Kornfeld</h3>
                                         </header>
@@ -222,7 +224,7 @@
 
                                 <div class="4u">
                                     <article class="item">
-                                        <img class="image circular" src="images/team/fabian.png" title="Fabian Svara - MASTER ZEBRAFISH" />
+                                        <img class="image circular" src="images/team/fabian.png" />
                                         <header>
                                             <h3>Fabian Svara</h3>
                                         </header>
@@ -271,7 +273,7 @@
                             <div class="row">
                                 <div class="4u">
                                     <article class="item">
-                                        <img class="image circular" src="images/team/seba.png" title="Sebastian 'The cool guy' Spaar" />
+                                        <img class="image circular" src="images/team/seba.png" />
                                         <header>
                                             <h3>Sebastian Spaar</h3>
                                         </header>
@@ -301,9 +303,9 @@
                         <h2>Contact</h2>
                     </header>
 
-                    <p>If you want to get in touch with us, click this button:</p>
+                    <p>We would love to hear from you! Use this e-mail address to contact us:</p>
 
-                    <a class="button" href="mailto:REMOVE-team@mpimf-heidelberg.mpg.de?subject=E-MAIL ADDRESS NEEDS EDITING&body=Please remove the text 'REMOVE-ME-' from the address before sending your email.">Knossos-Team</a>
+                    <a class="button" href="mailto:knossos-team@mpimf-heidelberg.mpg.de">knossos-team@mpimf-heidelberg.mpg.de</a>
                 </div>
             </section>
         </div>
@@ -316,6 +318,11 @@
                 </ul>
             </div>      
         </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/lightbox.min.js"></script>
 
         <script>
             window.onload = function () {

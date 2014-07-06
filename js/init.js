@@ -16,7 +16,7 @@
 					'widest':	{ range: '1881-', hasStyleSheet: false, containers: 1400, grid: { gutters: 40 } },
 					'wide':	{ range: '961-1880', containers: 1200, grid: { gutters: 40 } },
 					'normal':	{ range: '961-1620', containers: 960, grid: { gutters: 40 } },
-					'narrow':	{ range: '961-1320', containers: 'fluid', grid: { gutters: 20 } },
+					'narrow':	{ range: '961-1024', containers: 'fluid', grid: { gutters: 20 } },
 					'narrower':	{ range: '-960', containers: 'fluid', grid: { gutters: 15 } },
 					'mobile':	{ range: '-640', containers: 'fluid', lockViewport: true, grid: { gutters: 15, collapse: true } }
 				}
