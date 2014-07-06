@@ -78,7 +78,7 @@
 					transition: none;
 				}
 					
-					#nav ul li a .link {
+					#nav ul li a .nav-link {
 						display: none;
 					}
 

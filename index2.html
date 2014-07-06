@@ -16,12 +16,12 @@
         <div id="header">
             <nav id="nav">
                 <ul>
-                    <li><a href="#top" id="top-link"><span class="fa fa-home"></span><span class="link">Welcome</span></a></li>
-                    <li><a href="#specification" id="specification-link"><span class="fa fa-th"></span><span class="link">What is Knossos</span></a></li>
-                    <li><a href="#get-knossos" id="get-knossos-link"><span class="fa fa-download"></span><span class="link">Get Knossos</span></a></li>
-                    <li><a href="#started" id="started-link"><span class="fa fa-users"></span><span class="link">Get started!</span></a></li>
-                    <li><a href="#team" id="team-link"><span class="fa fa-users"></span><span class="link">The Team</span></a></li>
-                    <li><a href="#contact" id="contact-link"><span class="fa fa-envelope"></span><span class="link">Contact</span></a></li>
+                    <li><a href="#top" id="top-link"><span class="fa fa-home"></span><span class="nav-link">Welcome</span></a></li>
+                    <li><a href="#specification" id="specification-link"><span class="fa fa-th"></span><span class="nav-link">What is Knossos</span></a></li>
+                    <li><a href="#get-knossos" id="get-knossos-link"><span class="fa fa-download"></span><span class="nav-link">Get Knossos</span></a></li>
+                    <li><a href="#started" id="started-link"><span class="fa fa-users"></span><span class="nav-link">Get started!</span></a></li>
+                    <li><a href="#team" id="team-link"><span class="fa fa-users"></span><span class="nav-link">The Team</span></a></li>
+                    <li><a href="#contact" id="contact-link"><span class="fa fa-envelope"></span><span class="nav-link">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -34,16 +34,15 @@
                     </header>
 
                     <ul class="gallery">
-                        <li><a href="images/app.png" data-lightbox="image-1" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
-                        <li><a href="images/app.png" data-lightbox="image-2" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
-                        <li><a href="images/app.png" data-lightbox="image-3" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
-                        <li><a href="images/app.png" data-lightbox="image-4" data-title="My caption"><img src="images/thumb-app.png" class="circular"/></a></li>
+                        <li><a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/thumb-1.jpg" class="circular"/></a></li>
+                        <li><a href="images/image-2.jpg" data-lightbox="image-2" data-title="My caption"><img src="images/thumb-2.jpg" class="circular"/></a></li>
+                        <li><a href="images/image-3.jpg" data-lightbox="image-3" data-title="My caption"><img src="images/thumb-3.jpg" class="circular"/></a></li>
+                        <li><a href="images/image-4.jpg" data-lightbox="image-4" data-title="My caption"><img src="images/thumb-4.jpg" class="circular"/></a></li>
                     </ul>
             </section>
 
             <section id="specification" class="two">
                 <div class="container">
-            
                     <header>
                         <h2>What is <strong>Knossos</strong></h2>
                     </header>
@@ -69,7 +68,7 @@
 
                     <div class="row">
                         <div class="12u">
-                            <ol class="default">
+                            <ol>
                                 <li><strong>Helmstaedter, M., Briggman, K.L., Turaga, S.C., Jain, V., Seung, H.S., Denk, W.</strong> <a href="http://www.nature.com/nature/journal/v500/n7461/full/nature12346.html"><i>&#8220;Connectomic reconstruction of the inner plexiform layer in the mouse retina&#8221;</i></a><br />
                                 &mdash;Nature 500, 168&ndash;174, 2013</li>
                                 <li><strong>Helmstaedter, M., Briggman, K.L., Denk, W.</strong> <a href="http://www.nature.com/neuro/journal/v14/n8/full/nn.2868.html"><i>&#8220;High-accuracy neurite reconstruction for high-throughput neuroanatomy&#8221;</i></a><br />
@@ -145,7 +144,7 @@
 
                             <p>Example data stacks in the <strong>Knossos</strong> format can be found here: <a href="https://dl.dropboxusercontent.com/u/951334/e1088_mag1_small.zip">small (54 MB)</a>, <a href="https://dl.dropboxusercontent.com/u/951334/e1088_mag1_large.zip">large (400 MB)</a>.</p>
 
-                            <ul class="default">
+                            <ul>
                                 <li>After starting <strong>Knossos</strong>, navigate to &#8220;File - Load Dataset&#8221; and select the <span class="code">e1088_mag1</span> folder.</li>
                                 <li>Copy the following coordinates: <span class="code">829 1090 832</span> (Ctrl-c) and paste them into <strong>Knossos</strong> (the &#8220;paste&#8221; button is located in the menu bar).</li>
                                 <li>These steps take you directly to the center of the data stacks.</li>
@@ -289,7 +288,7 @@
                 </div>
             </section>
 
-            <section id="contact" class="five">
+            <address id="contact">
                 <div class="container">
                     <header>
                         <h2>Contact</h2>
@@ -299,13 +298,13 @@
 
                     <a class="button" href="mailto:knossos-team@mpimf-heidelberg.mpg.de">knossos-team@mpimf-heidelberg.mpg.de</a>
                 </div>
-            </section>
+            </address>
         </div>
 
         <footer>
             <ul class="menu">
                 <li><strong>Knossos</strong> 2014</li>
-                <li></li>
+                <li>&nbsp;</li>
             </ul>
         </footer>
         
@@ -313,22 +312,5 @@
         <script src="js/skel.min.js"></script>
         <script src="js/init.js"></script>
         <script src="js/lightbox.min.js"></script>
-
-        <script>
-            window.onload = function () {
-                var addressCleaner = function () {
-                      this.href = this.href.split("?")[0].replace("REMOVE", "knossos");
-                      this.onclick = function (){};
-                      this.oncontextmenu = function (){};
-                };
-                var links = document.getElementsByTagName("a");
-                for (var i=0; i < links.length; i++) {
-                    if(links[i].href.indexOf("mailto:") !== -1){
-                        links[i].onclick = addressCleaner;
-                        links[i].oncontextmenu = addressCleaner;
-                    }
-                }
-            };
-        </script>
     </body>
 </html>
