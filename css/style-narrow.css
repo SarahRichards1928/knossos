@@ -86,10 +86,6 @@
 					transition: none;
 				}
 					
-					#nav ul li a .nav-link {
-						display: none;
-					}
-
 					#nav ul li a span
 					{
 						font-size: 0.8em;
