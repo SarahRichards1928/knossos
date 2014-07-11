@@ -157,31 +157,7 @@
 // Ready stuff
 	jQuery(function() {
 
-		var $window = $(window),
-			_IEVersion = (navigator.userAgent.match(/MSIE ([0-9]+)\./) ? parseInt(RegExp.$1) : 99);
-
-		// Initialize events
-		
-			// Load
-				$window.load(function() {
-			
-					skel.onStateChange(function() {
-					
-						window.setTimeout(function() {
-							var fi = jQuery('.image.featured');
-						
-							// If we're mobile, do image alignment fix
-								if (skel.isActive('mobile'))
-									fi.each(function() { var img = jQuery(this).children('img'); img.css('left', '50%').css('margin-left', -1 * (img.width() / 2)); });
-							// Otherwise, remove the fix if it was applied previously
-								else
-									fi.each(function() { jQuery(this).children('img').css('left', 0).css('margin-left', 0); });
-									
-						}, 100);
-					
-					});
-
-				});
+		var $window = $(window)
 
 		// Initialize scrolly links
 			jQuery('.scrolly').n33_scrolly();
