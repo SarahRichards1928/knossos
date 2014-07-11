@@ -138,12 +138,12 @@
         text-align: left;
     }
 
-        p > span.code {
-            font-family: monospace;
-            font-size: 0.75em;
-            margin-left: 0.5em;
-            margin-right: 0.5em;
-        }
+code {
+    font-family: monospace;
+    font-size: 0.75em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 
     /* Sections/Articles */
     
