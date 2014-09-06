@@ -10,3 +10,37 @@ layout: default
     <h4>Learn about <a href="#0"><strong>Knossos&rsquo;</strong> features <i class="fa fa-angle-right"></i></a></h4>
   </div>
 </main>
+
+<div>
+
+<div class="cards">
+  {% for post in site.posts %}
+    <div class="card">
+      {% if post.ribbon %}
+        <div class="ribbon-wrapper"><div class="ribbon">{{ post.ribbon }}</div></div>
+      {% endif %}
+    
+      <div class="card-image">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      </div>
+      
+      <div class="card-header">
+        {{ post.title }}
+      </div>
+    
+      <div class="card-copy">
+        <p>{{ post.excerpt }}</p>
+      </div>
+    
+      <div class="card-stats">
+        <ul>
+          <li>date<span>Date</span></li>
+          <li>{{ post.author }}<span>Author</span></li>
+          <li>{{ post.tags }}<span>Tags</span></li>
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+</div>

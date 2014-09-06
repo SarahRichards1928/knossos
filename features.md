@@ -4,7 +4,12 @@ title: Features
 permalink: /features/
 ---
 
-<aside>
+<div class="bullets">
+<div class="bullet two-col-bullet">
+<div class="bullet-content">
+
+
+
 <div class = "browsers">
 <div class = "browser">
 <div class="browser-top-bar">
@@ -15,9 +20,136 @@ permalink: /features/
 <div class="browser-content"></div>
 </div>
 </div>
-</aside>
 
-<article>
-<p>Knossos is  really good, you should try it</p>
-</article>
-<!-- <div class="cover"></div> -->
+</div>
+</div>  
+<div class="bullet two-col-bullet">
+<div class="bullet-icon bullet-icon-2">
+<i class="fa fa-rocket"></i>
+</div>
+<div class="bullet-content">
+<h2>Knossos is really cool</h2>
+<p>You sould try it.</p>
+</div>
+</div>
+</div>
+
+<div class="bullets">
+<div class="bullet two-col-bullet">
+<div class="bullet-content">
+
+
+
+<div class = "browsers">
+<div class = "browser">
+<div class="browser-top-bar">
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+</div>
+<div class="browser-content"></div>
+</div>
+</div>
+
+</div>
+</div>  
+<div class="bullet two-col-bullet">
+<div class="bullet-icon bullet-icon-2">
+<i class="fa fa-rocket"></i>
+</div>
+<div class="bullet-content">
+<h2>Knossos is really cool</h2>
+<p>You sould try it.</p>
+</div>
+</div>
+</div>
+
+<div class="bullets">
+<div class="bullet two-col-bullet">
+<div class="bullet-content">
+
+
+
+<div class = "browsers">
+<div class = "browser">
+<div class="browser-top-bar">
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+</div>
+<div class="browser-content"></div>
+</div>
+</div>
+
+</div>
+</div>  
+<div class="bullet two-col-bullet">
+<div class="bullet-icon bullet-icon-2">
+<i class="fa fa-rocket"></i>
+</div>
+<div class="bullet-content">
+<h2>Knossos is really cool</h2>
+<p>You sould try it.</p>
+</div>
+</div>
+</div>
+
+<div class="bullets">
+<div class="bullet two-col-bullet">
+<div class="bullet-content">
+
+
+
+<div class = "browsers">
+<div class = "browser">
+<div class="browser-top-bar">
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+</div>
+<div class="browser-content"></div>
+</div>
+</div>
+
+</div>
+</div>  
+<div class="bullet two-col-bullet">
+<div class="bullet-icon bullet-icon-2">
+<i class="fa fa-rocket"></i>
+</div>
+<div class="bullet-content">
+<h2>Knossos is really cool</h2>
+<p>You sould try it.</p>
+</div>
+</div>
+</div>
+
+<div class="bullets">
+<div class="bullet two-col-bullet">
+<div class="bullet-content">
+
+
+
+<div class = "browsers">
+<div class = "browser">
+<div class="browser-top-bar">
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+<div class="browser-circle"></div>
+</div>
+<div class="browser-content"></div>
+</div>
+</div>
+
+</div>
+</div>  
+<div class="bullet two-col-bullet">
+<div class="bullet-icon bullet-icon-2">
+<i class="fa fa-rocket"></i>
+</div>
+<div class="bullet-content">
+<h2>Knossos is really cool</h2>
+<p>You sould try it.</p>
+</div>
+</div>
+</div>
