@@ -3,9 +3,28 @@
 
   <nav class="cd-main-nav">
     <ul>
+      <li><a href="{{ "/index.html" | prepend: site.baseurl }}"><i class="fa fa-home"></i> Home</a></li>
       {% for page in site.pages %}
-        {%if page.title %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% if page.title == "Features" %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-cogs"></i> {{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      {% for page in site.pages %}
+        {% if page.title == "Download" %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-download"></i> {{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      {% for page in site.pages %}
+        {% if page.title == "Get started" %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-play-circle"></i> {{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+      {% for page in site.pages %}
+        {% if page.title == "About us" %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-users"></i> {{ page.title }}</a></li>
         {% endif %}
       {% endfor %}
     </ul>
