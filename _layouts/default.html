@@ -7,11 +7,9 @@
 
     {% include header.html %}
 
-    <main>
-    </main>
+    {{ content }}
 
     {% include footer.html %}
-
     <script src="{{ "/js/jquery-2.1.1.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     <script src="{{ "/js/main.js" | prepend: site.baseurl }}" type="text/javascript"></script>
   </body>

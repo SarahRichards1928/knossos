@@ -62,7 +62,7 @@ $L:     1170px;
 // colors
 
 $background: #2e313d; // body background color
-$color-1: #transparent; // orange
+$color-1: transparent; // orange
 $color-2: #f0f1e7; // cream
 $color-3: #65676f; // blue text
 
@@ -110,7 +110,7 @@ Main components
     width: 100%;
     height: $header-height-S;
     background: $color-1;
-    box-shadow: 0 1px 3px rgba(#000, .2);
+    // box-shadow: 0 1px 3px rgba(#000, .2);
     z-index: index($elements, navigation); // see partials > _variables.scss
     @include clearfix;
 
@@ -125,7 +125,7 @@ Main components
 
     @include MQ(M) {
         height: $header-height-M;
-
+        
         #cd-logo {
             margin: 23px 0 0 5%;
         }
