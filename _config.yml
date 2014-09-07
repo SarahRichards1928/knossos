@@ -1,10 +1,9 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: KNOSSOS &mdash; 3D image data visualization and annotation
+name: KNOSSOS
+email: knossos-team@mpimf-heidelberg.mpg.de
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Knossos is a scientific application for 3D image data skeletonization.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://knossostool.org" # the base hostname & protocol for your site
 github_username:  knossos-project

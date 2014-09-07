@@ -77,9 +77,9 @@ $browser-content-background-3: #F0F0F0;
   }
 
   .browser-content {
-    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot1.png);
+    background: url("../img/app.png");
     background-color: $browser-content-background-1;
-    background-position: top;
+    background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -199,7 +199,7 @@ $browser-content-background-3: #F0F0F0;
   $card-hover-background: lighten($card-background, 5);
   $card-image-background: #DBD199;
   $card-image-hover-background: lighten($card-image-background, 5);
-  $card-stats-color: lighten($base-accent-color, 10);
+  $card-stats-color: lighten($dark-gray, 10);
 
   @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
@@ -291,7 +291,6 @@ $browser-content-background-3: #F0F0F0;
       }
 
       span {
-        color: $base-font-color;
         font-size: .7em;
         display: block;
         font-weight: normal;

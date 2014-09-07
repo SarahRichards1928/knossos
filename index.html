@@ -4,10 +4,11 @@ layout: default
 
 <div id="welcome">
   <div>
-    <h1>Introducing<br><img src="img/text.svg" alt="Logo"></h1>
+    <h3>Here is</h3>
+    <h1><img class="splash" src="{{ "/img/text.svg" | prepend: site.baseurl }}" alt="Knossos"></h1>
     <h2>Knossos</h2>
-    <h3>A scientific tool that lets you do cool stuff.</h3>
-    <h4>Learn about <a href="#0"><strong>Knossos&rsquo;</strong> features <i class="fa fa-angle-right"></i></a></h4>
+    <h4>A 3D image annotation program.</h3>
+    <h5>Learn about <a href="#0"><strong>Knossos&rsquo;</strong> features <i class="fa fa-angle-right"></i></a></h4>
   </div>
 </div>
 
@@ -20,16 +21,16 @@ layout: default
     
       {% if post.image %}
         <div class="card-image">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+          <img src="{{ post.image }}" alt="">
         </div>
       {% endif %}
       
       <div class="card-header">
-        {{ post.title }}
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </div>
     
       <div class="card-copy">
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}"><em>Read more &raquo;</em></a></p>
       </div>
     
       <div class="card-stats">

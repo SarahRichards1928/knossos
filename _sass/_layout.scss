@@ -1,7 +1,7 @@
 @import "bourbon/bourbon";
-@import "bitters/grid-settings";
+@import "base/grid-settings";
 @import "neat/neat";
-@import "bitters/base";
+@import "base/base";
 
 @import "cd";
 $base-spacing: 2em;
@@ -9,6 +9,36 @@ $base-spacing: 2em;
 @import "refills";
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  @extend %default-ul;
+  margin-left: 2em;
+}
+
+.bullets i {
+  font-size: 150%;
+  color: white;
+}
+
+p {
+  margin-bottom: $base-line-height * 0.5;
+}
+
+.button {
+  @include button;
+  color: white !important;
+}
 
 .cd-header {
   @media screen and (min-width: 768px) {
@@ -37,6 +67,27 @@ $base-spacing: 2em;
 
 .comment-image > i {
   font-size: 400%;
+  color: white;
+}
+
+#mpi {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+  font-size: 66%;
+
+  float: left;
+  margin: 13px 0 0 5%;
+
+  img {
+    margin-right: 13px;
+    vertical-align: middle;
+  }
+}
+
+hr {
+  border-bottom: 1px solid transparentize($base-font-color, .8);
+  margin: 1em;
 }
 
 strong {
@@ -49,7 +100,7 @@ body {
 
 html, body {
   height: 100%;
-  background-image: radial-gradient(ellipse farthest-corner at center center, darken(#0096dd, 5%) 40%, darken(#00539f, 10%) 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center center, darken(#0096dd, 10%) 40%, darken(#00539f, 10%) 100%);
 }
 
 body div#behindlay {
@@ -65,13 +116,17 @@ body div#behindlay {
   @media screen and (min-width: 768px) {
     @include pad(0 3em 0 3em);
   }
+
+  a {
+    color: $dark-gray;
+  }
 }
 
 .member-icon {
   float: left;
-  padding: 9em /4;
-  width: 9em;
-  height: 9em;
+  padding: 6em /4;
+  width: 6em;
+  height: 6em;
   margin-left: 1em;
   margin-right: 1em;
   > img {
@@ -80,14 +135,17 @@ body div#behindlay {
 }
 
 .members {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
+}
+
+.cards {
+  color: $dark-gray;
 }
 
 body section {
   @include pad(15% 1em 2.5em 1em);
   min-height: 100%;
   @include outer-container;
-  color: $light-gray;
 }
 
 body article {
@@ -99,7 +157,7 @@ body div#welcome {
   height: 60%;
   display: table;
   width: 100%;
-  color: $light-gray;
+
   div {
     display: table-cell;
     vertical-align: middle;
@@ -121,7 +179,7 @@ body div#welcome {
       }
     }
 
-    h3 {
+    h4 {
       margin-top: 1em;
     }
   }

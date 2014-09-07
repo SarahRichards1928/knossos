@@ -5,7 +5,7 @@ $base-font-family: "Lato", $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
-$base-font-size: 1em;
+$base-font-size: 1.1em;
 $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
@@ -15,22 +15,21 @@ $base-border-radius: em(3);
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ecf0f1;
+$light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
-$knossos-red: #7F1D3B;
 
 // Background Color
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: white;
 $base-accent-color: $blue;
 
 // Link Colors
-$base-link-color: $light-red;
-$hover-link-color: $light-gray;
+$base-link-color: darken($light-red, 15);
+$hover-link-color: $light-red;
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
