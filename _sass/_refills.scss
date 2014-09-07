@@ -118,12 +118,26 @@ $browser-content-background-3: #F0F0F0;
   overflow: auto;
   margin-bottom: $base-line-height;
 
-  // change ".three-col-bullet" class to this for two bullet layout
   .two-col-bullet {
     @include media($large-screen) {
       @include span-columns(6);
       @include omega(2n);  
     } 
+  }
+  
+  .three-col-bullet {
+    @include media($large-screen) {
+      @include span-columns(4);
+      @include omega(3n);
+      margin-top: 3em;
+    }
+  }
+
+  .four-col-bullet {
+    @include media($large-screen) {
+      @include span-columns(3);
+      @include omega(4n);
+    }
   }
 
   .bullet-icon {
@@ -197,7 +211,7 @@ $browser-content-background-3: #F0F0F0;
   position: relative;
 
   @include media($large-screen) {
-    @include span-columns(4);  
+    @include span-columns(6);  
     @include omega(3n);
   }
 
@@ -262,7 +276,7 @@ $browser-content-background-3: #F0F0F0;
       display: inline;
       color: $card-stats-color;
       font-weight: 800;
-      font-size: 1.2em;
+      font-size: 0.8em;
       float: left;
       border-right: 1px solid transparentize($base-font-color, .8);
       line-height: 1.1em;
@@ -313,7 +327,8 @@ $browser-content-background-3: #F0F0F0;
   $comment-image-width: 4em;
   $comment-color: $base-font-color;
   $comment-background: lighten($base-accent-color, 15);
-  $comment-detail-color: transparentize($comment-color, .5);
+  // $comment-detail-color: transparentize($comment-color, .5);
+  $comment-detail-color: $light-gray;
   $comment-image-vert-alignment: top;
 
   display: table;

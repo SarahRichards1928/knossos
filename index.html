@@ -34,9 +34,14 @@ layout: default
     
       <div class="card-stats">
         <ul>
-          <li>date<span>Date</span></li>
+          <li>{{ post.date | date: "%B %-d %Y" }}<span>Date</span></li>
           <li>{{ post.author }}<span>Author</span></li>
-          <li>{{ post.tags }}<span>Tags</span></li>
+          <li>
+            {% for t in post.tags %}
+              {{ t }},
+            {% endfor %}
+            <span>Tags</span>
+          </li>
         </ul>
       </div>
     </div>
