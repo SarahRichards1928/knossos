@@ -1,0 +1,1 @@
+: foreach *.js |> uglifyjs %f -o %o |> %B.min.js

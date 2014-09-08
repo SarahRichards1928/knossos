@@ -1,28 +1,41 @@
 - name: Jörgen Kornfeld
+  description: >
+    
   github: jmrk84
-  description:
   picture: joergen.png
 
 - name: Fabian Svara
+  description: >
+    
   github: fabiansvara
   picture: fabian.jpg
 
 - name: My-Tien Nguyen
+  description: >
+    
   github: my-tien
   picture: my-tien.png
 
 - name: Norbert Pfeiler
+  description: >
+    
   github: Optiligence
   picture: norbert.png
 
 - name: Michael Pronkin
+  description: >
+    
   github: n0void
   picture: michi.png
 
 - name: Oren Shatz
+  description: >
+    
   github: orenshatz
   picture: oren.png
 
 - name: Sebastian Spaar
+  description: >
+    
   github: Eroica
   picture: Seba.png
