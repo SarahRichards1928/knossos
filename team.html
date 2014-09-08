@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About us
-permalink: /about/
+title: The Team
+permalink: /team/
 ---
 
 <article>
@@ -21,7 +21,7 @@ permalink: /about/
       <div class="bullet-content">
         <h2>{{ member.name }}</h2>
         <p>{{ member.description }}</p>
-        <p><a href="https://github.com/{{ member.github}}"><i class=" fa fa-github"></i> {{ member.github }}</a></p>
+        <p><i class=" fa fa-github"></i> <a href="https://github.com/{{ member.github}}">{{ member.github }}</a></p>
       </div>
     </div>
   {% endfor %}

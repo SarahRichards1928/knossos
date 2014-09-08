@@ -8,7 +8,11 @@ layout: default
     <h1><img class="splash" src="{{ "/img/text.svg" | prepend: site.baseurl }}" alt="Knossos"></h1>
     <h2>Knossos</h2>
     <h4>A 3D image annotation program.</h3>
-    <h5>Learn about <a href="#0"><strong>Knossos&rsquo;</strong> features <i class="fa fa-angle-right"></i></a></h4>
+    <h5>Have a look at <a href="{{ "/about/" | prepend: site.baseurl }}">what <strong>Knossos</strong> is about <i class="fa fa-angle-right"></i></a></h4>
+
+    <h6><a class="button" href="{{ "/download/" | prepend: site.baseurl }}"><i class="fa fa-download"></i> Latest release ({{ site.data.knossos.version }})</a></h5>
+    <h6><a href="http://www.mpimf-heidelberg.mpg.de/en">Developed at Max Planck Institute for Medical Research <i class="fa fa-angle-double-right"></i></a></h5>
+
   </div>
 </div>
 
@@ -30,7 +34,7 @@ layout: default
       </div>
     
       <div class="card-copy">
-        <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}"><em>Read more &raquo;</em></a></p>
+        <p>{{ post.excerpt }} <a class="button" href="{{ post.url | prepend: site.baseurl }}">Read more <i class="fa fa-angle-right"></i></a></p>
       </div>
     
       <div class="card-stats">

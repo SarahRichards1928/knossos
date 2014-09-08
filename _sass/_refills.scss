@@ -14,7 +14,7 @@ $browser-content-background-3: #F0F0F0;
   display:inline-block;
   padding-top: 0;
   text-align:center;
-  width:100%;
+  width: 100%;
 
   @include media($large-screen) {
     padding-top: 2em;
@@ -63,21 +63,39 @@ $browser-content-background-3: #F0F0F0;
   box-shadow: 0 3px 5px transparentize(black, .7);
   display: inline-block;    
   text-align: left;
-  width:20%;
 }
 
 .browser:nth-child(1) {
   @include transform(scale(1));
-  background-color: $browser-content-background-2; 
-  width: 90%;
+  margin-left: -5em; // a little bit hacky
+  background-color: $browser-content-background-2;
+  border: 1px solid black;
+  width: 100%;
   
   @include media($large-screen) {
+    border: 1px solid blue;
     @include transform(scale(1.2));
-    width: 60%;
+    width: 80%;
   }
 
-  .browser-content {
-    background: url("../img/app.png");
+  .app {
+    background: url("../img/features/app.png");
+    background-color: $browser-content-background-1;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .merge {
+    background: url("../img/features/merge_feature.gif");
+    background-color: $browser-content-background-1;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .brush {
+    background: url("../img/features/brush_feature.gif");
     background-color: $browser-content-background-1;
     background-position: top left;
     background-repeat: no-repeat;
@@ -118,6 +136,7 @@ $browser-content-background-3: #F0F0F0;
   overflow: auto;
   margin-bottom: $base-line-height;
 
+  // change ".three-col-bullet" class to this for two bullet layout
   .two-col-bullet {
     @include media($large-screen) {
       @include span-columns(6);
@@ -129,10 +148,10 @@ $browser-content-background-3: #F0F0F0;
     @include media($large-screen) {
       @include span-columns(4);
       @include omega(3n);
-      margin-top: 3em;
     }
   }
 
+  // change ".three-col-bullet" class to this for four bullet layout
   .four-col-bullet {
     @include media($large-screen) {
       @include span-columns(3);
@@ -147,8 +166,7 @@ $browser-content-background-3: #F0F0F0;
     border-radius: 50%;
     width: $icon-bullet-size;
     height: $icon-bullet-size;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em;
   }
 
   .bullet-icon-1 {
@@ -195,18 +213,20 @@ $browser-content-background-3: #F0F0F0;
   $card-border-color: $base-border-color;
   $card-border: 1px solid $card-border-color;
   $card-background: lighten($card-border-color, 10);
-  $card-header-background: $card-background;
-  $card-hover-background: lighten($card-background, 5);
+  // $card-header-background: $card-background;
+  $card-header-background: darken(#2e313d, 2%);
+  // $card-hover-background: lighten($card-background, 5);
+  $card-hover-background: $card-background;
   $card-image-background: #DBD199;
   $card-image-hover-background: lighten($card-image-background, 5);
   $card-stats-color: lighten($dark-gray, 10);
 
-  @include transition (all 0.2s ease-in-out);
+  // @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
   border-radius: $base-border-radius;
   border: $card-border;
   margin-bottom: $base-spacing;
-  cursor: pointer;
+  // cursor: pointer;
   box-shadow: 0 2px 4px darken($base-background-color, 10);
   position: relative;
 
@@ -254,12 +274,16 @@ $browser-content-background-3: #F0F0F0;
   }
 
   .card-header {
-    @include transition (all 0.2s ease-in-out);
+    // @include transition (all 0.2s ease-in-out);
     background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
     font-weight: bold;
     padding: $base-spacing/3 $gutter/2;
+
+    &:hover, &:active {
+        background-color: lighten($knossos-red, 25);
+    }
   }
 
   .card-copy {
@@ -299,23 +323,23 @@ $browser-content-background-3: #F0F0F0;
   }
 
   &:hover {
-    background-color: $card-hover-background;
+    // background-color: $card-hover-background;
     
     .card-image img {
       background: $card-image-hover-background;
     }
   
-    .card-header {
-      background-color: $card-hover-background;
-    }
+    // .card-header {
+    //   background-color: lighten($knossos-red, 25);
+    // }
   }
 
   &:active {
-    background-color: $card-background;
+    // background-color: $card-background;
 
-    .card-header {
-      background-color: $card-background;
-    }
+    // .card-header {
+    //   background-color: lighten($knossos-red, 25);
+    // }
   }
 }
 

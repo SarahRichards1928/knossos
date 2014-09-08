@@ -1,8 +1,4 @@
 <header class="cd-header">
-  <div id="mpi">
-    <a href="{{ "/index.html" | prepend: site.baseurl }}"><img src="{{ "/img/mpi.svg" | prepend: site.baseurl }}" alt="Max Planck Institute for Medical Research"> Developed at Max Planck Institute</a>
-  </div>
-
   <div id="cd-logo">
     <a href="{{ "/index.html" | prepend: site.baseurl }}"><img src="{{ "/img/text.svg" | prepend: site.baseurl }}" alt="KNOSSOS"></a>
   </div>
@@ -10,29 +6,10 @@
   <nav class="cd-main-nav">
     <ul>
       <li><a href="{{ "/index.html" | prepend: site.baseurl }}"><i class="fa fa-home"></i> Home</a></li>
-      {% for page in site.pages %}
-        {% if page.title == "Features" %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-cogs"></i> {{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-
-      {% for page in site.pages %}
-        {% if page.title == "Download" %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-download"></i> {{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-
-      {% for page in site.pages %}
-        {% if page.title == "Get started" %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-play-circle"></i> {{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-
-      {% for page in site.pages %}
-        {% if page.title == "About us" %}
-          <li><a href="{{ page.url | prepend: site.baseurl }}"><i class="fa fa-users"></i> {{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+      <li><a href="{{ "/about/" | prepend: site.baseurl }}"><i class="fa fa-cogs"></i> About <strong>Knossos</strong></a></li>
+      <li><a href="{{ "/downloads/" | prepend: site.baseurl }}"><i class="fa fa-download"></i> Downloads</a></li>
+      <li><a href="{{ "/start/" | prepend: site.baseurl }}"><i class="fa fa-arrow-circle-o-right"></i> Get started</a></li>
+      <li><a href="{{ "/team/" | prepend: site.baseurl }}"><i class="fa fa-users"></i> The Team</a></li>
     </ul>
   </nav> <!-- cd-main-nav -->
 </header>
