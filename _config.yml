@@ -4,7 +4,7 @@ name: KNOSSOS
 email: knossos-team@mpimf-heidelberg.mpg.de
 description: > # this means to ignore newlines until "baseurl:"
   Knossos is a scientific application for 3D image data skeletonization.
-baseurl: "/knossos/" # the subpath of your site, e.g. /blog/
+baseurl: "/knossos" # the subpath of your site, e.g. /blog/
 url: "http://knossostool.org" # the base hostname & protocol for your site
 github_username:  knossos-project
 
