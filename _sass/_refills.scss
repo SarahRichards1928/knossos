@@ -69,11 +69,9 @@ $browser-content-background-3: #F0F0F0;
   @include transform(scale(1));
   margin-left: -5em; // a little bit hacky
   background-color: $browser-content-background-2;
-  border: 1px solid black;
   width: 100%;
   
   @include media($large-screen) {
-    border: 1px solid blue;
     @include transform(scale(1.2));
     width: 80%;
   }
@@ -182,8 +180,8 @@ $browser-content-background-3: #F0F0F0;
   }
 
   .bullet-content {
-    // margin-left: $icon-bullet-size *1.4;
-    margin-left: 0;
+    margin-left: $icon-bullet-size *1.4;
+    // margin-left: 0;
     margin-bottom: 2em;
   }
 
