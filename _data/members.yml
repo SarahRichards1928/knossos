@@ -1,41 +1,41 @@
 - name: Jörgen Kornfeld
   description: >
-    
+    Ph.D. student
   github: jmrk84
   picture: joergen.png
 
 - name: Fabian Svara
   description: >
-    
+    Ph.D. student
   github: fabiansvara
   picture: fabian.jpg
 
 - name: My-Tien Nguyen
   description: >
-    
+    Student of *Medical Informatics*
   github: my-tien
   picture: my-tien.png
 
 - name: Norbert Pfeiler
   description: >
-    
+    Student of *Computer Science*
   github: Optiligence
   picture: norbert.png
 
 - name: Michael Pronkin
   description: >
-    
+    Student of *Computer Science*
   github: n0void
   picture: michi.png
 
 - name: Oren Shatz
   description: >
-    
+    Student of *Molecular and Cellular Biology*
   github: orenshatz
   picture: oren.png
 
 - name: Sebastian Spaar
   description: >
-    
+    Student of *Computational Linguistics*
   github: Eroica
   picture: seba.png

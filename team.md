@@ -6,7 +6,7 @@ permalink: /team/
 **Knossos** is being developed at *Max Planck Institute for
 Medical Research* located in *Heidelberg, Germany*.
 The project leaders---Jörgen Kornfeld and Fabian Svara---are currently doing
-their PhD at MPI, while the rest of the team consists of students from
+their Ph.D. at MPI, while the rest of the team consists of students from
 *Heidelberg University* and *Mannheim University of Applied Sciences.*
 
 * * *
@@ -28,7 +28,9 @@ their PhD at MPI, while the rest of the team consists of students from
 </div>
 {% endfor %}
 
-* * *
+<div>
+Contact
+=======
 
 Feel free to contact us if you have any questions about **Knossos**:
 
@@ -51,3 +53,4 @@ Feel free to contact us if you have any questions about **Knossos**:
 
 You can also write us using this e-mail address:
 <span class="button">[knossos-team@mpimf-heidelberg.mpg.de](mailto:knossos-team@mpimf-heidelberg.mpg.de)
+</span>
