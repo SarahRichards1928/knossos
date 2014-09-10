@@ -5,10 +5,6 @@
 @import "neat/neat";
 
 @import "header";
-$base-font-family: "Lato", $sans-serif;
-
-$base-spacing: 2em;
-@import "refills";
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 
@@ -31,19 +27,19 @@ main ul {
   margin-left: 2em;
 }
 
-main > section {
+main > article {
   display: table;
   width: 100%;
-  margin-bottom: $base-spacing;
+  margin-bottom: $base-line-height;
   padding-bottom: 1em;
   border-bottom: 1px solid transparentize($base-font-color, .8);
 
-  aside, article {
+  > aside, div {
     display: table-cell;
     vertical-align: top;
   }
 
-  aside {
+  > aside {
     @include pad(default 1em default default);
     i {
       font-size: 300% !important;
@@ -53,27 +49,32 @@ main > section {
     }
   }
 
-  article {
+  > div {
     margin: 0;
     padding: 0;
     width: 100%;
   }
 }
 
-main > div {
+main > section {
   @include row();
+
+  > article {
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
+  }
 }
 
-main > div > section {
+main > div {
   @include omega(n);
   margin-bottom: $base-line-height * 2;
-  border: 1px solid red;
 
   @include media($medium-screen) {
      @include span-columns(6);
   }
 
-  aside {
+  > aside {
     text-align: center;
     @include media($medium-screen) {
       @include span-columns(3);
@@ -88,7 +89,7 @@ main > div > section {
     }
   }
 
-  article {
+  > div {
     @include media($medium-screen) {
       @include span-columns(9);
     }
@@ -97,14 +98,28 @@ main > div > section {
       @include span-columns(8);
     }
   }
+
+  &:last-of-type {
+    @include fill-parent();
+  }
 }
 
 span.floating {
   float: left;
-  margin: 1em;
+  margin: 0 1.5em 0 0;
 }
 
 .newbrowser {
+  $browser-top-bar-height: 1.5em;
+  $browser-circle-size: .5em; 
+  $browser-circle-margin: ($browser-top-bar-height - $browser-circle-size) / 2;
+  $browser-top-bar-background: lighten(#DFDFDF, 5);
+  $browser-border: 0px;
+  $browser-background: $base-background-color;
+  $browser-content-background-1: #F0F0F0;
+  $browser-content-background-2: $base-background-color;
+  $browser-content-background-3: #F0F0F0;
+
   .newbrowser-top-bar {
   @include linear-gradient($browser-top-bar-background, darken($browser-top-bar-background, 2));
   border-top-left-radius: $base-border-radius;
@@ -240,3 +255,140 @@ body div#welcome {
 }
 
 
+.cards {
+  @include clearfix;
+}
+
+.card {
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 10);
+  // $card-header-background: $card-background;
+  $card-header-background: darken(#2e313d, 2%);
+  // $card-hover-background: lighten($card-background, 5);
+  $card-hover-background: $card-background;
+  $card-image-background: #DBD199;
+  $card-image-hover-background: lighten($card-image-background, 5);
+  $card-stats-color: lighten($dark-gray, 10);
+
+  // @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-radius: $base-border-radius;
+  border: $card-border;
+  margin-bottom: $base-line-height;
+  // cursor: pointer;
+  box-shadow: 0 2px 4px darken($base-background-color, 10);
+  position: relative;
+
+  @include media($large-screen) {
+    @include span-columns(6);  
+    @include omega(3n);
+  }
+
+  .card-image {
+    overflow: hidden;
+    max-height: 150px;
+
+    img {
+      width: 100%;
+      @include transition (all 0.2s ease-in-out);
+      background: $card-image-background;
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+    }
+  }
+
+  .ribbon-wrapper {
+    $ribbon-size: 85px;
+    $ribbon-background: $base-accent-color;
+    @include size($ribbon-size);
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+
+    .ribbon {
+      font-size: .8em;
+      font-weight: 800;
+      text-align: center;
+      @include transform(rotate(45deg));
+      position: relative;
+      padding: 2px 7px;
+      left: -5px;
+      top: 15px;
+      width: 120px;
+      background-color: $ribbon-background;
+      color: white;
+      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    }
+  }
+
+  .card-header {
+    // @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    padding: $base-line-height/3 $gutter/2;
+
+    &:hover, &:active {
+        background-color: lighten($knossos-red, 25);
+    }
+  }
+
+  .card-copy {
+    padding: $base-line-height/2 $gutter/2;
+    font-size: .9em;
+    line-height: 1.5em;
+  }
+
+  .card-stats {
+    padding: $base-line-height/2 $gutter/2;
+    overflow: auto;
+
+    ul li {
+      display: inline;
+      color: $card-stats-color;
+      font-weight: 800;
+      font-size: 0.8em;
+      float: left;
+      border-right: 1px solid transparentize($base-font-color, .8);
+      line-height: 1.1em;
+      padding: 0 .7em 0 .7em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      span {
+        font-size: .7em;
+        display: block;
+        font-weight: normal;
+      }
+    }
+  }
+
+  &:hover {
+    // background-color: $card-hover-background;
+    
+    .card-image img {
+      background: $card-image-hover-background;
+    }
+  
+    // .card-header {
+    //   background-color: lighten($knossos-red, 25);
+    // }
+  }
+
+  &:active {
+    // background-color: $card-background;
+
+    // .card-header {
+    //   background-color: lighten($knossos-red, 25);
+    // }
+  }
+}

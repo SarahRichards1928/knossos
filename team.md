@@ -17,14 +17,14 @@ their PhD at MPI, while the rest of the team consists of students from
 <img src="{{ site.baseurl }}/img/{{ member.picture }}">
 </aside>
 
-<article>
+<div>
 {{ member.name }}
 -----------------
 
 {{ member.description }}
 
 <i class=" fa fa-github"></i> [{{ member.github }}](https://github.com/{{ member.github}})
-</article>
+</div>
 </div>
 {% endfor %}
 

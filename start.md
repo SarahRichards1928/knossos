@@ -3,16 +3,17 @@ layout: page
 title: Get started
 permalink: /start/
 ---
-<div>
+<section>
+<article>
 Stack Generation
 ================
 
 **Knossos** expects image data to be in a special cube format.
 [This **Matlab** code]({{ "downloads/KNOSSOSmaker_gaussfilter.zip" }} | prepend: site.baseurl)
 can be used to generate the appropriate data format from TIFF files.
-</div>
+</article>
 
-<div>
+<article>
 **Knossos** datasets
 ====================
 
@@ -25,8 +26,9 @@ Example data stacks in the **Knossos** format can be found here:
 *   Copy the following coordinates: `829 1090 832` (Ctrl-c) and paste them into **Knossos**
     (the "paste" button is located in the menu bar).
 *   These steps take you directly to the center of the data stacks.
-</div>
 
+</article>
+</section>
 
 Retina Editions (Online Streaming)
 ==================================
