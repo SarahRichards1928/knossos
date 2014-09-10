@@ -35,7 +35,8 @@ $base-button-color: darken(#2e313d, 2%);
 $hover-button-color: lighten($knossos-red, 25);
 
 // Border color
-$base-border-color: $light-gray;
+// $base-border-color: $light-gray;
+$base-border-color: transparent;
 
 // Flash Colors
 $alert-color: $light-yellow;

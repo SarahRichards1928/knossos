@@ -20,15 +20,8 @@ In addition to viewing and navigating, **Knossos** allows *efficient manual neur
 <section>
 
 <article>
-
-<div class="newbrowser">
-<div class="newbrowser-top-bar">
-<div class="newbrowser-circle"></div>
-<div class="newbrowser-circle"></div>
-<div class="newbrowser-circle"></div>
-</div>
-
-<img src="../img/features/app.png">
+{% include browser.html %}
+<img src="../img/app.png">
 </div>
 
 </article>
@@ -85,14 +78,8 @@ Use the *Merge feature* to fill up holes or to merge areas together with a singl
 </article>
 
 <article>
-<div class="newbrowser">
-<div class="newbrowser-top-bar">
-<div class="newbrowser-circle"></div>
-<div class="newbrowser-circle"></div>
-<div class="newbrowser-circle"></div>
-</div>
-
-<img src="../img/features/merge_feature.gif">
+{% include browser.html %}
+<img src="../img/merge_feature.gif">
 </div>
 </article>
 </section>
@@ -108,14 +95,8 @@ Additionally, you can perform a manual segmentation by using **Knossos'** *brush
 </article>
 
 <article>
-<div class="newbrowser">
-<div class="newbrowser-top-bar">
-<div class="newbrowser-circle"></div>
-<div class="newbrowser-circle"></div>
-<div class="newbrowser-circle"></div>
-</div>
-
-<img src="../img/features/brush_feature.gif">
+{% include browser.html %}
+<img src="../img/brush_feature.gif">
 </div>
 </article>
 </section>
