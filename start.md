@@ -9,7 +9,7 @@ Stack Generation
 ================
 
 **Knossos** expects image data to be in a special cube format.
-[This **Matlab** code]({{ "downloads/KNOSSOSmaker_gaussfilter.zip" }} | prepend: site.baseurl)
+[This **Matlab** code](http://www.knossostool.org/downloads/KNOSSOSmaker_gaussfilter.zip)
 can be used to generate the appropriate data format from TIFF files.
 </article>
 
@@ -18,8 +18,8 @@ can be used to generate the appropriate data format from TIFF files.
 ====================
 
 Example data stacks in the **Knossos** format can be found here:
-<span class="button">[small (54 MB)]({{ "downloads/e1088_mag1_small.zip" | prepend: site.baseurl }})</span>
-<span class="button">[large (400 MB)]({{ "downloads/e1088_mag1_large.zip" | prepend: site.baseurl}})</span>
+<span class="button">[small (54 MB)](http://www.knossostool.org/downloads/e1088_mag1_small.zip)</span>
+<span class="button">[large (400 MB)](http://www.knossostool.org/downloads/e1088_mag1_large.zip)</span>
 
 
 *   After starting **Knossos**, navigate to "File - Load Dataset" and select the `e1088_mag1` folder.
@@ -39,8 +39,8 @@ installation and do not require Python. Both datasets use image compression for
 online streaming.
 
 To run these special versions, download and extract one of these archives:
-<span class="button">[e2006]({{ "downloads/KNOSSOS_Online_Version_e2006.zip" | prepend: site.baseurl }})</span>
-<span class="button">[ek0563]({{ "downloads/KNOSSOS_Online_Version_ek0563.zip" | prepend: site.baseurl}})</span>
+<span class="button">[e2006](http://www.knossostool.org/downloads/KNOSSOS_Online_Version_e2006.zip)</span>
+<span class="button">[ek0563](http://www.knossostool.org/downloads/KNOSSOS_Online_Version_ek0563.zip)</span>
 
 * * *
 
