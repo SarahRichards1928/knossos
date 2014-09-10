@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-<section>
+<main>
     <h1>{{ page.title }}</h1>
     <p>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} <i class="fa fa-angle-right"></i> {{ page.author }} <i class="fa fa-angle-right"></i>{% endif %} {% for tag in page.tags %}{{ tag }}, {% endfor %}</p>
     
     <hr>
     
-    <article>
-        {{ content }}
-    </article>
-</section>
+    {{ content }}
+</main>

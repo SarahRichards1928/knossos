@@ -30,6 +30,9 @@ $(IMG_DIR)/%.png: $(ASSETS_DIR)/%.png
 $(IMG_DIR)/%.jpg: $(ASSETS_DIR)/%.jpg
 	cp $< $@
 
+watch:
+	osascript -e 'tell application "Safari"' -e 'set docUrl to URL of document 1' -e 'set URL of document 1 to docUrl' -e 'end tell'
+
 clean:
 	rm $(IMG_DIR)/*.png
 	rm $(IMG_DIR)/*.jpg

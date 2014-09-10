@@ -18,14 +18,6 @@ $L:     1600px;
   }
 }
 
-// super light grid - it works with the .cd-container class inside style.scss
-
-@mixin column($percentage, $float-direction:left) {
-  width: 100% * $percentage;
-  float: $float-direction;
-}
-
-
 
 // rem fallback - credits: http://zerosixthree.se/
 
@@ -38,29 +30,6 @@ $L:     1600px;
   font-size: $size;
   font-size: calculateRem($size);
 }
-
-// center vertically and/or horizontally an absolute positioned element
-
-@mixin center($xy:xy) {
-  @if $xy == xy {
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    @include transform(translateX(-50%) translateY(-50%));
-  }
-  @else if $xy == x {
-    left: 50%;
-    right: auto;
-    @include transform(translateX(-50%));
-  }
-  @else if $xy == y {
-    top: 50%;
-    bottom: auto;
-    @include transform(translateY(-50%));
-  }
-}
-
 
 // colors
 
@@ -98,7 +67,7 @@ $elements: intro-image, main-content, navigation;
     background: $color-1;
     // box-shadow: 0 1px 3px rgba(#000, .2);
     z-index: index($elements, navigation); // see partials > _variables.scss
-    @include clearfix;
+    // @include clearfix;
 
     #cd-logo {
         float: left;
@@ -185,111 +154,27 @@ $elements: intro-image, main-content, navigation;
     }
 }
 
-#cd-intro {
+.cd-header {
+  @media screen and (min-width: 1024px) {
     position: relative;
-    height: $intro-height-S;
-    margin-top: $header-height-S;
-    z-index: index($elements, intro-image);
+  }
 
-    #cd-intro-background {
-        height: 100%;
-        width:100%;
-        background: url('../img/cd-intro-background.jpg') no-repeat center center;
-        background-size: cover;
-        box-shadow: 0 0 30px rgba(#000, .5);
-    }
-
-    #cd-intro-tagline {
-        position: absolute;
-        width: 90%;
-        max-width: $L;
-        @include center; // see partials > _mixins.scss
-    }
-
-    h1 {
-        text-transform: uppercase;
-        @include font-size(24px);
-        text-align: center;
-        color: #FFF;
-        text-shadow: 0 2px 6px rgba(#000, .2);
-    }
-
-    @include MQ(M) {
-        height: $intro-height-M;
-        margin-top: $header-height-M;
-
-        h1 {
-            @include font-size(30px);
-        }
-    }
-
-    @include MQ(L) {
-        position: fixed;
-        /* do not overlap the header */
-        top: $header-height-M;
-        left: 0;
-        width: 100%;
-        height: $intro-height-L;
-        margin-top: 0;
-
-        .cd-intro-background {
-            /* origin for the scale transformation */
-            @include transform-origin(50% 100%);
-            @include backface-visibility(hidden);
-        }
-
-        h1 {
-            @include font-size(32px);
-        }
-    }
+  @media screen and (max-width: 1023px) {
+    background-color: darken(#2e313d, 2%);
+    box-shadow: 0 1px 3px rgba(#000, .2);
+  }
 }
 
-.cd-content {
-    position: relative;
-    padding: 2em 0;
-    line-height: 1.6;
-    color: $color-3;
-    background-color: $color-2;
-    z-index: index($elements, main-content);
+.cd-header .cd-main-nav ul a {
+  font-size: 100%;
+}
 
-    &::before {
-        /* subtle gradient right above the main content */
-        content: '';
-        position: absolute;
-        bottom: 100%;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        @include background(linear-gradient(to top, rgba($background, .5), rgba($background, 0)));
+#cd-logo {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
 
-        .no-cssgradients & {
-            /* use Modernizr to detect whether the browser supports or not css gradients */
-            display: none;
-        }
-    }
-
-    h2 {
-        @include font-size(20px);
-    }
-
-    p {
-        margin: 1em 0;
-    }
-
-    @include MQ(M) {
-        line-height: 1.8;
-
-        h2 {
-            @include font-size(30px);
-        }
-    }
-
-    @include MQ(L) {
-        padding: 4em 0;
-        margin-top: $intro-height-L + $header-height-M;
-
-        p {
-            @include font-size(20px);
-        }
-    }
+.cd-header i {
+  padding-right: 1em;
 }
