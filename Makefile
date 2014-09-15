@@ -17,7 +17,7 @@ JS_MAIN = main
 
 images: png jpg gif svg
 minify: js
-site: config _site
+site: config style _site
 
 js: $(subst $(ASSETS_DIR)/,$(JS_DIR)/,$(JS_FILES:.js=.min.js))
 
@@ -49,6 +49,9 @@ config:
 
 _site:
 	jekyll build
+
+style:
+	sass --scss --style compressed _sass/_layout.scss:_includes/style.html
 
 clean:
 	rm $(IMG_DIR)/*.png
