@@ -92,7 +92,7 @@ $elements: intro-image, main-content, navigation;
     margin-right: 5%;
     width: 44px;
     height: 100%;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjE2NjMwN0QzNEYzMTFFNEE5RUFGMUVGRDQ2REU0QTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjE2NjMwN0UzNEYzMTFFNEE5RUFGMUVGRDQ2REU0QTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMTY2MzA3QjM0RjMxMUU0QTlFQUYxRUZENDZERTRBNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMTY2MzA3QzM0RjMxMUU0QTlFQUYxRUZENDZERTRBNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmrY/1YAAAAGUExURf///////1V89WwAAAACdFJOU/8A5bcwSgAAAJJJREFUeNrs2LENxDAQA0F+/00bfsA1rAANA6U3kU7UfnEGAAAAAAAAAAAAAAAAAPA/onyALRSsnP8Kls5fPf4AgIisv4h6QL4L+m1YETzJAAAAzgK0N2G5Cq5vRqqZiJxQzDSjI5pRvI49yQAAAAD6T6p6Gd3ejFQzEVHNVDPVDAAAAAAAAAAAAAAAAOB6wCPAAOwBJw5o3yJJAAAAAElFTkSuQmCC) no-repeat center center;
+    background: url("../font/fontello.svg") no-repeat center center;
     background-size: 44px 44px;
     cursor: pointer;
 
@@ -116,6 +116,14 @@ $elements: intro-image, main-content, navigation;
         background: $background;
         border-top: 1px solid lighten($background, 3%);
         color: #FFF;
+    }
+
+    &:after {
+      font-family: "fontello";
+      float: right;
+      margin-top: 0.75em;
+      content: '\0E800';
+      z-index: -99999;
     }
 
     @include MQ(M) {
@@ -173,8 +181,4 @@ $elements: intro-image, main-content, navigation;
   @media screen and (min-width: 1024px) {
     display: none;
   }
-}
-
-.cd-header i {
-  padding-right: 1em;
 }
