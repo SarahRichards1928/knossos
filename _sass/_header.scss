@@ -118,13 +118,16 @@ $elements: intro-image, main-content, navigation;
         color: #FFF;
     }
 
-    &:after {
+    @media screen and (max-width: 1023px) {
+      &:after {
       font-family: "fontello";
       float: right;
       margin-top: 0.75em;
       content: '\0E800';
       z-index: -99999;
+      }
     }
+    
 
     @include MQ(M) {
         width: auto;
