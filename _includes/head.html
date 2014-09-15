@@ -7,7 +7,10 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="keywords" content="3D image, visualization, skeletonization">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+  <style>
+    {% include style.html %}
+  </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/css/font-awesome-4.2.0/css/font-awesome.min.css" | prepend: site.baseurl }}">
 </head>

@@ -1,0 +1,51 @@
+span.icon {
+  float: left;
+  margin: 0 1.5em 0 0;
+  width: 64px;
+  height: 64px;
+}
+
+.flag {
+  background: url("../css/img/flag.png");
+
+  @include hidpi(1.5) {
+    background: url("../css/img/flag@2x.png");
+    background-size: 64px 64px;
+  }
+}
+
+.frames {
+  background: url("../css/img/frames.png");
+
+  @include hidpi(1.5) {
+    background: url("../css/img/frames@2x.png");
+    background-size: 64px 64px;
+  }
+}
+
+.paintbrush2 {
+  background: url("../css/img/paintbrush2.png");
+
+  @include hidpi(1.5) {
+    background: url("../css/img/paintbrush2@2x.png");
+    background-size: 64px 64px;
+  }
+}
+
+.rulertriangle {
+  background: url("../css/img/rulertriangle.png");
+
+  @include hidpi(1.5) {
+    background: url("../css/img/rulertriangle@2x.png");
+    background-size: 64px 64px;
+  }
+}
+
+.stack {
+  background: url("../css/img/stack.png");
+
+  @include hidpi(1.5) {
+    background: url("../css/img/stack@2x.png");
+    background-size: 64px 64px;
+  }
+}

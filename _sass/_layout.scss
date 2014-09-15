@@ -5,6 +5,7 @@
 @import "neat/neat";
 @import "header";
 @import "refills";
+@import "icons";
 
 main {
   h1 {
@@ -161,7 +162,7 @@ body > div#behindlay {
 }
 
 body main {
-  @include pad(3em 1em 2.5em 1em);
+  @include pad(5em 1em 2.5em 1em);
   min-height: 100%;
   @include outer-container;
 }
