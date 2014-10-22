@@ -1,0 +1,42 @@
+---
+layout: default
+index: 1
+---
+<section id="features" data-scroll-index="1">
+  <!-- <header>
+    <h1><strong>Knossos</strong> was created for the rapid annotation of 3D image data.</h1>
+  </header> -->
+  <div>
+    {% for p in site.html_pages %}
+      {% if p.title == "Features" %}
+        {{ p.content }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section id="downloads" data-scroll-index="2">
+  <div>
+    {% for p in site.html_pages %}
+      {% if p.title == "Downloads" %}
+        {{ p.content }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section id="start" data-scroll-index="3">
+  <div>
+    {% include start.html %}
+  </div>
+</section>
+
+<section id="about" data-scroll-index="4">
+  <div>
+    {% for p in site.html_pages %}
+      {% if p.title == "About us" %}
+        {{ p.content }}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

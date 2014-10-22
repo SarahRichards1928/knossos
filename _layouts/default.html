@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <nav>
+      <ul>
+        <li><a data-scroll-nav="0" data-scroll-goto="0"><i class="fa fa-home"></i> Home</a></li>
+        <li><a data-scroll-nav="1" data-scroll-goto="1"><i class="fa fa-th"></i> What is <strong>Knossos</strong></a></li>
+        <li><a data-scroll-nav="2" data-scroll-goto="2"><i class="fa fa-download"></i> Downloads</a></li>
+        <li><a data-scroll-nav="3" data-scroll-goto="3"><i class="fa fa-rocket"></i> Getting started</a></li>
+        <li><a data-scroll-nav="4" data-scroll-goto="4"><i class="fa fa-users"></i> About <strong>Knossos</strong></a></li>
+      </ul>
+    </nav>
+
+    <header data-scroll-index="0">
+      <div>
+        <h1><img src="img/logo.svg" alt=""> <img src="img/text-white.svg" alt="KNOSSOS"></h1>
+        <h2>3D image annotation</h2>
+        <a class="button" href="https://github.com/knossos-project/knossos/releases/"><i class="fa fa-download"></i> Latest Release ({{ site.data.knossos.version }})</a> <span class="button inactive"><i class="fa fa-newspaper-o"></i> Documentation (coming soon)</span> <a class="button" href="https://github.com/knossos-project/knossos/"><i class="fa fa-github"></i> Github Repository</a>
+        
+        <h3>Scroll down to learn more about <strong>Knossos</strong></h3>
+
+        <h4><a data-scroll-goto="3">Or click here to get started using <strong>Knossos</strong></a></h4>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <script src="js/js.min.js"></script>
+  </body>
+</html>

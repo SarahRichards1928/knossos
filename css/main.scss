@@ -1,0 +1,104 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+
+// Our variables
+$base-font-family: "Lato", sans-serif;
+$base-font-size:   18pt;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #555;
+// $text-color: white;
+$h-color:          #34495e;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+/*****/
+
+$blue: #477DCA;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #DDD;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+$knossos-red: #B02034;
+
+// Background Color
+$base-background-color: white;
+
+// Font Colors
+$base-font-color: white;
+$base-accent-color: $knossos-red;
+
+// Link Colors
+$base-link-color: black;
+$hover-link-color: lighten($h-color, 25%);
+$base-button-color: darken(#2e313d, 2%);
+$hover-button-color: lighten($knossos-red, 25);
+
+// Border color
+// $base-border-color: $light-gray;
+$base-border-color: transparent;
+
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
+
+$base-border-radius: em(3);
+
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "../bower_components/bourbon/dist/bourbon",
+        "../bower_components/jeet.gs/scss/jeet/index",
+        "base",
+        "layout",
+        "typography",
+        "nav",
+        "header",
+        "icon",
+        "forms",
+        "browser",
+        "button",
+        "poi",
+        "syntax-highlighting"
+;
