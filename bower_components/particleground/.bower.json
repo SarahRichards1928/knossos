@@ -1,0 +1,14 @@
+{
+  "name": "particleground",
+  "homepage": "https://github.com/jnicol/particleground",
+  "_release": "bad81e28a0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "bad81e28a064c7883653c1f5045c93ac2f73e7d6"
+  },
+  "_source": "git://github.com/jnicol/particleground.git",
+  "_target": "*",
+  "_originalSource": "particleground",
+  "_direct": true
+}
