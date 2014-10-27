@@ -8,23 +8,22 @@ BOWER_DIR = bower_components
 JS_DIR = js
 IMG_DIR = img
 
-JS_FILES := $(BOWER_DIR)/jquery/dist/jquery.min.js \
-			$(BOWER_DIR)/particleground/jquery.particleground.min.js \
-			$(ASSETS_DIR)/scrollIt.min.js \
-			$(ASSETS_DIR)/main.js
+JS_FILES = $(BOWER_DIR)/jquery/dist/jquery.min.js \
+					 $(ASSETS_DIR)/scrollIt.min.js \
+					 $(ASSETS_DIR)/main.js
+# $(BOWER_DIR)/particleground/jquery.particleground.min.js \
 
 PNG_FILES = $(wildcard $(ASSETS_DIR)/*.png)
 JPG_FILES = $(wildcard $(ASSETS_DIR)/*.jpg)
 GIF_FILES = $(wildcard $(ASSETS_DIR)/*.gif)
 SVG_FILES = $(wildcard $(ASSETS_DIR)/*.svg)
 
-# images: png jpg gif svg
-
+.PHONY: js
 js: $(JS_FILES)
-	smash $(JS_FILES) > $(JS_DIR)/js.js
+	smash $^ > $(JS_DIR)/js.js
 
-minify: js
-	smash $(JS_FILES) | uglifyjs > $(JS_DIR)/js.min.js
+minify: $(JS_FILES)
+	smash $^ | uglifyjs > $(JS_DIR)/js.min.js
 
 # $(JS_DIR)/$(JS_MAIN).min.js: $(JS_FILES)
 
