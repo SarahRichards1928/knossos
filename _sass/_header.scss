@@ -14,9 +14,6 @@ body > header {
   display: table;
 
   > div {
-    // width: 90%;
-    // @include align(both);
-    // width: 100%;
     display: table-cell;
     vertical-align: middle;
   }

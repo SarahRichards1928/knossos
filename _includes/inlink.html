@@ -1,0 +1,1 @@
+{% if site.baseurl == "" %}{{ include.location }}{% else %}{{ include.location | prepend: site.baseurl }}{% endif %}

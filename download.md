@@ -46,7 +46,7 @@ You can help the development of **Knossos** by submitting bugs and other suggest
 **Knossos** datasets
 --------------------
 
-Example data stacks in the **Knossos** format can be found here: <a href="{{ "/downloads/e1088_mag1_small.zip" | prepend: site.baseurl }}" class="button">small (54 MB)</a> <a href="{{ "/downloads/e1088_mag1_large.zip" | prepend: site.baseurl }}" class="button">large (400 MB)</a>
+Example data stacks in the **Knossos** format can be found here: <a href="{{ "/downloads/e1088_mag1_small.zip" | prepend: site.url }}" class="button">small (54 MB)</a> <a href="{{ "/downloads/e1088_mag1_large.zip" | prepend: site.url }}" class="button">large (400 MB)</a>
 
 After starting **Knossos**, navigate to `File - Load Dataset` and select the `e1088_mag1` folder.
 
@@ -57,4 +57,4 @@ These steps take you directly to the center of the data stacks.
 Streaming datasets
 ------------------
 
-You can also stream datasets when using `Knossos 4.0.1` or higher. Simply download one of the following datasets: <a href="{{ "/downloads/e2006.zip" | prepend: site.baseurl }}" class="button">e2006.zip</a> <a href="{{ "/downloads/ek0563.zip" | prepend: site.baseurl }}" class="button">ek0563</a>
+You can also stream datasets when using `Knossos 4.0.1` or higher. Simply download one of the following datasets: <a href="{{"/downloads/e2006.zip" | prepend: site.url }}" class="button">e2006</a> <a href="{{ "/downloads/ek0563.zip" | prepend: site.url }}" class="button">ek0563</a>
