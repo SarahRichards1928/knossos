@@ -26,9 +26,7 @@ their Ph.D. at MPI, while the rest of the team consists of students from
 {% endfor %}
 </div>
 
-Contact
-=======
-
+<h1 data-scroll-index="11">Contact</h1>
 If there are any questions, suggestions or other things you want to tell us, feel free to contact us using this address:
 
 <a class="button" href="mailto:knossos-team@mpimf-heidelberg.mpg.de">knossos-team@mpimf-heidelberg.mpg.de</a>

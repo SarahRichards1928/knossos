@@ -39,7 +39,7 @@ Downloads
 <article>
 [https://github.com/knossos-project/knossos](https://github.com/knossos-project/knossos)
 
-You can help the development of **Knossos** by submitting bugs and other suggestions within [Github's issue tracker](https://github.com/knossos-project/knossos/issues) or by [contacting us directly](#contact).
+You can help the development of **Knossos** by submitting bugs and other suggestions within [Github's issue tracker](https://github.com/knossos-project/knossos/issues) or by <a href="" data-scroll-nav="11" data-scroll-goto="11">contacting us directly</a>.
 </article>
 </section>
 
