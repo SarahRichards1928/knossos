@@ -33,7 +33,7 @@ main {
     }
   }
 
-  aside {
+  > aside {
     @include col(1/2);
 
     @include media-query($on-laptop) {
@@ -41,7 +41,7 @@ main {
     }
   }
 
-  article {
+  > article {
     @include col(1/2);
 
     @include media-query($on-laptop) {
@@ -65,12 +65,19 @@ main {
 
 #download {
   section {
+    // @include align-items(center);
     @include cf();
+    display: table;
+    // @include display(flex);
+    // @include justify-content(center);
+    // @include flex-wrap(wrap);
+
+    &:nth-of-type(1) {
+      @include center(720px);
+    }
 
     div {
-      @include span(1/3);
-
-      text-align: center;
+      @include col(1/3);
       margin-bottom: 2em;
 
       &:nth-of-type(2) {
@@ -89,7 +96,9 @@ main {
     }
 
     aside {
-      @include span(1/5);
+      display: table-cell;
+      width: 20%;
+
       @include media-query($on-palm) {
         @include stack();
       }
@@ -100,7 +109,10 @@ main {
     }
 
     article {
-      @include span(4/5);
+      display: table-cell;
+      width: 80%;
+      vertical-align: middle;
+      
       @include media-query($on-palm) {
         @include stack();
       }
