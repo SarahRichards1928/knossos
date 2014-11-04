@@ -43,6 +43,17 @@ You can help the development of **Knossos** by submitting bugs and other suggest
 </article>
 </section>
 
+<section>
+<aside>
+<i class="fa fa-globe"></i>
+----------------------------
+</aside>
+
+<article>
+A platform-independent web version of **Knossos** is being developed by *Scalable Minds* at [oxalis.at](https://oxalis.at/)
+</article>
+</section>
+
 **Knossos** datasets
 --------------------
 
