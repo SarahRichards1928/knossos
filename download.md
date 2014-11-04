@@ -50,7 +50,7 @@ You can help the development of **Knossos** by submitting bugs and other suggest
 </aside>
 
 <article>
-A platform-independent web version of **Knossos** is being developed by *Scalable Minds* at [oxalis.at](https://oxalis.at/)
+A platform-independent web version of **Knossos** is being developed by at [oxalis.at](https://oxalis.at/)
 </article>
 </section>
 
