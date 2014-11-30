@@ -1,0 +1,144 @@
+img.himage {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+img.threed-feature {
+    background: url(../img/3d-feature.png) no-repeat;
+    width: 400px; /* Width of new image */
+    height: 400px; /* Height of new image */
+    padding-left: 400px; /* Equal to width of new image */
+
+    @include media-query($on-palm) {
+        width: 256px;
+        height: 256px;
+        padding-left: 256px;
+        margin: 0 auto;
+    }
+
+    @include hidpi(1.5) {
+        background: url(../img/3d-feature@2x.png) no-repeat;
+        width: 400px; /* Width of new image */
+        height: 400px; /* Height of new image */
+        padding-left: 400px; /* Equal to width of new image */
+        background-size: 400px 400px;
+
+        @include media-query($on-palm) {
+            width: 256px;
+            height: 256px;
+            padding: 0;
+            background-size: 256px 256px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+img.tree-feature {
+    background: url(../img/tree-feature.png) no-repeat;
+    width: 400px; /* Width of new image */
+    height: 400px; /* Height of new image */
+    padding-left: 400px; /* Equal to width of new image */
+
+    @include media-query($on-palm) {
+        width: 256px;
+        height: 256px;
+        padding-left: 256px;
+        margin: 0 auto;
+    }
+
+    @include hidpi(1.5) {
+        background: url(../img/tree-feature@2x.png) no-repeat;
+        width: 400px; /* Width of new image */
+        height: 400px; /* Height of new image */
+        padding-left: 400px; /* Equal to width of new image */
+        background-size: 400px 400px;
+
+        @include media-query($on-palm) {
+            width: 256px;
+            height: 256px;
+            padding: 0;
+            background-size: 256px 256px;
+            margin: 0 auto;
+        }
+    }
+}
+
+img.cross-feature {
+    background: url(../img/cross_platform-feature.png) no-repeat;
+    width: 400px; /* Width of new image */
+    height: 400px; /* Height of new image */
+    padding-left: 400px; /* Equal to width of new image */
+
+    @include media-query($on-palm) {
+        width: 256px;
+        height: 156px;
+        padding-left: 256px;
+        margin: 0 auto;
+    }
+
+    @include hidpi(1.5) {
+        background: url(../img/cross_platform-feature@2x.png) no-repeat;
+        width: 400px; /* Width of new image */
+        height: 400px; /* Height of new image */
+        padding-left: 400px; /* Equal to width of new image */
+        background-size: 400px 400px;
+
+        @include media-query($on-palm) {
+            width: 256px;
+            height: 156px;
+            padding: 0;
+            background-size: 256px 256px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+img.cuber-feature {
+    background: url(../img/cuber-feature.png) no-repeat;
+    width: 400px; /* Width of new image */
+    height: 400px; /* Height of new image */
+    padding-left: 400px; /* Equal to width of new image */
+
+    @include media-query($on-palm) {
+        width: 256px;
+        height: 256px;
+        padding-left: 256px;
+        margin: 0 auto;
+    }
+
+    @include hidpi(1.5) {
+        background: url(../img/cuber-feature@2x.png) no-repeat;
+        width: 400px; /* Width of new image */
+        height: 400px; /* Height of new image */
+        padding-left: 400px; /* Equal to width of new image */
+        background-size: 400px 400px;
+
+        @include media-query($on-palm) {
+            width: 256px;
+            height: 256px;
+            padding: 0;
+            background-size: 256px 256px;
+            margin: 0 auto;
+        }
+    }
+}
+
+img.mpi-dude {
+    background: url(../img/MPI-dude.png) no-repeat;
+    width: 50px; /* Width of new image */
+    height: 50px; /* Height of new image */
+    padding-left: 50px; /* Equal to width of new image */
+
+    @include hidpi(1.5) {
+        background: url(../img/MPI-dude@2x.png) no-repeat;
+        width: 50px; /* Width of new image */
+        height: 50px; /* Height of new image */
+        padding-left: 50px; /* Equal to width of new image */
+        background-size: 50px 50px;
+
+    }
+}

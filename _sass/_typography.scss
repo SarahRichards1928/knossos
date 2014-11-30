@@ -1,13 +1,45 @@
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
-  text-align: center;
-  color: $h-color;
-}
-
-h1 {
-  font-size: 2em;
-}
-
 strong {
-  font-variant: small-caps;
+    font-variant: small-caps;
+}
+
+strong, bold {
+    color: $bold-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $h1-color;
+    text-rendering: optimizeLegibility;
+}
+
+.button {
+    background-color: lighten($brand-color, 20);
+    border-radius: 2em;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 200;
+    margin-top: 30px;
+    opacity: 1.0;
+    overflow: hidden;
+    padding: 1em 0 1em 24px;
+
+    &:hover {
+        background-color: $brand-color;
+    }
+
+    i {
+        font-size: 200%;
+        vertical-align:middle;
+        padding-right: 6px;
+        color: #fff;
+    }
+
+    span {
+        vertical-align:middle;
+        border-left: 1px solid rgba(255,255,255,1.0);
+        padding-left: 12px;
+        padding-right: 20px;
+        position: relative;
+        color: #fff;
+    }
 }

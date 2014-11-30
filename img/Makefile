@@ -9,9 +9,9 @@ JS_DIR = js
 IMG_DIR = img
 
 JS_FILES = $(BOWER_DIR)/jquery/dist/jquery.min.js \
+					 $(ASSETS_DIR)/scrollIt.min.js \
 					 $(ASSETS_DIR)/main.js
-
-JS_MAP = $(BOWER_DIR)/jquery/dist/jquery.min.map
+# $(BOWER_DIR)/particleground/jquery.particleground.min.js \
 
 PNG_FILES = $(wildcard $(ASSETS_DIR)/*.png)
 JPG_FILES = $(wildcard $(ASSETS_DIR)/*.jpg)
@@ -21,7 +21,6 @@ SVG_FILES = $(wildcard $(ASSETS_DIR)/*.svg)
 .PHONY: js
 js: $(JS_FILES)
 	smash $^ > $(JS_DIR)/js.js
-	cp $(JS_MAP) $(JS_DIR)
 
 minify: $(JS_FILES)
 	smash $^ | uglifyjs > $(JS_DIR)/js.min.js

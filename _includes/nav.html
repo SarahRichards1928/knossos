@@ -1,9 +1,24 @@
 <nav>
-  <ul>
-    <li><a data-scroll-nav="0" data-scroll-goto="0"><i class="fa fa-home"></i> Home</a></li>
-    <li><a data-scroll-nav="1" data-scroll-goto="1"><i class="fa fa-th"></i> What is <strong>Knossos</strong></a></li>
-    <li><a data-scroll-nav="2" data-scroll-goto="2"><i class="fa fa-download"></i> Downloads</a></li>
-    <li><a data-scroll-nav="3" data-scroll-goto="3"><i class="fa fa-rocket"></i> Getting started</a></li>
-    <li><a data-scroll-nav="4" data-scroll-goto="4"><i class="fa fa-users"></i> About <strong>Knossos</strong></a></li>
-  </ul>
+    <ul>
+        <a href="{{ "/index.html" | prepend: site.baseurl }}">
+            <li>{% include fa.html icon="fa-home" %} <span>Home</span></li>
+        </a>
+        <a href="{{ "/start/" | prepend: site.baseurl }}">
+            <li>{% include fa.html icon="fa-rocket" %} <span>Getting started</span></li>
+        </a>
+        <a class="scroll-on-page-link" href="#get-started">
+            <li>{% include fa.html icon="fa-newspaper-o" %} <span>Documentation</span></li>
+        </a>
+        <a class="scroll-on-page-link" href="#about">
+            <li>{% include fa.html icon="fa-users" %} <span>About</span></li>
+        </a>
+        <a href="{{ site.data.knossos.github-url }}">
+            <li>{% include fa.html icon="fa-github" %} <span>Github {% include fa.html icon="fa-external-link" %}</span></li>
+        </a>
+        <!-- <a class="scroll-on-page-link" href="#footer">
+            <li>Web<strong>Knossos</strong><sup>&dagger;<</li>
+        </a> -->
+    </ul>
+
+    <div class="shadow"></div>
 </nav>

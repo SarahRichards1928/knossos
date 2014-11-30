@@ -1,8 +1,31 @@
----
-layout: default
----
-<section>
-  <div>
-    {{ content }}
-  </div>
-</section>
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+        <main>
+            {% include nav.html %}
+
+            <section id="page">
+                <div>
+                    {{ content }}
+                </div>
+
+
+                <section id="get-started">
+                    <div>
+                        <aside>
+                            <h1>Documentation (tbd)</h1>
+                            <p>The documentation is currently being reworked and not available.</p>
+                        </aside>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        {% include footer.html %}
+
+        <script src="{{ "/js/js.js" | prepend: site.baseurl }}"></script>
+    </body>
+</html>

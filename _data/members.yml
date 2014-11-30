@@ -8,7 +8,7 @@
   description: >
     Ph.D. student
   github: fabiansvara
-  picture: fabian.jpg
+  picture: fabian.png
 
 - name: My-Tien Nguyen
   description: >
@@ -36,6 +36,12 @@
 
 - name: Sebastian Spaar
   description: >
-    Student of *Computational Linguistics*
+    Student of *Computational Linguistics*/*Social Media Expert*
   github: Eroica
   picture: seba.png
+
+- name: Alex Stepanov
+  description: >
+    Student of *Computer Science*
+  github: al3xst
+  picture: alex.jpg

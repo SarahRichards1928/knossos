@@ -1,42 +1,36 @@
 ---
 layout: default
-index: 1
 ---
-<section id="features" data-scroll-index="1">
-  <!-- <header>
-    <h1><strong>Knossos</strong> was created for the rapid annotation of 3D image data.</h1>
-  </header> -->
-  <div>
-    {% for p in site.html_pages %}
-      {% if p.title == "Features" %}
-        {{ p.content }}
-      {% endif %}
-    {% endfor %}
-  </div>
+<section id="features">
+    <div>
+        {% for p in site.html_pages %}
+            {% if p.title == "Features" %}
+                {{ p.content }}
+            {% endif %}
+        {% endfor %}
+    </div>
 </section>
 
-<section id="download" data-scroll-index="2">
-  <div>
-    {% for p in site.html_pages %}
-      {% if p.title == "Download" %}
-        {{ p.content }}
-      {% endif %}
-    {% endfor %}
-  </div>
+<section id="get-started">
+    <div>
+        <article>
+            <a href="{{ "/start/" | prepend: site.baseurl }}"><h1>Getting started {% include fa.html icon="fa-arrow-right" %}</h1></a>
+            <p>Look here if you are new to <strong>Knossos</strong>, need help in setting it up or if you want to know how to prepare your data for <strong>Knossos</strong>.</p>
+        </article>
+
+        <aside>
+            <h1>Documentation (tbd)</h1>
+            <p>The documentation is currently being reworked and not available.</p>
+        </aside>
+    </div>
 </section>
 
-<section id="start" data-scroll-index="3">
-  <div>
-    {% include start.html %}
-  </div>
-</section>
-
-<section id="about" data-scroll-index="4">
-  <div>
-    {% for p in site.html_pages %}
-      {% if p.title == "About us" %}
-        {{ p.content }}
-      {% endif %}
-    {% endfor %}
-  </div>
+<section id="about">
+    <div>
+        {% for p in site.html_pages %}
+            {% if p.title == "About us" %}
+                {{ p.content }}
+            {% endif %}
+        {% endfor %}
+    </div>
 </section>
