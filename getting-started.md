@@ -6,22 +6,46 @@ permalink: /start/
 Preparing datasets
 ==================
 
-**Knossos** needs image data in a special format. The `knossos_cuber` (packaged with **Knossos'** installer) is used to convert images into this format. Currently, `.tif` and `RAW` image files are supported.
+**Knossos** needs image data in a special format. The `knossos_cuber` is a Python script that is used to convert an image dataset into this format. You can download the script here: [knossos_cuber](https://dl.dropboxusercontent.com/u/951334/knossos_cuber.zip).
 
-![KNOSSOS CUBBBBBERRR](knossos_cuber.png)
+To be able to run the Python script, make sure you have the following dependencies installed:
 
-Make sure the following options are set:
+*   numpy
+*   scipy
+*   Pillow
+*   PyQt4 (if you use the GUI, more about that below)
 
-1.  `source` and `target` directory.
-    *   The source directory may only contain the image data which must be alphabetically ordered.
-2.  The images' pixel dimensions (if you use `RAW` files).
-3.  `x/y/z` scalings of your research data.
-4.  The compression type (`JPEG/JPEG2000`)
-    *   If you choose `JPEG2000` compression, specify the path `path/to/openjpeg/bin/image_to_j2k` [(download *OpenJPEG* here)](http://www.openjpeg.org/index.php?menu=download). Adjust *Compression Quality* and *Gauss filter* according to the chosen compression type.
+Those dependencies can usually be instead using `pip`.
 
-(Additional information for every option can be viewed by hovering over it.)
+There are two ways to run the script: From the Command-Line or by using the GUI.
 
-Start the job and check the Output Console for the job's progress. After it has finished, start **Knossos** and load the generated `.conf` file.
+If you run the script from the Command-Line, you get the following output:
+
+    $ python knossos_cuber.py
+    Usage: knossos_cuber.py [input directory] [output directory] [tif|jpg|png]
+    Example: knossos_cuber.py input output tif
+
+The script expects 3 options:
+
+1.  The folder to your image dataset,
+2.  the destination folder,
+3.  and the file format of your images.
+
+At present, `*.tif`, `*.jpg`, and `*.png` files are supported.
+
+Running the script from the Command-Line with these 3 options will result in `knossos_cuber` using a default configuration on your image data. If you need to adjust some settings, right now it is best to use the GUI for that:
+
+    $ python knossos_cuber_gui.py
+
+Make sure to look at the following options:
+
+1.  Specifiy the paths of `source` and `target` directory.
+2.  Select the format of your image files in the drop-down menu.
+
+    (Right now, `Source dimensions x` and `y` do not need to be filled in, since the script will get the dimensions from the image itself.)
+3.  Click on the "Advanced" tab to see and adjust more options. Additional information for every option can be viewed by hovering over it.
+
+Start the job and check the output console for the job's progress. After it has finished, start **Knossos** and load the generated `.conf` file. It should be located in the `mag1` directory inside the destination folder.
 
 * * *
 
