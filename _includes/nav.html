@@ -9,8 +9,13 @@
         <a class="scroll-on-page-link" href="#get-started">
             <li>{% include fa.html icon="fa-newspaper-o" %} <span>Documentation</span></li>
         </a>
-        <a class="scroll-on-page-link" href="#about">
-            <li>{% include fa.html icon="fa-users" %} <span>About</span></li>
+
+        {% if page.title == "Getting started" %}
+            <a href="{{ "/index.html#about" | prepend: site.baseurl }}">
+        {% else %}
+            <a class="scroll-on-page-link" href="#about">
+        {% endif %}
+                <li>{% include fa.html icon="fa-users" %} <span>About</span></li>
         </a>
         <a href="{{ site.data.knossos.github-url }}">
             <li>{% include fa.html icon="fa-github" %} <span>Github {% include fa.html icon="fa-external-link" %}</span></li>

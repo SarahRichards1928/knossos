@@ -52,23 +52,25 @@ Start the job and check the output console for the job's progress. After it has 
 **Knossos** Quickstart Guide
 ============================
 
-**Knossos'** main window is split into four parts ("viewports"):
+Example datasets
+----------------
 
-*   The first three viewports represent each `x/y/z` plain respectively.
-*   The fourth viewport displays a 3D view on the data.
-
-![**Knossos'** main window](main_window.png)
+Example data stacks in the Knossos format can be found here: [small (54 MB)]({{ "/downloads/e1088_mag1_small.zip" | prepend: site.baseurl }}), [large (400 MB)]({{ "/downloads/e1088_mag1_large.zip" | prepend: site.baseurl }})
 
 An image dataset can be loaded into **Knossos** by selecting its `.conf` file in `File - Load Dataset...`
 
-![Loading image data into **Knossos**](load_dataset.png)
 
 Moving around
 -------------
 
+**Knossos'** main window is split into four parts ("viewports"):
+
+*   The first three viewports represent each `x/y/z` plain respectively.
+*   The fourth viewport displays a 3D view on the data.
 *   Click and drag in a viewport to move along that plane.
 *   Press `d/f` or scroll to move orthogonally.
 *   Zoom in our out with `Ctrl+Scroll` (for the 3D viewport: only `Scroll`).
+
 
 Skeletonization
 ---------------
