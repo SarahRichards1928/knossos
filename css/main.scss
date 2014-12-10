@@ -53,6 +53,7 @@ $on-laptop:        800px;
 @import
     "../bower_components/bourbon/dist/bourbon",
     "../bower_components/jeet.gs/scss/jeet/index",
+    "typography",
     "button",
     "header",
     "layout",
@@ -61,7 +62,6 @@ $on-laptop:        800px;
         // "normalize",
         // // "skeleton",
         // "reset",
-        // // "typography",
         // // "layout",
         // "header",
         // // "footer",
