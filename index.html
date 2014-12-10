@@ -1,8 +1,54 @@
 ---
 layout: default
 ---
-<section id="features">
-    <div>
+<section class="hero" id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                {% include nav.html %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h1 class="animated bounceInDown">Knossos</h1>
+                <p class="animated fadeInUpDelay">3D image visualization and annotation for scientific research</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <a href="" class="button button-primary">{% include fa.html icon="fa-windows fa-fw" %} Latest Release ({{ site.data.knossos.version }}, 64bit)</a>
+                <p><sub><a href="{{ site.data.knossos.release-url }}">Not your system?</a></sub></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5 text-center">
+                <p>Learn more:</p>
+                <a href="#getstarted" class="hero-play-btn">{% include fa.html icon="fa-angle-double-down fa-5x" %}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="download-now" id="getstarted">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 animated wp1">
+                <h1>What is <strong>Knossos</strong></h1>
+
+                <p><strong>Knossos</strong> is mainly a tool that is used for biological or medical studies. It visualizes 3D records taken by electronic microscopes by displaying each plane separately. Take a look at Knossos features to learn more about it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="features" id="features">
+    <div class="container">
         {% for p in site.html_pages %}
             {% if p.title == "Features" %}
                 {{ p.content }}
@@ -11,22 +57,48 @@ layout: default
     </div>
 </section>
 
-<section id="get-started">
-    <div>
-        <article>
-            <a href="{{ "/start/" | prepend: site.baseurl }}"><h1>Getting started {% include fa.html icon="fa-arrow-right" %}</h1></a>
-            <p>Look here if you are new to <strong>Knossos</strong>, need help in setting it up or if you want to know how to prepare your data for <strong>Knossos</strong>.</p>
-        </article>
 
-        <aside>
-            <h1>Documentation {% include fa.html icon="fa-close" %}</h1>
-            <p>The documentation is currently being reworked and not available.</p>
-        </aside>
+
+<section class="download-now2" id="getstarted2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 animated wp4">
+                <h1>Getting started</h1>
+
+                <h2>Download Knossos</h2>
+                <p>Knossos is available for Windows, GNU/Linux and OS X. Head to our Github repository to download Knossos for your system
+
+                <h2>Example datasets</h2>
+                <p>If you want to take a look at <strong>Knossos</strong>, but need a dataset to try it out, you can download two example datasets here:</p>
+
+                <p>An image dataset can be loaded into <strong>Knossos</strong> by selecting its <code>.conf</code> file in <code>File - Load Dataset...</code></p>
+
+                <h2>Own datasets</h2>
+                <p>If you have own image datasets, they will probably need to be converted into Knossos format. Download the Knossos Cuber script and take a look at the Getting started section to learn how to do so.
+
+                <p>Feel free to contact us if you need any assistance in setting up Knossos.</p>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="about">
-    <div>
+
+
+<section class="design" id="design">
+    <div class="container">
+        {% for p in site.html_pages %}
+            {% if p.title == "Gallery" %}
+                {{ p.content }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+
+
+
+
+<section class="testimonials" id="media">
+    <div class="container">
         {% for p in site.html_pages %}
             {% if p.title == "About us" %}
                 {{ p.content }}

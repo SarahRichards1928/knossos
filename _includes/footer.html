@@ -1,27 +1,24 @@
-<footer id="footer">
-    <div>
-        <section>
-            <div>
-                <div><img src="{{ "/img/footer_logo.svg" | prepend: site.baseurl }}"></div>
-                <div>&copy; <strong>Knossos</strong> 2014</div>
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <a href="#" class="badge-btn">Badge Button</a>
+                <p class="footer-credit">Back to top</p>
             </div>
-        </section>
 
-        <section>
-            <div>
-                <div><a class="scroll-on-page-link" href="#header"><span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-                </span></a></div>
-                <div>Back to top</div>
+            <div class="col-md-4">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Getting started</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
             </div>
-        </section>
 
-        <section>
-            <div>
-                <div><img class="himage mpi-dude"></div>
-                <div><strong>Knossos</strong> is developed at <a href="http://www.mpimf-heidelberg.mpg.de/en">Max Planck Institute for Medical Research</a> {% include fa.html icon="fa-external-link" %}</div>
+            <div class="col-md-4">
+                <img src="{{ "/img/MPI-dude@2x.png" | prepend: site.baseurl }}" width="50">
+                <p><strong>Knossos</strong> is developed at <a href="">Max Planck Institute for Medical Research in Heidelberg, Germany.</a></p>
             </div>
-        </section>
+        </div>
     </div>
 </footer>

@@ -1,29 +1,16 @@
-<nav>
-    <ul>
-        <a href="{{ "/index.html" | prepend: site.baseurl }}">
-            <li>{% include fa.html icon="fa-home" %} <span>Home</span></li>
-        </a>
-        <a href="{{ "/start/" | prepend: site.baseurl }}">
-            <li>{% include fa.html icon="fa-rocket" %} <span>Getting started</span></li>
-        </a>
-        <a class="scroll-on-page-link" href="#get-started">
-            <li>{% include fa.html icon="fa-newspaper-o" %} <span>Documentation</span></li>
-        </a>
+<ul class="navi">
+    <li><a href="{{ "/index.html" | prepend: site.baseurl }}">{% include fa.html icon="fa-home" %} <span>Home</span></a></li>
 
+    <li><a href="{{ "/start/" | prepend: site.baseurl }}">{% include fa.html icon="fa-rocket" %} <span>Getting started</span></a></li>
+
+    <li><a class="scroll-on-page-link" href="#get-started">{% include fa.html icon="fa-newspaper-o" %} <span>Documentation</span></a></li>
+
+    <li>
         {% if page.title == "Getting started" %}
             <a href="{{ "/index.html#about" | prepend: site.baseurl }}">
         {% else %}
-            <a class="scroll-on-page-link" href="#about">
+            <a href="#media">
         {% endif %}
-                <li>{% include fa.html icon="fa-users" %} <span>About</span></li>
-        </a>
-        <a href="{{ site.data.knossos.github-url }}">
-            <li>{% include fa.html icon="fa-github" %} <span>Github {% include fa.html icon="fa-external-link" %}</span></li>
-        </a>
-        <!-- <a class="scroll-on-page-link" href="#footer">
-            <li>Web<strong>Knossos</strong><sup>&dagger;<</li>
-        </a> -->
-    </ul>
-
-    <div class="shadow"></div>
-</nav>
+        {% include fa.html icon="fa-users" %} <span>About</span></a>
+    </li>
+</ul>

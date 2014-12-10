@@ -4,24 +4,36 @@
     {% include head.html %}
 
     <body>
-        {% include header.html %}
-
-        <div>
-            <div>
-                {% for p in site.html_pages %}
-                    {% if p.title == "Feature List" %}
-                        {{ p.content }}
-                    {% endif %}
-                {% endfor %}
+        <!-- <section class="navigation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+              <nav class="pull">
+                <ul class="top-nav">
+                  <li><a href="#getstarted">Get Started <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#media">Media <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                  <li class="nav-last"><a href="#design">Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                </ul>
+              </nav>
             </div>
+          </div>
         </div>
+      </section> -->
 
-        <main>
-            {{ content }}
-        </main>
+      {{ content }}
 
-        {% include footer.html %}
+      {% include footer.html %}
 
-        <script src="{{ "/js/js.js" | prepend: site.baseurl }}"></script>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="{{ "/js/jquery.fancybox.pack.js" | prepend: site.baseurl }}"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/scripts.js?v=1.7" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/jquery.flexslider.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/jquery.smooth-scroll.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/modernizr.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/js/waypoints.min.js" | prepend: site.baseurl }}"></script>
     </body>
 </html>

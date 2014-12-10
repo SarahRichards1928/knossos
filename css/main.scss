@@ -49,18 +49,22 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "../bower_components/bourbon/dist/bourbon",
-        "../bower_components/jeet.gs/scss/jeet/index",
-        "base",
-        "reset",
-        "typography",
-        "layout",
-        "header",
-        "footer",
-        "img"
+    "../bower_components/bourbon/dist/bourbon",
+    "../bower_components/jeet.gs/scss/jeet/index",
+    "button",
+    "header",
+    "layout",
+    "footer"
+        // "base",
+        // "normalize",
+        // // "skeleton",
+        // "reset",
+        // // "typography",
+        // // "layout",
+        // "header",
+        // // "footer",
+        // // "img",
         // "syntax-highlighting"
 ;

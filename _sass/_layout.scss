@@ -1,177 +1,83 @@
-body > div:nth-of-type(1) {
-    // background: url("img/overlay-pattern.png") #e6e6e6;
-    background: url("img/overlay-pattern.png") #fff;
-    box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
-    font-size: 80%;
-    width: 100%;
+.features h1 {
+    color: #9197a8;
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+ }
+.features {
+    background: #fff url('../img/arrowBG.png') no-repeat center -1px;
+    padding: 70px 0;
+ }
+.features p { color: #7a8387;
+     font-size: 16px;
+     word-spacing: 2px;
+     line-height: 30px;
+ }
 
-    a, strong {
-        color: black;
-        border-bottom: 0;
-    }
+.features-leftcol {
+    border-right: 1px solid rgba(208, 217, 226, 0.4);
+    padding-right: 60px;
+ }
 
-    > div {
-        margin: 0 auto;
-        padding-bottom: 2em;
-        padding-top: 2em;
-        width: 80%;
+.features-rightcol {
+    padding-left: 60px;
+ }
 
-        > ul {
-            @include cf();
-            list-style: none;
-            margin: 0;
-            padding: 0;
 
-            > li {
-                @include span(1/4);
-                padding: 0 0.5em 0 0.5em;
 
-                @include media-query($on-palm) {
-                    @include stack();
-                }
-
-                p {
-                    margin: 0;
-
-                    &:first-of-type {
-                        color: black;
-                    }
-                }
-
-            }
-        }
-    }
+.download-now h1 {
+    font-size: 55px;
+    font-weight: 100;
+    color: #fff;
+    margin: 100px 0 20px 0;
 }
 
-main {
-    background: url("img/overlay-pattern.png") #f5f9fc;
-    // background: #fafafa;
-
-    aside {
-        @include col(1/2);
-    }
-
-    article {
-        @include col(1/2);
-    }
-
-    > section {
-        box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
-
-        > div {
-            @include center(960px, 1em);
-        }
-    }
-
-    > section#page {
-        box-shadow: inset 0 0 0 0;
-        padding-top: 1.5em;
-    }
+.download-now {
+    background: #5B6E8C url('../img/ipadBG.png') no-repeat right 65px;
+    background-size: 50%;
 }
 
-#features {
-    box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.15), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
-    padding-bottom: 2em;
-    padding-top: 2em;
+.download-now p { color: #fff; font-size: 16px; margin: 40px 30px 40px 0; line-height: 30px; }
 
-    > div {
-        section {
-            display: table;
-            padding-top: 1.5em;
-            width: 100%;
+.download-btn { border: solid 3px #fff; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 17px; letter-spacing: 2px; transition: all 0.5s ease; padding: 15px 70px; display: inline-block; color: #fff; margin-bottom: 185px; }
 
-            > div {
-                display: table-cell;
-                padding: 0 1em 0 1em;
-                vertical-align: middle;
-                width: 50%;
+.download-btn:hover, .download-btn:focus { text-decoration: none; border-color: #a58347; color: #a58347; }
 
-                @include media-query($on-laptop) {
-                    @include stack();
-                    text-align: center;
-                }
 
-                &:first-of-type {
-                    text-align: right;
-                }
-
-            }
-
-            div.right {
-                text-align: right;
-            }
-        }
-    }
+.download-now2 h1 {
+    font-size: 55px;
+    font-weight: 100;
+    color: #fff;
+    margin: 100px 0 20px 0;
 }
 
-#get-started {
-    background: url("img/overlay-pattern.png") #ebf0f6;
-    box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
-
-    > div {
-        @include center(1280px, 1em);
-        padding: 40px;
-
-        h1 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        > article {
-            border-right: 1px solid #ddd;
-
-            @include media-query($on-laptop) {
-                @include stack();
-                border-right: 0;
-            }
-        }
-    }
+.download-now2 {
+    background: #5B6E8C url('../img/ipadBG2.png') no-repeat right 65px;
+    background-size: 50%;
+    background-position: top right;
 }
 
-#about {
-    background: url("img/overlay-pattern.png") #5b6d8c;
-    box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
-    padding-bottom: 5em;
-    padding-top: 5em;
+.download-now2 p { color: #fff; font-size: 16px; margin: 40px 30px 40px 0; line-height: 30px; }
 
-    h1, h2, strong {
-        color: #e2eeff;
-    }
 
-    h2 {
-        font-size: 120%;
-    }
 
-    > div {
-        color: #a4b3cd;
 
-        section {
-            @include cf();
-            @include span(1/2);
-            display: table;
-            min-width: 50%;
-            min-height: 250px;
-            padding-bottom: 1.5em;
+.testimonials h1 {
+    color: #fff;
+    font-size: 43px;
+    font-weight: 100;
+    // margin: 20px 0 80px 0;
+    // font-style: italic;
+}
 
-            @include media-query($on-palm) {
-                @include stack();
-            }
+.testimonials {
+    background: #2b3442;
+    padding: 3em 0;
+}
 
-            > div {
-                display: table-cell;
-                padding: 0 1em 0 1em;
-                vertical-align: middle;
-
-                @include media-query($on-laptop) {
-                    @include stack();
-                    text-align: center;
-                }
-
-                img {
-                    border-radius: 50%;
-                }
-            }
-        }
+.testimonials {
+    color: white;
+    img {
+        border-radius: 50%;
     }
 }
