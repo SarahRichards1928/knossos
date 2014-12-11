@@ -6,7 +6,7 @@ permalink: /start/
 Preparing datasets
 ==================
 
-**Knossos** needs image data in a special format. The `knossos_cuber` is a Python script that is used to convert an image dataset into this format. You can download the script here: [knossos_cuber](<a href="{{ "/downloads/knossos_cuber.zip" | prepend: site.baseurl }}">).
+**Knossos** needs image data in a special format. The `knossos_cuber` is a Python script that is used to convert an image dataset into this format. You can download the script here: [knossos_cuber]({{ "/downloads/knossos_cuber.zip" | prepend: site.baseurl }}).
 
 To be able to run the Python script, make sure you have the following dependencies installed:
 
