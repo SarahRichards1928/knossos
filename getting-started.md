@@ -52,14 +52,6 @@ Start the job and check the output console for the job's progress. After it has 
 **Knossos** Quickstart Guide
 ============================
 
-Example datasets
-----------------
-
-Example data stacks in the Knossos format can be found here: [small (54 MB)]({{ "/downloads/e1088_mag1_small.zip" | prepend: site.baseurl }}), [large (400 MB)]({{ "/downloads/e1088_mag1_large.zip" | prepend: site.baseurl }})
-
-An image dataset can be loaded into **Knossos** by selecting its `.conf` file in `File - Load Dataset...`
-
-
 Moving around
 -------------
 

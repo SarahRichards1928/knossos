@@ -24,6 +24,18 @@ ul.navi {
             margin: 0 1em 0 1em;
         }
     }
+
+    a {
+        border: 1px solid transparent;
+        padding: 1em;
+        color: #fff;
+    }
+
+    a:hover {
+        text-decoration: none;
+        border: 1px solid #f9f2f4;
+        border-radius: 4px;
+    }
 }
 
 html, body {
@@ -39,7 +51,7 @@ html, body {
  }
 
 .hero {
-    background: url('../img/grain_header.gif') no-repeat center center;
+    background: url('../img/grain_header.jpg') no-repeat top left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

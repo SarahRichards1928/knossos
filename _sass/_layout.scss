@@ -33,7 +33,7 @@
 }
 
 .download-now {
-    background: #5B6E8C url('../img/ipadBG.png') no-repeat right 65px;
+    background: #5B6E8C url('../img/ipadBG_top.png') no-repeat right 65px;
     background-size: 50%;
 }
 
@@ -44,24 +44,44 @@
 .download-btn:hover, .download-btn:focus { text-decoration: none; border-color: #a58347; color: #a58347; }
 
 
-.download-now2 h1 {
-    font-size: 55px;
-    font-weight: 100;
-    color: #fff;
-    margin: 100px 0 20px 0;
-}
-
-.download-now2 h2 {
-    color: darken(#fff, 20);
-}
-
 .download-now2 {
-    background: #5B6E8C url('../img/ipadBG2.png') no-repeat right 65px;
+    background: #5B6E8C url('../img/ipadBG_bottom.png') no-repeat right 65px;
     background-size: 50%;
     background-position: top right;
-}
 
-.download-now2 p { color: #fff; font-size: 16px; margin: 40px 30px 40px 0; line-height: 30px; }
+    h1 {
+        font-size: 55px;
+        font-weight: 100;
+        color: #fff;
+        margin: 100px 0 20px 0;
+    }
+
+    h2 {
+        color: darken(#fff, 15);
+    }
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        margin: 40px 30px 40px 0;
+        line-height: 30px;
+    }
+
+    a, a:visited, a:active {
+        color: darken(#fff, 15);
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    a > code {
+        border: 1px solid #f9f2f4;
+        background: none;
+        color: white;
+    }
+}
 
 
 

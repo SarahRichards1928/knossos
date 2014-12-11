@@ -15,8 +15,8 @@ permalink: /gallery/
 <div class="colourway colour1">
 <img src="{{ "/img/knossos.jpg" | prepend: site.baseurl }}" class="img-responsive">
 </div>
-<p class="title">**Knossos'** Main Window</p>
-<p class="feature-text">Added Feature</p>
+<p class="title"><strong>Knossos&rsquo;</strong> Main Window</p>
+<p class="feature-text">Shows a clean dataset to be annotated.</p>
 
 </div>
 </div>
@@ -24,10 +24,10 @@ permalink: /gallery/
 <div class="col-md-6">
 <div class="flat-box">
 <div class="colourway colour2">
-<img src="{{ "/img/knossos.jpg" | prepend: site.baseurl }}" class="img-responsive">
+<img src="{{ "/img/cuber.png" | prepend: site.baseurl }}" class="img-responsive">
 </div>
 <p class="title"><strong>Knossos</strong> Cuber</p>
-<p class="feature-text">Extra nice UI comes with the app</p>
+<p class="feature-text">Converts images into <strong>Knossos&rsquo;</strong> format</p>
 </div>
 </div>
 
@@ -38,7 +38,7 @@ permalink: /gallery/
 <div class="col-md-6">
 <div class="flat-box">
 <div class="colourway colour3">
-<img src="{{ "/img/knossos.jpg" | prepend: site.baseurl }}" class="img-responsive">
+<img src="{{ "/img/cuber.jpg" | prepend: site.baseurl }}" class="img-responsive">
 </div>
 <p class="title">Skeletonization</p>
 <p class="feature-text">Added Feature</p>
