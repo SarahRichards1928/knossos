@@ -38,20 +38,19 @@ permalink: /gallery/
 <div class="col-md-6">
 <div class="flat-box">
 <div class="colourway colour3">
-<img src="{{ "/img/cuber.jpg" | prepend: site.baseurl }}" class="img-responsive">
+<img src="{{ "/img/tree.png" | prepend: site.baseurl }}" class="img-responsive">
 </div>
-<p class="title">Skeletonization</p>
-<p class="feature-text">Added Feature</p>
+<p class="title">Tree View</p>
+<p class="feature-text"></p>
 </div>
 </div>
 
 <div class="col-md-6">
 <div class="flat-box">
 <div class="colourway colour4">
-<img src="{{ "/img/knossos.jpg" | prepend: site.baseurl }}" class="img-responsive">
 </div>
-<p class="title">Tree View</p>
-<p class="feature-text">Extra nice UI comes with the app</p>
+<p class="title"></p>
+<p class="feature-text"></p>
 </div>
 </div>
 
