@@ -12,36 +12,36 @@
 
 - name: My-Tien Nguyen
   description: >
-    Student of *Medical Informatics*
+    Student of Medical Informatics
   github: my-tien
   picture: my-tien.png
 
 - name: Norbert Pfeiler
   description: >
-    Student of *Computer Science*
+    Student of Computer Science
   github: Optiligence
   picture: norbert.png
 
 - name: Michael Pronkin
   description: >
-    Student of *Computer Science*
+    Student of Computer Science
   github: n0void
   picture: michi.png
 
 - name: Oren Shatz
   description: >
-    Student of *Molecular and Cellular Biology*
+    Student of Molecular and Cellular Biology
   github: orenshatz
   picture: oren.png
 
 - name: Sebastian Spaar
   description: >
-    Student of *Computational Linguistics*
+    Student of Computational Linguistics
   github: Eroica
   picture: seba.png
 
 - name: Alex Stepanov
   description: >
-    Student of *Computer Science*
+    Student of Computer Science
   github: al3xst
   picture: alex.jpg

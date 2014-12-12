@@ -71,3 +71,95 @@ Skeletonization
 
 *   Nodes are placed with a right-click. Consecutive nodes are automatically connected with a segment.
 *   Open the *Tree View* (`Windows - Annotation Window`) for an overview of your current skeleton.
+
+
+
+* * *
+
+
+Saving/Autosaving/Loading
+-------------------------
+*   Before you start tracing, choose a folder and a file name for your skeleton data by pressing "File" and "Save as" in the menu bar of KNOSSOS.
+*   The skeleton data will be saved automatically every five minutes if changes have been made.
+*   Skeleton files can be loaded into KNOSSOS by choosing "File" and "Load". Alternatively, you can also choose between recently saved files by pressing "Files" and "Recent Files".
+
+
+Basic Viewport Handling
+-----------------------
+*   To move through the dataset place the mouse cursor in one of the three slice plane viewports and
+    *   press "f" or "d" or use the arrow keys: Moves one layer forward or backward.
+    *   Press "f" or "d" in combatination with "SHIFT": Jumps ten layers forward or backward.
+    *   Press "e" or "r": Moves x layers forward or backward, where x can be defined under "Preferences" -> "Dataset *  Navigation" -> "Walk frames".
+    *   move the mouse wheel up or down to slowly move through the dataset.
+    *   Press the left mouse button
+        *   and pull the stack in the desired destination (if "View" -> "Work Mode" is "Drag Dataset").
+        *   and KNOSSOS centers on that point (if "View" -> "Work Mode" is "Recenter on Click").
+*   To translate/rotate in the skeleton viewport press and hold the left/right mouse button inside the skeleton viewport and drag.
+*   To zoom into the dataset or into the skeleton viewport place the mouse cursor in one of the four viewports and press "i" or "o" to zoom in/out.
+*   To resize or move the viewports use the two buttons inside the viewports. To restore the standard positions and sizes click the button "Use Standard Positions and Sizes" in the "Viewport Settings" window, where you can also toggle the buttons' visibility.
+
+
+Skeleton tracing
+----------------
+*   Nodes are placed by a right click in one of the three slice plane viewports and are automatically linked to the last node. To just "drop" nodes without linking you have to change the work mode via "Edit Skeleton" and "Work Mode" in the menu bar.
+*   The currently active node can be recognized by its number which appears beside the point or via the Tools window.
+*   You can activate a node by holding down the "SHIFT" button and left-clicking it or by simply entering the desired node ID in the „Active Node ID“ field of the "tools" window. Press "x"/"x"+"SHIFT" in one of the viewports to activate the next/previous node. To change the active tree press "y" or "SHIFT" + "y".
+*   To jump to the active node press "s" or click on "Jump to node" in the Tools window.
+*   You can delete the active node by pressing "DEL" on your keyboard or by clicking on "Delete Node" in the Tools window.
+*   If you want to reposition a node, simply click on the node with the middle mouse button and drag it to another position. The node does not have to be your active node.
+*   You can add branch nodes by holding "CTRL" when pressing the right mouse button. To transform a normal node to a branch node press "b" or choose "Push Branch Node" in the Tools window. To jump to the last placed branch node, press "j" or use "Pop & Jump" in the Tools window. This transforms the branch node to a normal node.
+*   Different node colors indicate different node types:
+*   Blue: Branch node
+*   Yellow: Commented node (will be blue, if it is also a branch node)
+*   Red: Normal node
+*   To link two non-connected nodes or to unlink two connected nodes activate one of them, hold "ALT" and left click the second node or hold "SHIFT" and click on the second node with the mouse wheel. Alternatively this can also be done in the Tools window.
+*   If you want to delete a huge part of the skeleton, isolate this part by unlinking the corresponding nodes and pressing "Split Last Component From Tree". This divides this tree in two trees; using "Delete Active Tree" deletes this part. The Button "Merge Trees" merges two trees into one tree.
+
+
+Comments
+--------
+*   You can add a comment on every tree and on every node by using the textboxes in the Tools window.
+*   If you use some comments regularly, you can enter them in the Comment Tools window and add them to the active node by pressing "F1" - "F5".
+*   In the Comment Tools window you can also change the comment preferences. In addition, there is a summary of all comments of the whole skeleton.
+
+![comments]()
+
+
+Overview Keyboard Shortcuts
+---------------------------
+
+<div class="row">
+
+<div class="six columns">
+
+|        |          |
+|:------:|:---------|
+| Arrow keys / f / d | move one layer
+| SHIFT + Arrow keys / f / d | jump ten layers
+| r / e | move ten layers
+| i / o | zoom in / out
+| b / j | create / jump to branch node
+| s | jump to active node
+| DEL | delete active node
+
+</div>
+
+<div class="six columns">
+
+|        |          |
+|:------:|:---------|
+| x, SHIFT + x | next / previous node
+| c | new tree
+| y | next tree
+| a / w | switch work mode to add / link node
+| F1 - F5 | add user defined comments to node
+| n / p | next / previous commented node
+| 1 | enable / disable skeleton overlay
+| 3 | draw / hide viewport crosshairs
+| CTRL + v | paste coordinates
+| CTRL + s | save skeleton
+
+</div>
+
+</div>
+

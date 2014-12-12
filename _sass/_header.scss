@@ -1,83 +1,89 @@
-ul.navi {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-        font-size: 150%;
+body, html {
+    height: 100%;
+}
+
+.navi {
+    ul {
+        list-styl: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            display: inline;
+        }
+    }
 
     span {
         @include media-query($on-palm) {
             display: none;
         }
     }
+}
 
-    > li {
-        display: inline;
-        margin: 0 1em 0 1em;
+.table {
+    display: table;
+    width: 100%;
+}
 
-        @include media-query($on-laptop) {
-            font-size: 80%;
-            margin: 0 1em 0 1em;
-        }
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
 
-        @include media-query($on-palm) {
-            font-size: 100%;
-            margin: 0 1em 0 1em;
-        }
+.hero {
+    // display: table;
+    width: 100%;
+    min-height: 100%;
+    background: url('../img/grain_header.jpg') no-repeat top left;
+    background-size: cover;
+
+    .row:first-of-type {
+        padding-top: 2em;
+    }
+
+    .row {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5.0rem;
+        font-weight: 100;
+        color: #fff;
+        letter-spacing: -1px;
+        font-variant: small-caps;
+    }
+
+    p {
+        color: #d0e7e9;
+        font-style: italic;
+        margin: 0 0 1.5em 0;
+        font-weight: 300;
     }
 
     a {
-        border: 1px solid transparent;
-        padding: 1em;
         color: #fff;
+
+        &:hover {
+            color: $hover-link-color;
+        }
     }
 
-    a:hover {
-        text-decoration: none;
-        border: 1px solid #f9f2f4;
-        border-radius: 4px;
-    }
+
 }
 
-html, body {
-    height: 100%;
+.hero.small {
+    min-height: 20%;
 }
-
-.hero h1 {
-    font-size: 60px;
-    font-weight: 100;
-    color: #fff;
-    letter-spacing: -1px;
-    margin: 100px 0 20px 0;
- }
-
-.hero {
-    background: url('../img/grain_header.jpg') no-repeat top left;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 65px 0;
-    height: 100%;
- }
-
-.hero p {
-    color: #d0e7e9;
-    font-style: italic;
-    font-size: 17px;
-    margin: 0 0 1.5em 0;
- }
-
-.hero a {
-    color: #fff;
- }
 
 .hero-play-btn {
     height: 99px;
     width: 99px;
     // background: url('../img/play-btn.png') no-repeat center center;
     display: block;
+    margin: 0 auto;
     // text-indent: -99999px;
-    margin: 20px auto 260px;
+    // margin: 20px auto 260px;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;

@@ -1,13 +1,37 @@
-<header id="header">
-    {% include nav.html %}
+<header class="hero" id="header" markdown="0">
+<div class="container">
+<div class="row">
+    <div class="twelve columns">
+        {% include nav.html %}
+    </div>
+</div>
+</div>
 
-    <section>
-        <div>
-            <h1>KNOSSOS</h1>
-            <h2>3D image visualization and annotation for scientific research</h2>
+<section class="table">
+    <div class="table-cell">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h1 class="animated bounceInDown">Knossos</h1>
+                    <p class="animated fadeInUp">3D image visualization and annotation for scientific research</p>
+                </div>
+            </div>
 
-            <a class="button button-primary" href="https://github.com/knossos-project/knossos/releases/download/v4.0.1/win64-Setup-Knossos.4.0.1.exe">{% include fa.html icon="fa-windows" %} Latest Release ({{ site.data.knossos.version }}) 64bit</a>
-            <p><sub><a href="{{ site.data.knossos.release-url }}">Not your system?</a></sub></p>
+            <div class="row">
+                <div class="twelve columns">
+                    <a href="https://github.com/knossos-project/knossos/releases/download/v4.0.1/win64-Setup-Knossos.4.0.1.exe" class="button button-primary">{% include fa.html icon="fa-windows fa-fw" %} Latest Release ({{ site.data.knossos.version }}, 64bit)</a>
+                    <a href="#get-started" class="button button-primary">{% include fa.html icon="fa-download fa-fw" %} Download Datasets</a>
+                    <p><sub><a href="{{ site.data.knossos.release-url }}">Not your system?</a></sub></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <p>Learn more:</p>
+                    <a href="#features" class="hero-play-btn">{% include fa.html icon="fa-angle-down fa-5x" %}</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 </header>

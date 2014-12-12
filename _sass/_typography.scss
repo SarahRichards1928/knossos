@@ -1,5 +1,52 @@
-h2 {
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/* * Addresses `font-family` inconsistency between `textarea` and other form
+* elements. */
+html, button, input, select, textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 43px;
     font-weight: 100;
-    color: #a4b3cd;
-    margin: 1.5em 0 20px 0;
+}
+
+h2 {
+    color: #d9d9d9;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+p {
+    word-spacing: 2px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: $hover-link-color;
+}
+
+.button {
+    color: white;
+
+    &:hover {
+        color: white;
+    }
+}
+
+strong {
+    font-variant: small-caps;
+}
+
+h1 strong {
+    font-weight: normal;
 }

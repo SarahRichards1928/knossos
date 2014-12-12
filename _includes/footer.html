@@ -1,24 +1,24 @@
 <footer>
     <div class="container">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <a href="#nav">{% include fa.html icon="fa-arrow-up" %}</a>
+        <div class="row">
+            <div class="four columns">
+                <a href="#header">{% include fa.html icon="fa-angle-up fa-5x" %}</a>
                 <!-- <a href="#" class="badge-btn">Badge Button</a> -->
                 <p class="footer-credit">Back to top</p>
             </div>
 
-            <div class="col-md-4">
-                <ul class="footer-nav">
-                    <li><a href="#nav">Home</a></li>
+            <div class="four columns">
+                <ul>
+                    <li><a href="#header">Home</a></li>
                     <li><a href="{{ "/start/" | prepend: site.baseurl }}">Getting started</a></li>
-                    <li><del><a href="#">Documentation</a></del></li>
-                    <li><a href="https://github.com/knossos-project/knossos">Github</a></li>
+                    <!-- <li><a href="{{ "/documentation/" | prepend: site.baseurl }}">Documentation</a></li> -->
+                    <li><a href="https://github.com/knossos-project/knossos">Github {% include fa.html icon="fa-external-link" %}</a></li>
                 </ul>
             </div>
 
-            <div class="col-md-4">
-                <img src="{{ "/img/MPI-dude@2x.png" | prepend: site.baseurl }}" width="50">
-                <p><strong>Knossos</strong> is developed at <a href="https://www.mpimf-heidelberg.mpg.de/en">Max Planck Institute for Medical Research in Heidelberg, Germany.</a></p>
+            <div class="four columns">
+                <img src="{{ "/img/MPI-dude@2x.png" | prepend: site.baseurl }}" width="50" alt="Max Planck Institute for Medical Research">
+                <p><strong>Knossos</strong> is developed at <a href="https://www.mpimf-heidelberg.mpg.de/en">Max Planck Institute for Medical Research {% include fa.html icon="fa-external-link" %}</a> in Heidelberg, Germany.</p>
             </div>
         </div>
     </div>

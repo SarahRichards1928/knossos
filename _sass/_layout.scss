@@ -1,59 +1,20 @@
-.features h1 {
-    color: #9197a8;
-    font-size: 15px;
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
- }
-.features {
-    background: #fff url('../img/arrowBG.png') no-repeat center -1px;
-    padding: 70px 0;
- }
-.features p { color: #7a8387;
-     font-size: 16px;
-     word-spacing: 2px;
-     line-height: 30px;
- }
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD { visibility: visible; }
 
-.features-leftcol {
-    border-right: 1px solid rgba(208, 217, 226, 0.4);
-    padding-right: 60px;
- }
-
-.features-rightcol {
-    padding-left: 60px;
- }
-
-
-
-.download-now h1 {
+.about-knossos h1 {
     font-size: 55px;
     font-weight: 100;
     color: #fff;
     margin: 100px 0 20px 0;
 }
 
-.download-now {
-    background: #5B6E8C url('../img/ipadBG_top.png') no-repeat right 65px;
+.about-knossos {
+    background: #5B6E8C url('../img/ipadBG_top.png') no-repeat;
+    background-position: 100% -50%;
     background-size: 50%;
-}
 
-.download-now p { color: #fff; font-size: 16px; margin: 40px 30px 40px 0; line-height: 30px; }
-
-.download-btn { border: solid 3px #fff; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; font-size: 17px; letter-spacing: 2px; transition: all 0.5s ease; padding: 15px 70px; display: inline-block; color: #fff; margin-bottom: 185px; }
-
-.download-btn:hover, .download-btn:focus { text-decoration: none; border-color: #a58347; color: #a58347; }
-
-
-.download-now2 {
-    background: #5B6E8C url('../img/ipadBG_bottom.png') no-repeat right 65px;
-    background-size: 50%;
-    background-position: top right;
-
-    h1 {
-        font-size: 55px;
-        font-weight: 100;
-        color: #fff;
-        margin: 100px 0 20px 0;
+    @include media-query($on-palm) {
+        background: #5B6E8C; background-image: none;
     }
 
     h2 {
@@ -63,68 +24,130 @@
     p {
         color: #fff;
         font-size: 16px;
-        margin: 40px 30px 40px 0;
+        margin: 0 30px 40px 0;
         line-height: 30px;
+        font-weight: 300;
     }
 
-    a, a:visited, a:active {
-        color: darken(#fff, 15);
-        text-decoration: none;
+    a {
+        color: $hover-link-color;
 
         &:hover {
             color: #fff;
         }
+    }
+}
+
+.about-knossos.bottom {
+    background: #5B6E8C url('../img/ipadBG_bottom.png') no-repeat;
+    background-position: top right;
+    background-size: 50%;
+
+    @include media-query($on-palm) {
+        background: #5B6E8C; background-image: none;
     }
 
     a > code {
         border: 1px solid #f9f2f4;
         background: none;
         color: white;
+
+        &:hover {
+            background: #f9f2f4;
+            color: #333;
+        }
+    }
+
+    code {
+        color: #c7254e;
     }
 }
 
 
 
+.features {
+    background: #fff url('../img/arrowBG.png') no-repeat center -1px;
+    padding: 70px 0;
 
-.testimonials h1 {
-    color: #fff;
-    font-size: 43px;
-    font-weight: 100;
-    // margin: 20px 0 80px 0;
-    // font-style: italic;
-}
+    h2 {
+        color: #9197a8;
+        font-size: 15px;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
 
-.testimonials {
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0;
+    }
+
+    p {
+        color: #7a8387;
+        font-size: 16px;
+        word-spacing: 2px;
+        line-height: 30px; font-weight: 300;
+    }
+ }
+
+
+
+
+
+
+.team {
     background: #2b3442;
     padding: 3em 0;
-}
-
-.testimonials {
     color: white;
+
+    ul {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+
+    h2 {
+        margin-top: 1em;
+        color: #a4b3cd;
+    }
+
     img {
         border-radius: 50%;
     }
+
+    .button span {
+        @include media-query($on-palm) {
+            display: none;
+        }
+    }
 }
 
 
+.page {
+    padding-top: 2em;
 
+    h2 {
+        color: #9197a8;
+        font-size: 15px;
+        margin: 0 0 20px 0;
+        text-transform: uppercase;
 
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: 0;
+    }
 
-/* For mobile:like samsung grand(480 * 800): */
-@media screen and (max-width:480px) {
-    .get-started-btn { padding: 20px 50px; }
-}
-/* For iphone: */
-@media screen and (max-width:320px) {
-}
-/* For ipad: */
-@media screen and (max-width:760px) {
-}
-@media screen and (max-width:991px) {
-    .download-now { background: #5B6E8C; background-image: none; }
-    .download-now2 { background: #5B6E8C; background-image: none; }
-    .features-leftcol { border: none; padding: 0 0 0 20px; }
-    .features-rightcol { padding: 0 0 0 20px; }
-    .margin-bottom { margin-bottom: 0; }
-    .features p { margin-bottom: 50px; }
+    hr {
+        margin-bottom: 2em;
+    }
+
+    ul, ol {
+        list-style-position: outside;
+
+        li {
+            margin-bottom: 0;
+        }
+    }
 }

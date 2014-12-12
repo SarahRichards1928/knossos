@@ -6,27 +6,23 @@
 
 
 // Our variables
-// $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
-$base-font-size:   16px;
+$base-font-family: "Lato", sans-serif;
+$base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 2;
 
 $spacing-unit:     30px;
 
-$text-color:       #737e90;
+$text-color:       #7a8387;
 $background-color: #fdfdfd;
-$brand-color:      #B02034;
-$h1-color:         #363b43;
-$link-color:       black;
-$hover-link-color: lighten($brand-color, 25%);
-$bold-color:       #6a7586;
-$base-button-color: darken(#2e313d, 2%);
-$hover-button-color: lighten($brand-color, 25);
+$brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$link-color: darken(#33C3F0, 10);
+$hover-link-color: #1EAEDB;
 
 // Width of the content area
 $content-width:    800px;
@@ -49,23 +45,17 @@ $on-laptop:        800px;
     }
 }
 
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    "../bower_components/bourbon/dist/bourbon",
-    "../bower_components/jeet.gs/scss/jeet/index",
-    "typography",
-    "button",
-    "header",
-    "page",
-    "layout",
-    "footer"
-        // "base",
-        // "normalize",
-        // // "skeleton",
-        // "reset",
+        "../bower_components/bourbon/dist/bourbon",
+        "base",
+        "typography",
+        "header",
+        "layout",
+        "footer"
+        // "base"
         // // "layout",
-        // "header",
-        // // "footer",
-        // // "img",
         // "syntax-highlighting"
 ;
