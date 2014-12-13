@@ -28,7 +28,7 @@ Own datasets
 ------------
 If you have own image datasets, they will probably need to be converted into **Knossos'** format. Head to the  [Getting started]({{ "/start/" | prepend: site.baseurl }}) section to learn how to do so.
 
-Feel free to <a href="#team">contact us</a> if you need any assistance in setting up **Knossos**.
+Feel free to <a href="#contact">contact us</a> if you need any assistance in setting up **Knossos**.
 
 </div>
 </div>

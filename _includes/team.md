@@ -26,6 +26,6 @@ Contact us
 ==========
 If you have any questions or suggestions regarding **Knossos**, feel free to write us:
 
-<a class="button button-primary" href="mailto:knossos-team@mpimf-heidelberg.mpg.de">{% include fa.html icon="fa-envelope" %} knossos-team<span>@mpimf-heidelberg.mpg.de</span></a>
+<a id="contact" class="button button-primary" href="mailto:knossos-team@mpimf-heidelberg.mpg.de">{% include fa.html icon="fa-envelope" %} knossos-team<span>@mpimf-heidelberg.mpg.de</span></a>
 </div>
 </div>
