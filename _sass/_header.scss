@@ -23,6 +23,7 @@ body, html {
 .table {
     display: table;
     width: 100%;
+    height: 100%;
 }
 
 .table-cell {
@@ -33,17 +34,13 @@ body, html {
 .hero {
     // display: table;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     background: url('../img/grain_header.jpg') no-repeat top left;
     background-size: cover;
+    text-align: center;
 
     .row:first-of-type {
         padding-top: 2em;
-    }
-
-    .row {
-        margin-bottom: 0;
-        text-align: center;
     }
 
     h1 {
