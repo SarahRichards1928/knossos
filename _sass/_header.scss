@@ -29,10 +29,13 @@ body, html {
 .table-cell {
     display: table-cell;
     vertical-align: middle;
+
+    @include media-query($on-palm) {
+        vertical-align: top;
+    }
 }
 
 .hero {
-    // display: table;
     width: 100%;
     height: 100%;
     background: url('../img/grain_header.jpg') no-repeat top left;
@@ -65,8 +68,6 @@ body, html {
             color: $hover-link-color;
         }
     }
-
-
 }
 
 .hero.small {
@@ -76,11 +77,8 @@ body, html {
 .hero-play-btn {
     height: 99px;
     width: 99px;
-    // background: url('../img/play-btn.png') no-repeat center center;
     display: block;
     margin: 0 auto;
-    // text-indent: -99999px;
-    // margin: 20px auto 260px;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
