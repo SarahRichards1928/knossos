@@ -66,11 +66,6 @@ $(document).ready(function () {
             }
         }
 
-        combinedClasses = os + ' ' + browserName + ' ' + browserOsVersion;
-        if(el.className){
-            combinedClasses += ' ' + el.className;
-        }
-
         return os;
     };
 
@@ -87,6 +82,12 @@ $(document).ready(function () {
     if(os == "linux") {
         $(".download-btn").attr("href", linux_release);
         $(".download-icon").attr("class", "fa fa-linux fa-fw");
+    }
+
+    if(os == "iphone") {
+        $(".download-btn").attr("href", "#");
+        $(".download-btn").text("Not available for iOS");
+        $(".download-icon").attr("class", "fa fa-times fa-fw");
     }
 });
 
