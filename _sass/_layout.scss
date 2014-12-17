@@ -151,4 +151,15 @@
             margin-bottom: 0;
         }
     }
+
+    .sidebar {
+        ul, ol {
+            margin: 0;
+            padding: 0;
+        }
+
+        ol ol:first-of-type {
+            margin-left: 1em;
+        }
+    }
 }

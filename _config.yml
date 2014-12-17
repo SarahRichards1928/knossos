@@ -13,7 +13,7 @@ markdown: kramdown
 
 kramdown:
   parse_block_html: true
-  auto_ids: false
+  # auto_ids: false
 
 sass:
   style: :compressed

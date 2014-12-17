@@ -86,10 +86,6 @@ $(document).ready(function () {
 });
 
 
-
-
-
-
 // waypoints
 $(document).ready(function() {
 
@@ -118,6 +114,8 @@ $(document).ready(function() {
   });
 
 });
+
+
 // smooth scroll
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
