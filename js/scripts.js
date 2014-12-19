@@ -1,15 +1,13 @@
 $(document).ready(function () {
-    agent = navigator.userAgent;
-
     mac_release = "https://github.com/knossos-project/knossos/releases/download/v4.0.1/mac-Knossos.4.0.1.zip";
     linux_release = "https://github.com/knossos-project/knossos/releases/download/v4.0.1/knossos.deb";
 
-    if(agent.indexOf("Macintosh") >= -1) {
+    if(navigator.userAgent.indexOf("Macintosh") > -1) {
         $(".download-btn").attr("href", mac_release);
         $(".download-icon").attr("class", "fa fa-apple fa-fw");
     }
 
-    if(agent.indexOf("Linux") >= -1) {
+    if(navigator.userAgent.indexOf("Linux") > -1) {
         $(".download-btn").attr("href", linux_release);
         $(".download-icon").attr("class", "fa fa-linux fa-fw");
     }
