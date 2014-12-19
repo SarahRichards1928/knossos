@@ -24,9 +24,16 @@ $(document).ready(function() {
     $('.wp0').waypoint(function() {
     $(window).scroll(function() {
     var x = $(this).scrollTop();
-    $('.app-img').css("top", parseInt($(this).scrollTop() * -0.5));
+
+    if(x <= 160) {
+
+    $('.app-img').css("top", parseInt($(this).scrollTop() * -x/$(window).height()*8));
+
+}
+
 });
-    });
+
+});
 
 
   $('.wp1').waypoint(function() {
@@ -43,12 +50,6 @@ $(document).ready(function() {
 
   $('.wp3').waypoint(function() {
     $('.wp3').addClass('animated fadeInUpD');
-  }, {
-    offset: '75%'
-  });
-
-  $('.wp4').waypoint(function() {
-    $('.wp4').addClass('animated fadeInUpD');
   }, {
     offset: '75%'
   });

@@ -9,7 +9,7 @@ View 3D images as 2D representation of each side, allowing you to easily navigat
 
 <div class="six columns">
 
-img
+![tree]({{ "/img/3d.png" | prepend: site.baseurl }})
 
 </div>
 </div>
@@ -27,7 +27,7 @@ This is already being used at *Max Planck Institute for Medical Research* where 
 
 <div class="six columns">
 
-![tree]({{ "/img/tree.png" | prepend: site.baseurl }})
+![tree]({{ "/img/segmentation.png" | prepend: site.baseurl }})
 
 </div>
 </div>
