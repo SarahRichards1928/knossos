@@ -1,10 +1,40 @@
-<div class="row">
-<div class="six columns wp1">
+<div class="row wp1">
+<div class="six columns">
 
 3D Visualization
 ----------------
 View 3D images as 2D representation of each side, allowing you to easily navigate through datasets. By dynamically loading only data from the surrounding of the current location, seamless navigation is not limited to datasets that fit into the available RAM but also works with much larger datasets stored in **Knossos'** special format on disk.
 
+</div>
+
+<div class="six columns">
+
+img
+
+</div>
+</div>
+
+<div class="row wp2">
+<div class="six columns">
+
+3D Annotation
+-------------
+Using **Knossos'** annotation tools, you can build 3D skeletons of your data by placing and connecting nodes *(with 3D volume annotation coming soon)*.
+
+This is already being used at *Max Planck Institute for Medical Research* where several employees work together to skeletonize neurons and their connections.
+
+</div>
+
+<div class="six columns">
+
+![tree]({{ "/img/tree.png" | prepend: site.baseurl }})
+
+</div>
+</div>
+
+
+<div class="row">
+<div class="six columns">
 
 Open Source &amp; Cross-platform
 --------------------------------
@@ -12,13 +42,8 @@ Open Source &amp; Cross-platform
 
 </div>
 
-<div class="six columns wp2">
+<div class="six columns">
 
-3D Annotation
--------------
-Using **Knossos'** annotation tools, you can build 3D skeletons of your data by placing and connecting nodes *(with 3D volume annotation coming soon)*.
-
-This is already being used at *Max Planck Institute for Medical Research* where several employees work together to skeletonize neurons and their connections.
 
 Easily prepare your data for **Knossos**
 ----------------------------------------

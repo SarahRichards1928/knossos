@@ -5,13 +5,14 @@
     font-size: 55px;
     font-weight: 100;
     color: #fff;
-    margin: 100px 0 20px 0;
+    margin: 1em 0 20px 0;
 }
 
 .about-knossos {
-    background: #5B6E8C url('../img/ipadBG_top.png') no-repeat;
-    background-position: 100% -50%;
-    background-size: 50%;
+    // background: #5B6E8C url('../img/ipadBG_top.png') no-repeat;
+    // background-position: 100% -50%;
+    // background-size: 50%;
+    background: #5B6E8C;
 
     @include media-query($on-palm) {
         background: #5B6E8C; background-image: none;
@@ -39,9 +40,10 @@
 }
 
 .about-knossos.bottom {
-    background: #5B6E8C url('../img/ipadBG_bottom.png') no-repeat;
-    background-position: top right;
-    background-size: 50%;
+    // background: #5B6E8C url('../img/ipadBG_bottom.png') no-repeat;
+    // background-position: top right;
+    // background-size: 50%;
+    background: #5B6E8C;
 
     @include media-query($on-palm) {
         background: #5B6E8C; background-image: none;

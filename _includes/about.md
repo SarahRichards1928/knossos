@@ -1,5 +1,5 @@
 <div class="row">
-<div class="eight columns wp1">
+<div class="twelve columns wp1">
 What is **Knossos**
 ===================
 

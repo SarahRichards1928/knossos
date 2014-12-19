@@ -15,7 +15,6 @@ layout: default
 </div>
 </section>
 
-
 <section class="about-knossos bottom" id="get-started">
 <div class="container">
 {% include about-bottom.md %}

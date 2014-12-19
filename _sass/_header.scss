@@ -34,10 +34,9 @@ body, html {
 
 .table-cell {
     display: table-cell;
-    vertical-align: middle;
 
-    @include media-query($on-palm) {
-        vertical-align: top;
+    img {
+        position: relative;
     }
 }
 

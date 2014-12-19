@@ -1,136 +1,7 @@
----
-layout: page
-title: Documentation
-permalink: /documentation/
----
-<div class="row">
-<aside class="three columns sidebar">
-
-1.  [Preparing your Dataset](#preparing-your-dataset)
-2.  [Launching **Knossos**](#knossos-installation)
-3.  [**Knossos** Starter Guide]()
-    1.  [Add Dataset]()
-    2.  [Profile]()
-    3.  [Remove Dataset]()
-    4.  [Select dataset]()
-    5.  [Supercube edge]()
-    6.  [Synchronize on start]()
-4.  **Knossos**
-    1.  [Branch Points]()
-        1.  [Add Branch Point]()
-        2.  [Jump to Branch Point]()
-        3.  [Remove Branch Point]()
-    2.  [Coordinates]()
-        1.  Copy coordinates
-    3.  [Edit Skeleton (Menu)]()
-        1.  [Work Mode]()
-            1.  [Add node (a)]()
-            2.  [Link with active node (w)]()
-            3.  [Drop nodes]()
-        2.  [Skeleton Statistics...]()
-        3.  [Clear Skeleton]()
-    4.  [File (menu)]()
-        1.  [Open... -> Open Skeleton File [open file]]()
-            1.  [Merge with Open Skeleton]()
-        2.  [Open recent Skeleton File (open recent file)]()
-        3.  [Save (CTRL+s) -> Save Skeleton File [save file]]()
-            1.  [Standard save folder (for skeleton files)]()
-        4.  [Save as...]()
-        5.  [Quit]()
-    5.  [Help (menu)]()
-        1.  [About]()
-    6.  [Hot keys [Hotkey, Shortcuts, Short cuts]]()
-    7.  [Keyboard layout [Keys, functional keys]]()
-    8.  [Moving [scrolling, panning]]()
-    9.  [Nodes [skeleton nodes, skeleton points]]()
-        1.  [Activate nodes [active node, reactivate nodes]]()
-        2.  [Add nodes [place nodes]]()
-        3.  [Connect nodes [make segment]]()
-        4.  [Delete node [remove node]]()
-        5.  [Delete segment [remove segment]]()
-        6.  [Move node [reposition node, drag node]]()
-        7.  [Node ID]()
-    10. [Preferences (menu)]()
-        1.  [Load Custom Preferences]()
-        2.  [Save Custom Preferences As]()
-        3.  [Dataset Navigation]()
-        4.  [Synchronization]()
-            1.  [Synchronization Settings]()
-        5.  [Data Saving Options]()
-        6.  [Viewport Setting]()
-    11. [Synchronization [synchronize **Knossos**]]()
-    12. [Tools window]()
-        1.  [Quick]()
-            1.  [Active Tree ID]()
-            2.  [Active Node ID]()
-            3.  [Comments]()
-            4.  [Branch Points]()
-        2.  [Trees]()
-            1.  [Active Tree ID]()
-            2.  [Delete Active Tree]()
-            3.  [New Tree (C)]()
-            4.  [Merge Trees]()
-            5.  [Split Trees By Connected Components]()
-        3.  [Nodes]()
-            1.  [Active Node ID]()
-            2.  [Jump to Node (s)]()
-            3.  [Delete node (Del)]()
-            4.  [Link node with (Shift+Click)]()
-            5.  [Comment]()
-            6.  [Node Radius]()
-            7.  [Locking]()
-    13.  [Trees [Skeleton]]()
-        1.  [Add tree [new tree, new skeleton]]()
-        2.  [Delete tree [remove tree, delete skeleton]]()
-        3.  [Merge trees [merge skeletons]]()
-        4.  [Split trees [separate trees, split skeleton]]()
-        5.  [Tree ID]()
-    14. [View (menu)]()
-        1.  [Work Mode]()
-            1. [Drag Dataset]()
-            2. [Recenter on Click]()
-        2.  [Dataset Statistics]()
-        3.  [Zoom...]()
-            1.  [Viewport Zooming]()
-    15. [Viewport]()
-        1.  [Viewport xy (red viewport)]()
-        2.  [Viewport yz (blue viewport)]()
-        3.  [Viewport xz (green viewport)]()
-        4.  [3D Viewport]()
-    16. [Viewport Settings]()
-        1.  [General]()
-            1.  [Skeleton Visualization]()
-            2.  [Skeleton Rendering Model]()
-        2.  [Slice Plane Viewports]()
-            1.  [Skeleton Overlay]()
-            2.  [Voxel Filtering]()
-            3.  [Dataset color lookup table]()
-            4.  [Dataset Dynamic Range (Contrast)]()
-            5.  [Object ID Overlay]()
-        3.  [Skeleton Viewport]()
-            1.  [Dataset Visualization]()
-            2.  [Skeleton Display Modes]()
-            3.  [3D View]()
-    17. [Windows (menu)]()
-        1.  [Tools window]()
-        2.  [Log window]()
-    18. Zooming
-        1.  [Zooming Slice Viewports]()
-        2.  [Zooming 3D Viewport]()
-</aside>
-
-
-<div class="nine columns">
-
-
-
-* * *
-
-
 
 Preparing your Dataset
 ======================
-Use the **Knossos** Cuber script found in the [Getting started]() section for a tutorial on how to prepare your dataset for **Knossos**.
+Use the **Knossos** Cuber script found in the [Getting started]() section for a tutorial on how to prepare your dataset.
 
 * * *
 
@@ -140,11 +11,11 @@ Lanching **Knossos**
 ====================
 
 *   Execute **Knossos** 4.0.
-*   Choose the desired dataset at the top-left menu entry: "File" -> "Load Dataset...".
+*   Choose the desired dataset at the top-left menu entry: `File` - `Choose Dataset...`
 *   Load a dataset with "Select Dataset Path" or choose from previously used datasets in the drop down menu.
 *   The *Data cache cube edge length* option sets the *Supercube Edge*, i.e. the number of cubes to be loaded per viewport. Higher numbers require more memory.
-    *   A supercube edge size of 5 is optimal for tracing (requires 250 MB RAM). The settings 7 (686 MB RAM-Speicher) or 3 (54 MB RAM) are also sensible.
-    *   When changing the supercube edge size, a newstart of **Knossos** is required.
+    *   A supercube edge size of `5` is optimal for tracing (requires 250 MB RAM). Other sensible settings are `7` (requiring 686 MB RAM) or `3` (54 MB RAM).
+    *   When changing the supercube edge size, a restart of **Knossos** is required.
 *   On exit, **Knossos** remembers the last used dataset and automatically loads it on next start.
 
 * * *
@@ -158,20 +29,20 @@ Branch Points
 -------------
 
 *   Branch points help you to relocate important nodes in your skeleton.
-    *   Mainly this feature is used to find a location where the cell divides into two branches. Because you can only follow one branch, you have to find the other later on to trace it.
+    *   This feature is mainly used to find a location where the cell divides into two branches. Since you can only follow one branch, you have to find the other one later to trace it.
     *   Branch points are stacked. This means that new branch points will be stacked onto the old ones in the branch point file and when you jump to them you first come to the newer branch points and afterwards to the older ones.
 
 
-### Add branch point
+### Add Branch Point
 
-*   You can make a node a branch point by simply pressing B on your keyboard when the node is activated. The color of the node turns blue.
-*   Another possibility is to hold down CTRL while clicking with your right mouse button onto a new position. A node will be added which is simultaneously marked as branch point. This node does not automatically become active (in comparison to normal node placing)
+*   You can make a node a branch point by simply pressing `B` on your keyboard while the node is activated. The color of the node turns blue.
+*   Another possibility is to hold down `Ctrl` while clicking with your right mouse button onto a new position. A node will be added which is simultaneously marked as branch point. This node does not automatically become active (in comparison to normal node placing)
 
 
-### Jump to branch point
+### Jump to Branch Point
 
-*   Press J on your keyboard to jump to the last made branch point. The marking as a branch point is automatically removed. If you want to keep it, press again B on your keyboard.
-*   Another possibility is to click on *Pop and (J)ump* in the annotation window. See [Branch Point(annotation window)]() for further information.
+*   Press `J` on your keyboard to jump to the last made branch point. The marking as a branch point is automatically removed. If you want to keep it, press `B` again on your keyboard.
+*   Another possibility is to click on *Pop and (J)ump* in the annotation window. See [Branch Point (annotation window)]() for further information.
 
 
 ### Remove Branch Point
@@ -180,20 +51,24 @@ Branch Points
 
 * * *
 
+
+
 Coordinates
 -----------
 
-*   In the upper left section of **Knossos**, you can enter the x-,y-,z-coordinates of a location you want to move to, e.g. to find the seedpoint of your tracing.
-*   Simply type in the coordinates each one in the corresponding coordinate field, or simply copy your coordinates from the excel file (separated by blanks, e.g. 100 100 100) and click on the Paste button left from the coordinate fields or press V on your keyboard while holding down CTRL.
+*   In the upper left section of **Knossos**, you can enter the `x`, `y`, and `z` coordinates of a location you want to move to, e.g. to find the seedpoint of your tracing.
+*   Simply type each coordinate into the respective field, or simply copy your coordinates from an excel file (separated by blanks, e.g. `100 100 100`) and click on the `Paste` button left from the coordinate fields (or press `Ctrl+V` on your keyboard).
 
 
 ### Copy coordinates
 
-*   If you want to extract the coordinates of your current location, click on the *Copy*-Button left from the coordinate fields. The coordinates will be copied to your clipboard, separated with blanks.
+*   If you want to extract the coordinates of your current location, click on the `Copy` button left from the coordinate fields. The coordinates will be copied to your clipboard, separated with blanks.
 
 * * *
 
-Edit Skeleton (menu)
+
+
+Edit Skeleton (Menu)
 --------------------
 
 ### Work Mode
@@ -815,5 +690,3 @@ Windows (menu)
 *   Another possibility to zoom is to use the Zoom and Multiresolution Settings window.
 
 * * *
-</div>
-</div>
