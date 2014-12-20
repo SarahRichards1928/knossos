@@ -34,6 +34,7 @@ body, html {
 
 .table-cell {
     display: table-cell;
+    vertical-align: middle;
 
     img {
         position: relative;
@@ -47,6 +48,7 @@ body, html {
     background: url('../img/grain_header.jpg') no-repeat top left;
     background-size: cover;
     text-align: center;
+    font-size: 150%;
 
     .row:first-of-type {
         padding-top: 2em;
@@ -74,10 +76,16 @@ body, html {
             color: $hover-link-color;
         }
     }
+
+    @include media-query($on-palm) {
+        img {
+            display: none;
+        }
+    }
 }
 
 .hero.small {
-    height: 15%;
+    height: 20%;
 }
 
 .hero-play-btn {

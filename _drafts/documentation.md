@@ -1,7 +1,7 @@
 
 Preparing your Dataset
 ======================
-Use the **Knossos** Cuber script found in the [Getting started]() section for a tutorial on how to prepare your dataset.
+Use the `knossos_cuber` script found in the [Getting started]({{ "/start/" | prepend: site.baseurl }}) section for a tutorial on how to prepare your dataset. The following documentation is more concerned about the usage of the main program, **Knossos**, and not about the creation of datasets. A complete documentation to the `knossos_cuber` might follow soon.
 
 * * *
 
@@ -12,9 +12,9 @@ Lanching **Knossos**
 
 *   Execute **Knossos** 4.0.
 *   Choose the desired dataset at the top-left menu entry: `File` - `Choose Dataset...`
-*   Load a dataset with "Select Dataset Path" or choose from previously used datasets in the drop down menu.
+*   Load a dataset with *Select Dataset Path* or choose from previously used datasets in the drop down menu.
 *   The *Data cache cube edge length* option sets the *Supercube Edge*, i.e. the number of cubes to be loaded per viewport. Higher numbers require more memory.
-    *   A supercube edge size of `5` is optimal for tracing (requires 250 MB RAM). Other sensible settings are `7` (requiring 686 MB RAM) or `3` (54 MB RAM).
+    *   A supercube edge size of `5` is optimal for tracing (requires 250 MB RAM). Other sensible settings are `7` (requires 686 MB RAM) or `3` (54 MB RAM).
     *   When changing the supercube edge size, a restart of **Knossos** is required.
 *   On exit, **Knossos** remembers the last used dataset and automatically loads it on next start.
 
@@ -28,20 +28,21 @@ Lanching **Knossos**
 Branch Points
 -------------
 
-*   Branch points help you to relocate important nodes in your skeleton.
-    *   This feature is mainly used to find a location where the cell divides into two branches. Since you can only follow one branch, you have to find the other one later to trace it.
-    *   Branch points are stacked. This means that new branch points will be stacked onto the old ones in the branch point file and when you jump to them you first come to the newer branch points and afterwards to the older ones.
+Branch points help you to relocate important nodes in your skeleton.
+
+*   This feature is mainly used to find a location where the cell divides into two branches. Since you can only follow one branch, you have to find the other one later to trace it.
+*   Branch points are *stacked*. This means that new branch points will be stacked onto the old ones in the branch point file and when you jump to them you first come to the newer branch points and afterwards to the older ones.
 
 
 ### Add Branch Point
 
 *   You can make a node a branch point by simply pressing `B` on your keyboard while the node is activated. The color of the node turns blue.
-*   Another possibility is to hold down `Ctrl` while clicking with your right mouse button onto a new position. A node will be added which is simultaneously marked as branch point. This node does not automatically become active (in comparison to normal node placing)
+*   Another possibility is to hold down `Ctrl` while clicking with your right mouse button onto a new position. A node will be added which is simultaneously marked as branch point. This node does not automatically become active (in comparison to normal node placing).
 
 
 ### Jump to Branch Point
 
-*   Press `J` on your keyboard to jump to the last made branch point. The marking as a branch point is automatically removed. If you want to keep it, press `B` again on your keyboard.
+*   Press `J` on your keyboard to jump to the last made branch point. The flagging as a branch point is automatically removed. If you want to keep it, press `B` again on your keyboard.
 *   Another possibility is to click on *Pop and (J)ump* in the annotation window. See [Branch Point (annotation window)]() for further information.
 
 
@@ -57,7 +58,7 @@ Coordinates
 -----------
 
 *   In the upper left section of **Knossos**, you can enter the `x`, `y`, and `z` coordinates of a location you want to move to, e.g. to find the seedpoint of your tracing.
-*   Simply type each coordinate into the respective field, or simply copy your coordinates from an excel file (separated by blanks, e.g. `100 100 100`) and click on the `Paste` button left from the coordinate fields (or press `Ctrl+V` on your keyboard).
+*   Simply type each coordinate into the respective field, or copy your coordinates from an excel file (separated by blanks, e.g. `100 100 100`) and click on the `Paste` button (or press `Ctrl+V` on your keyboard).
 
 
 ### Copy coordinates
@@ -99,17 +100,17 @@ Skeleton File (menu)
 
 *   Under "Skeleton File" -> "Open..." a window opens where you can choose a skeleton file from your computer to be loaded into **Knossos**.
     *   Browse through your folders and choose a file. Then click on "Open"
-*   Alternatively, simply drag and drop a skeleton file from your computer onto **Knossos**, to load it.
+    *   Alternatively, simply drag and drop a skeleton file from your computer onto **Knossos** to load it.
 *   A dialog will appear to ask you if the current skeleton should be overriden by the new one or if they should be merged together.
-    *   Note: The two skeletons will have the same tree IDs! If you want to give them different IDs again, see here.
+    *   Note: The two skeletons will have the same tree IDs! If you want to give them different IDs again, see [here]().
 
 ### Open recent Skeleton File (Recent File(s))
 
-*   This menu item will show you a list of recently loaded skeleton files (with the directory where they lie).
+*   This menu item will show you a list of recently loaded skeleton files (together with the directory where they are located in the file system).
 
-### Save (CTRL+s) -> Save Skeleton File [save file]
+### Save (`Ctrl`+s) -> Save Skeleton File [save file]
 
-*   Here you can save your current skeletons on your computer. Pressing s on your keyboard while holding down CTRL will do the same.
+*   Here you can save your current skeletons on your computer. Pressing `Ctrl+S` will do the same.
 
 ### Standard save folder (for skeleton files)
 
@@ -119,7 +120,7 @@ Skeleton File (menu)
 ### Save As...
 
 *   To specify the file name and the folder for your skeleton file, choose this menu item.
-    *   A window will open where you can browse to the desired folder and save the file under the name given in the field *Filename:*.
+*   A window will open where you can browse to the desired folder and save the file under the name given in the field *Filename:*.
 
 ### Quit
 
@@ -146,17 +147,19 @@ Help (Menu)
 Shortcuts
 ---------
 
+(In this paragraph, `LB` means "Left mouse button", `RB` means "Right mouse button", and `MM` means "Middle mouse button". Also keep in mind that on OS X, `Ctrl` is the `Cmd` key.)
+
 *   There are some key combinations which might help you to be faster on **Knossos**:
-    *   SHIFT + Arrow keys: Moves dataset 10 planes into the corresponding direction instead of 1. For faster scrolling.
-    *   SHIFT + F / D: Moves dataset 10 planes forwards / backwards. For faster perpendicular scrolling.
-    *   CTRL + S: Saves your skeleton in the same way as the autosaving feature does (auto increment number). See [Save file]().
-    *   CTRL + V: If you have copied the coordinates into clipboard you can use this to quickly paste them into **Knossos** and jump to that location. See [Paste coordinates]().
-    *   CTRL + mouse wheel: Zoom in and out of the three orthogonal viewports. In the skeleton viewport you don't need to hold CTRL
-    *   SHIFT + mouse wheel: Changes the node radius of the active node. See [Node Radius]() for further information.
-    *   SHIFT + left mouse button click on node: Activate node
-    *   CTRL + right mouse button click in slice viewport: Add a node which is simultaneously marked as a branchpoint (but does not become an active node).
-    *   SHIFT + middle mouse button click on a node: Delete segment between the active and the clicked node. See [Delete segment]().
-    *   CTRL + middle mouse button click on a node: Add segment between the active and the clicked node. See [Connect nodes]().
+    *   `Shift+&#8593;&#8595;&#8592;&#8594;`: Moves dataset 10 planes into the corresponding direction instead of 1 plane for faster scrolling.
+    *   `Shift+F/D`: Moves dataset 10 planes forwards/backwards, for faster perpendicular scrolling.
+    *   `Ctrl+S`: Saves your skeleton in the same way as the autosaving feature does (auto increment number). See [Save file]().
+    *   `Ctrl+V`: If you have copied the coordinates into clipboard you can use this to quickly paste them into **Knossos** and jump to that location. See [Paste coordinates]().
+    *   `Ctrl + mouse wheel`: Zooms in and out of the three orthogonal viewports. In the skeleton viewport you don't need to hold `Ctrl`.
+    *   `Shift + mouse wheel`: Changes the node radius of the active node. See [Node Radius]() for further information.
+    *   `Shift+LB` on node: Activates node.
+    *   `Ctrl+RB` in slice viewport: Adds a node which is simultaneously marked as a branch point (but does not become an active node).
+    *   `Shift+MM` on a node: Deletes segment between the active and the clicked node. See [Delete segment]().
+    *   `Ctrl+MM` on a node: Adds segment between the active and the clicked node. See [Connect nodes]().
 
 
 All Available Shortcuts
@@ -166,12 +169,12 @@ All Available Shortcuts
 
 | Shortcut | Action
 |:-:|:-
-| CTRL + O | Load skeleton from file
-| CTRL + S | Save skeleton
-| CTRL + C | Copy current coordinates
-| CTRL + V | Paste coordinates
-| CTRL + H | Open this documentation
-| CTRL + Q<br>(equal to ALT + F4) | Close **Knossos**
+| `Ctrl+O` | Load skeleton from file
+| `Ctrl+S` | Save skeleton
+| `Ctrl+C` | Copy current coordinates
+| `Ctrl+V` | Paste coordinates
+| `Ctrl+H` | Open this documentation
+| `Ctrl+Q`<br>(equal to ALT + F4) | Close **Knossos**
 
 
 
@@ -179,28 +182,28 @@ All Available Shortcuts
 
 | Shortcut | Action
 |:-:|:-
-| C | Create a new tree
-| Z/Shift + Z | Move to next/previous tree (by tree ID)
-| X/Shift + X | Move to next/previous node (by node ID)
+| `C` | Create a new tree
+| `Z/Shift+Z` | Move to next/previous tree (by tree ID)
+| `X/Shift+X` | Move to next/previous node (by node ID)
 
 
 ### Node Shortcuts
 
 | Shortcut | Action
 |:-:|:-
-| S | Jump to active node
-| DEL | Delete active node
-| B | Mark active node as branch node
-| J | Jump to last branch node
-| Shift + left click on node | Mark clicked node as active node
-| CTRL + left click on node | Select node for an operation
-| CTRL + left mouse drag | Pull selection square to select multiple nodes
-| ALT + left click on node<br>(equal to SHIFT + mouse wheel click on node) | Add/delete segment between clicked node and active node
+| `S` | Jump to active node
+| `Del` | Delete active node
+| `B` | Mark active node as branch node
+| `J` | Jump to last branch node
+| `Shift+LM` on node | Mark clicked node as active node
+| `Ctrl+LM` on node | Select node for an operation
+| `Ctrl+LM` drag | Pull selection square to select multiple nodes
+| `Alt+LM` on node<br>(equal to Shift + mouse wheel click on node) | Add/delete segment between clicked node and active node
 | Mouse wheel hold and drag on node | Move node to new position
-| A | Change to work mode "Add node"
-| W | Change to work mode "Link node"
-| N/P | Jump to next/previous comment node
-| F1-F5 | Custom comment shortcuts
+| `A` | Change to work mode "Add node"
+| `W` | Change to work mode "Link node"
+| `N/P` | Jump to next/previous comment node
+| `F1-F5` | Custom comment shortcuts
 
 
 
@@ -209,15 +212,15 @@ All Available Shortcuts
 | Shortcut | Action
 |:-:|:-
 | Left/Right arrow key | Jump [Jump Frames] steps left/right in active viewport<br>(Jump Frames can be defined at "Preferences">"Dataset Navigation")
-| SHIFT + Left/Right arrow key | Jump 10 steps left/right in active viewport
+| Shift + Left/Right arrow key | Jump 10 steps left/right in active viewport
 | Up/Down arrow key | Jump [Jump Frames] steps up/down in active viewport
-| SHIFT + Up/Down arrow key | Jump 10 steps up/down in active viewport
+| Shift + Up/Down arrow key | Jump 10 steps up/down in active viewport
 | F/D<br>(equal to mouse wheel forward/backward) | Jump [Jump Frames] steps forward/backward in active viewport<br>(Jump Frames can be defined at "Preferences">"Dataset Navigation")
-| SHIFT + F/D | Jump 10 steps forward/backward in active viewport
+| Shift + F/D | Jump 10 steps forward/backward in active viewport
 | R/E | Move [Walk Frames] steps forward/backward in active viewport<br>(Walk Frames can be defined at "Preferences">"Dataset Navigation")
-| SHIFT + R/E | Move 10 steps forward/backward in active viewport
-| I/O in orthogonal viewports<br>(equal to CTRL + mouse scroll) | Zoom in and out of orthogonal viewports
-| CTRL + ALT + left mouse drag | drag viewport<br>(restore original position by clicking on "reset viewports" in the tool bar)
+| Shift + R/E | Move 10 steps forward/backward in active viewport
+| I/O in orthogonal viewports<br>(equal to `Ctrl` + mouse scroll) | Zoom in and out of orthogonal viewports
+| `Ctrl` + ALT + left mouse drag | drag viewport<br>(restore original position by clicking on "reset viewports" in the tool bar)
 | 3 | Toggle viewport crosshairs
 
 * * *
@@ -229,11 +232,11 @@ Moving [scrolling, panning]
 *   There are many ways in **Knossos** to move through the dataset. They are listed here in priority order:
     *   You can use your left mouse button to either drag the dataset by clicking and pulling in one direction, or to recenter the view on the position you clicked (depending on the [Work Mode]() you chose)
     *   Use the arrow keys on your keyboard to move into the corresponding direction (depending on which slice viewport your mouse cursor is currently positioned).
-        *   Using the arrow keys while holding down SHIFT will move 10 planes.
+        *   Using the arrow keys while holding down `Shift` will move 10 planes.
     *   Use your mouse wheels to move perpendicularly to the viewport where your mouse cursor is currently positioned.
-    *   Using D and F on your keyboard will also move the dataset perpendicularly [Jump Frames] planes, [Jump Frames] can be defined under "Preferences" --> "Navigation Settings".
-        *   Using F/D while holding down SHIFT will perpendicularly move 10 planes.
-    *   Placing a node using your right mouse button will recenter the view on the node. (Adding one using CTRL + right mouse button won't do so).
+    *   Using `D` and `F` on your keyboard will also move the dataset perpendicularly an amount of [Jump Frames] planes, [Jump Frames] can be defined under "Preferences" --> "Navigation Settings".
+        *   Using F/D while holding down Shift will perpendicularly move 10 planes.
+    *   Placing a node using your right mouse button will recenter the view on the node. (Adding one using `Ctrl` + right mouse button won't do so).
     *   You can jump to the currently active node using S on your keyboard. See [here]() for further information.
     *   By entering a coordinate in the upper left coordinate fields you can jump to a desired location. See [here]() for further information.
     *   You can jump to a node previously marked as a branch point using J on your keyboard or using your [annotation window]().
@@ -251,7 +254,7 @@ Nodes [skeleton nodes, skeleton points]
 *   The currently active node is highlighted by its node ID which is shown right near to the node.
 *   New placed nodes will be connected to the currently active node, given that the option [Link with active node]() is enabled (default).
 *   Furthermore, several functions such as [Delete node](), [Connect nodes/Make segment](), [Delete segment]() and [Branchpoint]() are related to the currently active node.
-*   You activate a node by clicking on it with your left mouse button while simultaneously having the SHIFT key on your keyboard pressed.
+*   You activate a node by clicking on it with your left mouse button while simultaneously having the Shift key on your keyboard pressed.
     *   Another possibility is to choose the desired node ID in the Annotation window.
 
 ### Add nodes [place nodes]
@@ -263,18 +266,18 @@ Nodes [skeleton nodes, skeleton points]
 
 ### Connect nodes [make segment]
 
-*   You can connect two nodes with each other by activating one of the two nodes and clicking on the other one with the middle mouse button while simultaneously holding down the CTRL key on your keyboard.
+*   You can connect two nodes with each other by activating one of the two nodes and clicking on the other one with the middle mouse button while simultaneously holding down the `Ctrl` key on your keyboard.
     *   This is helpful, e.g. if you separated two skeleton parts by accident and you want to connect them again.
     *   Another way is to select both nodes in the Annotation window's Tree View and link them by the right-click menu entry "(Un)link nodes". Repeating this unlinks the nodes again.
 
 ### Delete segment [remove segment]
 
-*   You can delete the connection (segment) between two nodes by activating one of them and clicking on the other with your middle mouse button while holding down the SHIFT key on your keyboard.
+*   You can delete the connection (segment) between two nodes by activating one of them and clicking on the other with your middle mouse button while holding down the Shift key on your keyboard.
     *   This is helpful if you want to separate two parts of your skeleton (to delete one of them or to make two trees according to [Split Trees]())
 
 ### Delete node [remove node]
 
-*   You can delete a node by selecting it (CTRL+left click) and pressing DEL on your keyboard.
+*   You can delete a node by selecting it (`Ctrl`+left click) and pressing DEL on your keyboard.
     *   Another way is to use the Tree View of the Annotation window: [Tree View]())
 
 ### Move node [reposition node, drag node]
@@ -283,8 +286,8 @@ Nodes [skeleton nodes, skeleton points]
 
 ### Select nodes [operate on multiple nodes]
 
-*   Sometimes you want to perform actions on multiple nodes, e.g. delete many nodes at once. You do this by selecting nodes in the viewport: CTRL+left-click on a node selects it. CTRL + left mouse drag in the viewport pulls a selection square that selects all nodes within.
-*   CTRL + leftclick a selected node to unselect it, or press ESC to undo the entire node selection.
+*   Sometimes you want to perform actions on multiple nodes, e.g. delete many nodes at once. You do this by selecting nodes in the viewport: `Ctrl`+left-click on a node selects it. `Ctrl` + left mouse drag in the viewport pulls a selection square that selects all nodes within.
+*   `Ctrl` + leftclick a selected node to unselect it, or press ESC to undo the entire node selection.
 *   Press DEL to delete all selected nodes.
 *   The selected nodes are highlighted in green in both the viewports and the Tree View of the Annotation Window. Right-clicking on the node list in the Tree View opens a context menu where you can perform many operations on the selected nodes (see [here]()).
 *   If you have exactly one node selected, it becomes the active node. I.e. the next placed node will be connected to this one.
@@ -354,7 +357,7 @@ The Tree View is the first Tab in the Annotation Window. It is separated into a 
 *   The list displays all trees with their ID, their color for easy identification and their comment. The active tree is always listed in the first row, separated from the rest.
 *   Double-clicking a tree in the list makes it the active tree.
 *   Double click the color of a tree, to change it. And change the comment by writing it into the comment field.
-*   Select a list entry like in any common table by clicking on it. Select multiple entries in a row by SHIFT+clicking. Select multiple entries not in a row by CTRL+clicking.
+*   Select a list entry like in any common table by clicking on it. Select multiple entries in a row by Shift+clicking. Select multiple entries not in a row by `Ctrl`+clicking.
 *   Perform operations on selected trees by opening the context menu on them with a right click. The context menu includes:
     *   Set as active tree (needs exactly one selected tree)
     *   Move selected node(s) to this tree (needs exactly one selected tree and at least one selected node)
@@ -374,13 +377,13 @@ The Tree View is the first Tab in the Annotation Window. It is separated into a 
 *   Search for nodes containing the comment substring entered in the search bar at the top. Check the "RegEx" checkbox to enable a search with a regular expression.
 *   Filter the displayed nodes after following criteria:
     *   nodes of selected trees (shows only the nodes of trees currently selected in the tree list)
-    *   selected nodes (shows only nodes that are selected either by the list or in the viewport with CTRL+leftclick on node)
+    *   selected nodes (shows only nodes that are selected either by the list or in the viewport with `Ctrl`+leftclick on node)
     *   "... with branch mark", "... with comments" are optional filters.
     *   The "Displayed Nodes" drop down restricts the number of displayed nodes to ensure a good performance. If you cannot find a node in the list, because it exceeds the number of displayed nodes, use the filtering mechanisms to find it. If more than several thousand nodes are shown in the list, **Knossos** will run slower.
 *   The list displays all nodes with their ID, their radius, position and comment. The active node is always listed in the first row, separated from the rest.
 *   Double-clicking a node in the list makes it the active node.
 *   Directly edit a node's property by writing into its property fields.
-*   Select a list entry like in any common table by clicking on it. Select multiple entries in a row by SHIFT+clicking. Select multiple entries not in a row by CTRL+clicking.
+*   Select a list entry like in any common table by clicking on it. Select multiple entries in a row by Shift+clicking. Select multiple entries not in a row by `Ctrl`+clicking.
 *   Perform operations on selected nodes by opening the context menu on them with a right click. The context menu includes:
     *   Split component from tree (splits the component containing this node from the tree, see [Split Component from tree]())
     *   (Un)link nodes (select two nodes, to add or remove a link between them)
@@ -402,12 +405,12 @@ In the Commands section, several important functions are accessable.
 
 #### Active Tree ID
 
-*   This shows you the currently active tree ID. This is the tree which is also highlighted in red in all viewports. You can switch to another tree by typing in or toggling to another ID. Using Z/SHIFT+Z will do the same.
+*   This shows you the currently active tree ID. This is the tree which is also highlighted in red in all viewports. You can switch to another tree by typing in or toggling to another ID. Using Z/Shift+Z will do the same.
 
 
 #### Active Node ID
 
-*   This shows you the currently active node ID. You can switch to another node by typing in or toggling to another ID. Using X/SHIFT+X will do the same.
+*   This shows you the currently active node ID. You can switch to another node by typing in or toggling to another ID. Using X/Shift+X will do the same.
 
 
 #### Branch Points
@@ -524,22 +527,24 @@ Viewport
 
 ### Arbitrary Viewport Orientation
 
-*   Instead of being aligned with the coordinate axes, the viewports can have *arbitrary orientation*. I.e the viewports stay orthogonal to each other, but their angle to the coordinate axes can change.
-*   Press *"K"* or *"M"* to rotate clock-wise or counter-clockwise around the *z-axis*.
-*   Press *"L"* or *","* to rotate clock-wise or counter-clockwise around the *y-axis*.
+Instead of being aligned with the coordinate axes, the viewports can have *arbitrary orientation*, i.e the viewports stay orthogonal to each other, but their angle to the coordinate axes can change.
+
+*   Press `K` or `M` to rotate clock-wise or counter-clockwise around the *z axis*.
+*   Press `L` or `,` to rotate clock-wise or counter-clockwise around the *y axis*.
 *   Keep in mind that in arbitrary orientation you do not have original image quality. But it might help you to understand the morphology better.
-*   When you trace in arbitrary orientation mode, each time you place a node the viewports will automatically align orthogonally to tracing direction, or more precisely, the former xy-Viewport will be orthogonal to tracing direction.
-*   To lock the viewports current orientation, tick the "Lock current VP orientation" checkbox in the tool bar
-*   To restore the original axes-aligned viewport orientation, press on the button "Restore VP orientation"
+*   When you trace in arbitrary orientation mode, each time you place a node the viewports will automatically align orthogonally to tracing direction---or more precisely, the former `xy` viewport will be orthogonal to tracing direction.
+*   To lock the viewports current orientation, tick the *"Lock current VP orientation"* checkbox in the tool bar.
+*   To restore the original axes-aligned viewport orientation, press on the button *"Restore VP orientation"*.
 
 
 ### 3D Viewport
 
-*   The lower right viewport (with a black border) represents the 3D viewport.
+The lower right viewport (with a black border) represents the 3D viewport.
+
 *   The black borders represent the border of the dataset, on the edges you can see the voxel coordinates.
-*   With the 3D viewport you can observe the development of your traced skeleton(s).
-*   The three other viewports can be seen as 3 planes around the current viewports' center.
-*   By scrolling you move in and out of the dataset, with the left mouse button you can pan through the stack and with the right mouse button you rotate the stack.
+*   With the 3D viewport, you can observe the development of your traced skeleton(s).
+*   The three other viewports can be seen as 3 planes around the current viewport's center.
+*   By scrolling, you move in and out of the dataset. With the left mouse button you can pan through the stack, and with the right mouse button you rotate the stack.
 
 * * *
 
@@ -562,16 +567,17 @@ Viewport Settings
 
 #### Rendering Quality
 
-*   You can use this to adjust the quality of the rendered skeleton. A higher quality reduces speed and vice versa, where a value of 1 ensures best quality and a value of 20 yields fastest rendering.
+You can use this to adjust the quality of the rendered skeleton. A higher quality reduces speed and vice versa, where a value of 1 ensures best quality and a value of 20 yields fastest rendering.
 
 #### Skeleton Display Modes
 
-*   Under "Skeleton Display Modes" you can configure how the skeleton should be displayed.
-    *   *Whole Skeleton* allows the whole loaded/traced skeleton to be displayed.
-    *   *Only Selected Trees* allows only the trees to be displayed that are currently selected in the treeview (they are highlighted in green).
-    *   *Hide Skeleton in Ortho VPs* hides the skeleton in the three orthogonal viewports, but still shows it in the 3D View.
-    *   *Hide Skeleton in Skeleton VP (fast)* hides the skeleton in the 3D viewport. This option is recommended, if your skeletons become very large and your computer gets slower and slower. Switching the trees off significantly improves the performance.
-    *   Note that if "Hide Skeleton in Ortho/Skeleton VP" are not checked and you still cannot see the whole skeleton, it might be that you have "Only Selected Trees" checked.
+Under "Skeleton Display Modes" you can configure how the skeleton should be displayed.
+
+*   *Whole Skeleton* allows the whole loaded/traced skeleton to be displayed.
+*   *Only Selected Trees* allows only the trees to be displayed that are currently selected in the treeview (they are highlighted in green).
+*   *Hide Skeleton in Ortho VPs* hides the skeleton in the three orthogonal viewports, but still shows it in the 3D View.
+*   *Hide Skeleton in Skeleton VP (fast)* hides the skeleton in the 3D viewport. This option is recommended if your skeletons become very large and your computer gets slower and slower. Switching the trees off significantly improves the performance.
+*   Note that if *"Hide Skeleton in Ortho/Skeleton VP"* are not checked and you still cannot see the whole skeleton, it might be that you have *"Only Selected Trees"* checked.
 
 
 
@@ -588,25 +594,28 @@ Viewport Settings
 
 #### Color lookup table
 
-*   This feature enables you to change the grey values of the dataset and the default tree colors into color values according to a "Color Lookup Table" (LUT). The format of this table is the ImageJ-format, supporting only 768 byte tables (3 bytes RGB colors for each of the 256 grey values)
-*   To use this feature, first load an adequat lookup table by clicking on *Load*. A window will open where you are asked for the LUT-file.
+This feature enables you to change the grey values of the dataset and the default tree colors into color values according to a *"Color Lookup Table" (LUT)*. The format of this table is the *ImageJ* format, supporting only 768 byte tables (3 bytes RGB colors for each of the 256 grey values)
+
+*   To use this feature, first load an adequat lookup table by clicking on *Load*. A window will open where you are asked for the `LUT` file.
     *   Then check on *Use Own Dataset Colors* or *Use Own Tree Colors* and the dataset or the trees should change their color according to the table.
 
 #### Dataset Dynamic Range (Contrast)
 
-*   Here the intensity values (i.e. the contrast) of the dataset can be adjusted. Because it is 8-bit greyscale the range goes from 0 to 255.
+Here the intensity values (i.e. the contrast) of the dataset can be adjusted. Because it is 8-bit greyscale the range goes from 0 to 255.
+
 *   If you increase *Bias* (default 0), then the image gets brighter. If you decrease *Range Delta*, the image gets darker.
 *   A good setting is 100 for both *Bias* and *Range Delta*.
 
 #### Viewport Objects
 
-*   Here you can toggle the display of the intersection crosshairs, which show you the intersections of the three slice plane viewports. The color of an intersecting line corresponds to the viewport border of the respective viewport, i.e red for XY, green for XZ and blue for YZ.
+Here you can toggle the display of the intersection crosshairs, which show you the intersections of the three slice plane viewports. The color of an intersecting line corresponds to the viewport border of the respective viewport, i.e red for `XY`, green for `XZ` and blue for `YZ`.
+
 *   You can also toggle the display of the size label in each slice plane viewport. The label shows you the size of the displayed dataset in μm.
 
 #### Object ID Overlay
 
-*   This feature is used to stain parts of the EM dataset with other colors by using a second "object id"-dataset.
-*   However this feature is yet not fully implemented.
+This feature is used to stain parts of the EM dataset with other colors by using a second "object id"-dataset. However this feature is yet not fully implemented.
+
 *   *Enable Color Overlay* will enable this feature.
 
 
@@ -615,40 +624,41 @@ Viewport Settings
 
 #### Dataset Visualization
 
-*   The buttons Show XY Plane, Show XZ Plane and Show YZ Plane switch the rendering of the grey planes in the 3D viewport around the current center of view on or off.
+The buttons `Show XY Plane`, `Show XZ Plane` and `Show YZ Plane` switch the rendering of the grey planes in the 3D viewport around the current center of view on or off.
 
 #### 3D View
 
-*   If *Rotate Around Active Node* is activated (default) then the rotation in the 3D viewport will be around the currently active node. Otherwise the view will rotate around the center of the dataset.
-*   You rotate in the skeleton viewport by dragging with the right mouse button or using the r90, r180 buttons in the skeleton viewport to rotate 90 or 180 degrees.
+*   If *Rotate Around Active Node* is activated (default), then the rotation in the 3D viewport will be around the currently active node. Otherwise the view will rotate around the center of the dataset.
+*   You rotate in the skeleton viewport by dragging with the right mouse button or using the `r90`, `r180` buttons in the skeleton viewport to rotate 90 or 180 degrees.
 
 * * *
+
 
 
 Windows (menu)
 --------------
 
-*   Under "Windows" you can open the Annotation window, Task Management, Comments, Zoom and Multiresolution Settings and the Tracing Time window.
+Under *"Windows"* you can open the Annotation window, Task Management, Comments, Zoom and Multiresolution Settings and the Tracing Time window.
 
 ### Annotation window
 
-*   See [here]() for information about the Annotation window
+See [here]() for information about the Annotation window
 
 ### Comment Settings
 
-*   In the Comment Settings you can define comment shortcuts, customize the way comments are highlighted and search in a list of all comments in the skeleton.
+In the Comment Settings you can define comment shortcuts, customize the way comments are highlighted and search in a list of all comments in the skeleton.
 
 #### Shortcuts
 
-*   Place comments on the F1-F5 shortcuts. When pressing a comment shortcut, the currently active node will receive the corresponding comment.
+*   Place comments on the `F1-F5` shortcuts. When pressing a comment shortcut, the currently active node will receive the corresponding comment.
 *   The shortcuts will be saved for you on closing **Knossos**.
 
 #### Highlighting
 
 *   Define in which way comments with certain substrings are highlighted.
-*   With the checkboxes "Enable cond. coloring" and "Enable cond. radius" you can toggle the usage of your highlighting definitions. Don't forget to check them if you want to use comment highlighting.
-*   In the text box enter the substring you would like to highlight. Then choose a color and a radius and all nodes with comments containing that substring will appear in the defined color and will have the defined radius.
-*   Note that if a comment matches several substrings, only the first substring will be considered. So place your most important substring into the first text box, the second most important into the second text box and so on.
+*   With the checkboxes *"Enable cond. coloring"* and *"Enable cond. radius"*, you can toggle the usage of your highlighting definitions. Don't forget to check them if you want to use comment highlighting.
+    *   In the text box enter the substring you would like to highlight. Then choose a color and a radius and all nodes with comments containing that substring will appear in the defined color and will have the defined radius.
+    *   Note that if a comment matches several substrings, only the first substring will be considered. So place your most important substring into the first text box, the second most important into the second text box, and so on.
 
 #### Node Comments
 
@@ -656,17 +666,17 @@ Windows (menu)
 *   By clicking on one table entry, the corresponding node will be activated and the view recenters on its position.
 
 ### Tracing Time
+The Tracing Time window is an informative widget to show you your time spent on the loaded Skeleton.
 
-*   The Tracing Time window is an informative widget to show you your time spent on the loaded Skeleton.
 *   *Running Time* shows how long this **Knossos** session is running already.
 *   *Tracing Time* shows how much from that time you have been tracing.
 *   *Idle Time* shows how much of this time you have been idle, i.e. have done nothing.
 
 
 ### Task Management
+You can manage your tracing tasks here. Tracing tasks are skeleton files with a starting node and task information. Note that you need a network connection, as this feature connects to a task host.
 
-*   Here you can manage your tracing tasks. Tracing tasks are skeleton files with a starting node and task information. Note that you need a network connection, as this feature connects to a task host.
-*   First you have to login at your task host with your username and password.
+*   At first, you have to login at your task host with your username and password.
 *   On successful login, you will reach the task management widget which displays to you your current task if you have already activated one. If not, you can load one via *Load New Task*. The task file will be saved in a task-files folder. Please read the task category's description and the task's comment carefully.
 *   Now you can trace as usual. You can submit your work every now and then by clicking on *Submit*. If you check the *final* checkbox first, your submit will be marked as final, that is, as finished work.
 *   Through *Load Last Submit* you can load your latest submit to your task into **Knossos** to continue tracing. If you haven't submitted anything, yet, the task file will be loaded instead.
@@ -678,11 +688,11 @@ Windows (menu)
 
 #### Zooming Slice Viewports
 
-*   You can zoom into a slice viewport by either pressing I on your keyboard or holding down CTRL and moving your mouse wheel forward.
-*   You can zoom out of a slice viewport by either pressing O on your keyboard or holding down CTRL and moving your mouse wheel backward.
-*   The mouse cursor has to be placed over one of the slice viewports
+*   You can zoom into a slice viewport by either pressing `I` on your keyboard or holding down `Ctrl` and moving your mouse wheel forward.
+*   You can zoom out of a slice viewport by either pressing `O` on your keyboard or holding down `Ctrl` and moving your mouse wheel backward.
+    *   The mouse cursor has to be placed over one of the slice viewports
 *   Another possibility to zoom is to use the *Zoom and Multiresolution Settings* window.
-*   If you have a dataset with several magnifications, **Knossos** will dynamically switch between these magnifications while zooming. You can prevent this by checking "Lock dataset to current mag".
+*   If you have a dataset with several magnifications, **Knossos** will dynamically switch between these magnifications while zooming. You can prevent this by checking *"Lock dataset to current mag"*.
 
 #### Zooming 3D Viewport
 

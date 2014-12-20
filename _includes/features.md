@@ -47,7 +47,7 @@ Open Source &amp; Cross-platform
 
 Easily prepare your data for **Knossos**
 ----------------------------------------
-**Knossos** ships together with a Python script---*Knossos Cuber*---that makes it easy to prepare any image data for use within **Knossos**.
+**Knossos** ships together with a Python script---*Knossos Cuber*---that makes it easy to prepare any image data for the use with **Knossos**.
 
 </div>
 </div>

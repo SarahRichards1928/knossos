@@ -25,7 +25,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
     var x = $(this).scrollTop();
 
-    if(x <= 160) {
+    if(x <= 190 && $(window).height() <= 1080) {
 
     $('.app-img').css("top", parseInt($(this).scrollTop() * -x/$(window).height()*8));
 
