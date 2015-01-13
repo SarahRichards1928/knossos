@@ -1,4 +1,3 @@
-
 Preparing your Dataset
 ======================
 Use the `knossos_cuber` script found in the [Getting started]({{ "/start/" | prepend: site.baseurl }}) section for a tutorial on how to prepare your dataset. The following documentation is more concerned about the usage of the main program, **Knossos**, and not about the creation of datasets. A complete documentation to the `knossos_cuber` might follow soon.
@@ -6,23 +5,7 @@ Use the `knossos_cuber` script found in the [Getting started]({{ "/start/" | pre
 * * *
 
 
-
-Lanching **Knossos**
-====================
-
-*   Execute **Knossos** 4.0.
-*   Choose the desired dataset at the top-left menu entry: `File` - `Choose Dataset...`
-*   Load a dataset with *Select Dataset Path* or choose from previously used datasets in the drop down menu.
-*   The *Data cache cube edge length* option sets the *Supercube Edge*, i.e. the number of cubes to be loaded per viewport. Higher numbers require more memory.
-    *   A supercube edge size of `5` is optimal for tracing (requires 250 MB RAM). Other sensible settings are `7` (requires 686 MB RAM) or `3` (54 MB RAM).
-    *   When changing the supercube edge size, a restart of **Knossos** is required.
-*   On exit, **Knossos** remembers the last used dataset and automatically loads it on next start.
-
-* * *
-
-
-
-**Knossos** Main Documentation
+**Knossos** Full Documentation
 ==============================
 
 Branch Points
@@ -36,19 +19,18 @@ Branch points help you to relocate important nodes in your skeleton.
 
 ### Add Branch Point
 
-*   You can make a node a branch point by simply pressing `B` on your keyboard while the node is activated. The color of the node turns blue.
-*   Another possibility is to hold down `Ctrl` while clicking with your right mouse button onto a new position. A node will be added which is simultaneously marked as branch point. This node does not automatically become active (in comparison to normal node placing).
+*   You can make a node a branch point by simply pressing `B` on your keyboard while the node is activated. The color of the node turns to blue.
+*   Another possibility is to use `Ctrl+(RB)` on a new position. A node will be added which is simultaneously marked as a branch point. This node does not automatically become active (in comparison to normal node placing).
 
 
 ### Jump to Branch Point
 
 *   Press `J` on your keyboard to jump to the last made branch point. The flagging as a branch point is automatically removed. If you want to keep it, press `B` again on your keyboard.
-*   Another possibility is to click on *Pop and (J)ump* in the annotation window. See [Branch Point (annotation window)]() for further information.
-
+*   Another possibility is to click on *Pop and (J)ump* in the annotation window. See [Branch Point (annotation window)](!TODO Branch Point Annotation window) for further information.
 
 ### Remove Branch Point
 
-*   A branch point is removed at the time you jump to it.
+A branch point is removed at the time you jump to it.
 
 * * *
 
@@ -57,8 +39,9 @@ Branch points help you to relocate important nodes in your skeleton.
 Coordinates
 -----------
 
-*   In the upper left section of **Knossos**, you can enter the `x`, `y`, and `z` coordinates of a location you want to move to, e.g. to find the seedpoint of your tracing.
-*   Simply type each coordinate into the respective field, or copy your coordinates from an excel file (separated by blanks, e.g. `100 100 100`) and click on the `Paste` button (or press `Ctrl+V` on your keyboard).
+In the upper left section of **Knossos**, you can enter the `x`, `y`, and `z` coordinates of a location you want to move to, e.g. to find the seedpoint of your tracing.
+
+Simply type each coordinate into the respective field, or copy your coordinates from an excel file (separated by blanks, e.g. `100 100 100`) and click on the `Paste` button (or press `Ctrl+V` on your keyboard).
 
 
 ### Copy coordinates
@@ -73,58 +56,62 @@ Edit Skeleton (Menu)
 --------------------
 
 ### Work Mode
-*   Here you can choose between different types of placing a node.
+Here you can choose between different types of placing a node.
 
 ### Add node (a)
-*   This work mode does not connect the first node you place with any previously active node. Further placed nodes will be connected as usual. Pressing "a" on your keyboard will do the same.
+This work mode does not connect the first node you place with any previously active node. Further placed nodes will be connected as usual. Pressing `a` on your keyboard will do the same.
 
 ### Link with active node (w)
-*   This is the normal work mode, where each new placed node will be connected to the previously active node (and becomes the next active node).
+This is the normal work mode, i.e. each new placed node will be connected to the previously active node (and becomes the next active node).
 
 ### Drop nodes
-*   This work mode simply places single nodes without connecting them. This is a special work mode which you do only need if you want to drop "node clouds" e.g. for glia cells.
+This work mode simply places single nodes without connecting them. This is a special work mode which you only need if you want to drop "node clouds" e.g. for *glia* cells.
+!TODO glia?
 
 ### Skeleton Statistics...
-*   This feature is not yet implemented.
-
+(This feature is not yet implemented.)
+!TODO
 
 ### Clear Skeleton
-*   This menu item will clear the whole cube from any skeleton you traced/loaded. You will be asked by a dialog if you really want to do this.
+This menu item will clear the whole cube from any skeleton you traced/loaded. You will be asked by a dialog if you really want to do this.
 
 * * *
 
 Skeleton File (menu)
 --------------------
 
-### Open... -> Open Skeleton File [open file]
+### Open... - Open Skeleton File
 
-*   Under "Skeleton File" -> "Open..." a window opens where you can choose a skeleton file from your computer to be loaded into **Knossos**.
-    *   Browse through your folders and choose a file. Then click on "Open"
-    *   Alternatively, simply drag and drop a skeleton file from your computer onto **Knossos** to load it.
+Select "Skeleton File" -> "Open..." to open a file dialog to select a skeleton file from your computer to be loaded into **Knossos**.
+
+*   Browse through your folders and choose a file. Then click on "Open"
+*   Alternatively, simply drag and drop a skeleton file from your computer onto **Knossos** to load it.
 *   A dialog will appear to ask you if the current skeleton should be overriden by the new one or if they should be merged together.
-    *   Note: The two skeletons will have the same tree IDs! If you want to give them different IDs again, see [here]().
+    *   Note: The two skeletons will have the same tree IDs! If you want to give them different IDs again, see [here](!TODO).
 
-### Open recent Skeleton File (Recent File(s))
+### Open recent Skeleton File
 
-*   This menu item will show you a list of recently loaded skeleton files (together with the directory where they are located in the file system).
+This menu item will show you a list of recently loaded skeleton files (together with the directory where they are located in the file system).
 
-### Save (`Ctrl`+s) -> Save Skeleton File [save file]
+### Save (`Ctrl`+s) - Save Skeleton File
 
-*   Here you can save your current skeletons on your computer. Pressing `Ctrl+S` will do the same.
+Here you can save your current skeletons on your computer. Pressing `Ctrl+S` will do the same.
 
 ### Standard save folder (for skeleton files)
 
-*   If you haven't saved a file yet using [Save As...]() the file will be stored in the *skeletonFiles* folder of your **Knossos** installation directory using as file name a combination of the date and time when you started **Knossos** to do tracing.
-*   If you have already stored a file in a specific folder and used a file name without ".000.nml" at the end, **Knossos** will save a new file in this folder using the previous file name and adding ".000.nml". If the file name already contains ".000.nml", **Knossos** will name the subsequent saved files ".001.nml", ".002.nml" and so on, given that you did not turn off the option *Auto Increment Filename* (for further information see [Data Saving Options]()
+If you haven't saved a file yet using [Save As...](!TODO), the file will be stored in the `skeletonFiles` folder of your **Knossos** installation directory, and with a name of a combination of the date and time when you started **Knossos** to do tracing.
+
+*   If you have already stored a file in a specific folder and used a file name without ".000.nml" at the end, **Knossos** will save a new file in this folder using the previous file name and adding ".000.nml". If the file name already contains ".000.nml", **Knossos** will name the subsequent saved files ".001.nml", ".002.nml" and so on, given that you did not turn off the option *Auto Increment Filename* (for further information see [Data Saving Options](!TODO)
 
 ### Save As...
 
-*   To specify the file name and the folder for your skeleton file, choose this menu item.
+To specify the file name and the folder for your skeleton file, choose this menu item.
+
 *   A window will open where you can browse to the desired folder and save the file under the name given in the field *Filename:*.
 
 ### Quit
 
-*   This menu item will quit **Knossos**.
+This menu item will quit **Knossos**.
 
 * * *
 

@@ -33,7 +33,7 @@ This is already being used at *Max Planck Institute for Medical Research* where 
 </div>
 
 
-<div class="row">
+<div class="row wp3">
 <div class="six columns">
 
 Open Source &amp; Cross-platform
