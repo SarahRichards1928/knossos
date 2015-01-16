@@ -23,7 +23,7 @@ These are offline datasets that already contain all images: [`small (54 MB)`]({{
 
 ### Own datasets
 
-If you have your own image datasets, they will probably need to be converted into **Knossos'** format. Head to the  [Getting started]({{ "/start/" | prepend: site.baseurl }}) section to learn how to do so.
+If you have your own image datasets, they will probably need to be converted into **Knossos'** format. Head to the  [Dataset Preparation]({{ "/start/" | prepend: site.baseurl }}) section to learn how to do so.
 
 Feel free to [contact us](#contact) if you need any assistance in setting up **Knossos**.
 

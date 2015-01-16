@@ -68,7 +68,7 @@
 
 
 .features {
-    background: #fff url('../img/arrowBG.png') no-repeat center -1px;
+    background: #ecf0f1 url('../img/arrowBG.png') no-repeat center -1px;
     padding: 70px 0;
 
     h2 {
@@ -83,10 +83,10 @@
     }
 
     p {
-        color: #7a8387;
+        color: darken(#7a8387, 25);
         font-size: 16px;
         word-spacing: 2px;
-        line-height: 30px; font-weight: 300;
+        line-height: 30px;
     }
  }
 
