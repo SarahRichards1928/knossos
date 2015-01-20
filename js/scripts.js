@@ -13,31 +13,6 @@ $(document).ready(function () {
     }
 });
 
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     [].forEach.call(document.querySelectorAll('.app-img'), function(el) {
-//         el.addEventListener('click', function(e) {
-//             if (e.target.nodeName.toLowerCase() == 'a') {
-//                 e.preventDefault();
-//             }
-//             document.getElementById('overlay').classList.add('open');
-//         });
-//     });
-// });
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('overlay').addEventListener('click', function(e) {
-//             if (e.target.nodeName.toLowerCase() == 'a') {
-//                 e.preventDefault();
-//             }
-//             document.getElementById('overlay').classList.remove('open');
-//     });
-// });
-
-
 // waypoints
 $(document).ready(function() {
     if($('.wp0').height() < 900 && $('.wp0').width() > 640) {
@@ -46,17 +21,6 @@ $(document).ready(function() {
 
         $('.hero').css('height', wph-$('.app-img').position()["top"]+wph+imgh);
     }
-
-
-    $('.wp0').waypoint(function() {
-        // $(window).scroll(function() {
-        //     var x = $(this).scrollTop();
-
-        //     if(x <= 190 && $(window).height() <= 1080) {
-        //         $('.app-img').css("top", parseInt($(this).scrollTop() * -x/$(window).height()*8));
-        //     }
-        // });
-    });
 
     $('.wp1').waypoint(function() {
         $('.wp1').addClass('animated fadeInUp');
